@@ -3,6 +3,9 @@ import Image from 'next/image'
 import Header from '../components/Header'
 import MenuLayover from '../components/MenuLayover'
 import Hero from '../components/Hero'
+import Intro from '../components/Intro'
+import Stats from '../components/Stats'
+import News from '../components/News'
 
 export default function Home() {
   return (
@@ -20,11 +23,10 @@ export default function Home() {
         <Header/>
         <MenuLayover/>
         <Hero/>
+        <Intro />
+        <Stats />
+        <News />
       </main>
-
-      <footer>
-        
-      </footer>
     </div>
   )
 }
