@@ -1,21 +1,28 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Header from '../components/Header'
+import MenuLayover from '../components/MenuLayover'
+import Hero from '../components/Hero'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div >
       <Head>
         <title>Impac'tu</title>
         <meta name="description" content="Criamos impacto junto daqueles que mais precisam de nós." />
+        <meta charSet="UTF-8"/>
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
         <link rel="icon" href="/favicon.png" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
       </Head>
 
-      <main className={styles.main}>
-
+      <main>
+        <Header/>
+        <MenuLayover/>
+        <Hero/>
       </main>
 
-      <footer className={styles.footer}>
+      <footer>
         
       </footer>
     </div>
