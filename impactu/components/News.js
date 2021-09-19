@@ -1,4 +1,5 @@
 import Footer from './Footer'
+import Image from 'next/image'
 
 const Stats = () => {
     return (
@@ -18,13 +19,13 @@ const Stats = () => {
                                     <svg className='arrow news' xmlns="http://www.w3.org/2000/svg" width="19" height="14"
                                         viewBox="0 0 19 14" fill="none">
                                         <path d="M17.6151 7.0705H0.515381V7.99454H17.6151V7.0705Z" fill="black"
-                                            stroke-width="1" stroke-miterlimit="102" />
+                                            strokeWidth="1" strokeMiterlimit="102" />
                                         <path
                                             d="M18.5153 7.30319L12.1274 1L11.5484 1.57138L17.9363 7.87457L18.5153 7.30319Z"
-                                            fill="black" stroke-width="1" stroke-miterlimit="10" />
+                                            fill="black" strokeWidth="1" strokeMiterlimit="10" />
                                         <path
                                             d="M17.3516 7.30151L11.5464 13.0297L12.1254 13.6011L17.9306 7.8729L17.3516 7.30151Z"
-                                            fill="black" stroke-width="1" stroke-miterlimit="10" />
+                                            fill="black" strokeWidth="1" strokeMiterlimit="10" />
                                     </svg>
                                 </a>
                             </div>
@@ -35,7 +36,7 @@ const Stats = () => {
                     <div className="card-slider">
                         <a href='#'>
                             <div className="news-card">
-                                <img src='https://placeimg.com/640/640/nature' alt='news' />
+                                <Image src='/arch.jpeg' alt='news' width="640" height="640"/>
                                 <div className="card-info">
                                     <h2>Covid-19</h2>
                                     <p>Plano de Prevenção e Contingência</p>
@@ -45,7 +46,7 @@ const Stats = () => {
                         </a>
                         <a href='#'>
                             <div className="news-card">
-                                <img src='https://placeimg.com/640/640/tech' alt='news' />
+                                <Image src='/arch.jpeg' alt='news' width="640" height="640"/>
                                 <div className="card-info">
                                     <h2>Banco Alimentar Contra a Fome</h2>
                                     <p>Lorem ipsum dolor sit.
@@ -56,7 +57,7 @@ const Stats = () => {
                         </a>
                         <a href='#'>
                             <div className="news-card">
-                                <img src='https://placeimg.com/640/640/arch' alt='news' />
+                                <Image src="/arch.jpeg" alt="news" width="640" height="640"/>
                                 <div className="card-info">
                                     <h2>Reunião com a União de Freguesias do...</h2>
                                     <p>Plano de Prevenção e Contingência</p>
@@ -66,7 +67,7 @@ const Stats = () => {
                         </a>
                         <a href='#'>
                             <div className="news-card">
-                                <img src='https://placeimg.com/640/640/people' alt='news' />
+                                <Image src='/arch.jpeg' alt='news' width="640" height="640"/>
                                 <div className="card-info">
                                     <h2>Reunião com a União de Freguesias do...</h2>
                                     <p>Plano de Prevenção e Contingência</p>
@@ -76,7 +77,7 @@ const Stats = () => {
                         </a>
                         <a href='#'>
                             <div className="news-card">
-                                <img src='https://placeimg.com/640/640/nature' alt='news' />
+                                <Image src='/arch.jpeg' alt='news' width="640" height="640"/>
                                 <div className="card-info">
                                     <h2>Covid-19</h2>
                                     <p>Plano de Prevenção e Contingência</p>
@@ -86,7 +87,7 @@ const Stats = () => {
                         </a>
                         <a href='#'>
                             <div className="news-card">
-                                <img src='https://placeimg.com/640/640/tech' alt='news' />
+                                <Image src='/arch.jpeg' alt='news' width="640" height="640"/>
                                 <div className="card-info">
                                     <h2>Banco Alimentar Contra a Fome</h2>
                                     <p>Lorem ipsum dolor sit amet.</p>
@@ -96,7 +97,7 @@ const Stats = () => {
                         </a>
                         <a href='#'>
                             <div className="news-card">
-                                <img src='https://placeimg.com/640/640/arch' alt='news' />
+                                <Image src='/arch.jpeg' alt='news' width="640" height="640"/>
                                 <div className="card-info">
                                     <h2>Reunião com a União de Freguesias do...</h2>
                                     <p>Plano de Prevenção e Contingência</p>
@@ -106,7 +107,7 @@ const Stats = () => {
                         </a>
                         <a href='#'>
                             <div className="news-card">
-                                <img src='https://placeimg.com/640/640/people' alt='news' />
+                                <Image src='/arch.jpeg' alt='news' width="640" height="640"/>
                                 <div className="card-info">
                                     <h2>Reunião com a União de Freguesias do...</h2>
                                     <p>Plano de Prevenção e Contingência</p>
