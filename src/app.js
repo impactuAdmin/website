@@ -120,27 +120,3 @@ counters.forEach(counter => {
     }
     updateCount();
 })
-
-
-// Função para "ler mais" e "ler menos"
-var departamentos = document.querySelector('#departamentos');
-
-departamentos.addEventListener('click', function (e) {
-    var target = e.target;
-    if (target.classList.contains('ver-mais-underline')) {
-        var serviceItem = target.parentNode;
-        var open = target.dataset.open === 'true';
-        target.dataset.open = !open;
-        if (open) {
-            target.innerText = 'Ver mais';
-            serviceItem.classList.remove('open');
-        } else {
-            target.innerText = 'Ver menos';
-            serviceItem.classList.add('open');
-        }
-    }
-});
-
-
-
-
