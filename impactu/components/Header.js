@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 const Header = () => {
     return (
         <div><nav className='navigation_wrapper'>
@@ -35,7 +37,7 @@ const Header = () => {
                 </svg>
             </a>
             <div className="links">
-                <a href='about.html'>Quem somos?</a>
+                <Link href="/About"><a>Quem somos?</a></Link>
                 <a href='impactosocial.html'>Impacto Social</a>
                 <a href='recrutamento.html'>Recrutamento</a>
                 <a href='contacts.html'>Contactos</a>
