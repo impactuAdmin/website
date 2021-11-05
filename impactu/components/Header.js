@@ -39,7 +39,7 @@ const Header = () => {
             <div className="links">
                 <Link href="/About"><a>Quem somos?</a></Link>
                 <a href='impactosocial.html'>Impacto Social</a>
-                <a href='recrutamento.html'>Recrutamento</a>
+                <Link href="/Recrutamento"><a>Recrutamento</a></Link>
                 <a href='contacts.html'>Contactos</a>
             </div>
             <a href='queroajudar.html'>

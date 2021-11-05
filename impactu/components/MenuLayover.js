@@ -13,9 +13,11 @@ const MenuLayover = () => {
             <a href="impactosocial.html">
                 <h1>Impacto Social</h1>
             </a>
-            <a href="recrutamento.html">
-                <h1>Recrutamento</h1>
-            </a>
+            <Link href="/Recrutamento">
+                <a>
+                    <h1>Recrutamento</h1>
+                </a>
+            </Link>
             <a className='nth-of-type-wasnt-working' href="contacts.html">
                 <h1>Contactos</h1>
             </a>
