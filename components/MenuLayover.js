@@ -1,17 +1,23 @@
+import Link from 'next/link'
+
 const MenuLayover = () => {
     return (
         <div className='menu-wrapper'>
         <div className="menu-content">
             <div className='menu-dismiss'>O</div>
-            <a href="about.html">
-                <h1>Quem somos?</h1>
-            </a>
+            <Link href="/About">
+                <a>
+                    <h1>Quem somos?</h1>
+                </a>
+            </Link>
             <a href="impactosocial.html">
                 <h1>Impacto Social</h1>
             </a>
-            <a href="recrutamento.html">
-                <h1>Recrutamento</h1>
-            </a>
+            <Link href="/Recrutamento">
+                <a>
+                    <h1>Recrutamento</h1>
+                </a>
+            </Link>
             <a className='nth-of-type-wasnt-working' href="contacts.html">
                 <h1>Contactos</h1>
             </a>
