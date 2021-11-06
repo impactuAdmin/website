@@ -7,7 +7,7 @@ const RecruitmentForm = () => {
                 </div>
             </div>
             <div className="container-formulario">
-                <form name="candidatura" method="POST" data-netlify="true" action="/Success">
+                <form name="candidaturas" method="POST" data-netlify="true" action="/Success">
                     <input type="hidden" name="form-name" value="candidaturas" />
                     <label htmlFor="fname">Nome Completo</label>
                     <input type="text" id="fname" name="firstname" placeholder="Texto de resposta curta"/>
