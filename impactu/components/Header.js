@@ -4,7 +4,7 @@ const Header = () => {
     return (
         <div><nav className='navigation_wrapper'>
         <div className='navigation'>
-            <a className='logo-container' href='#'>
+            <Link href="/Home"><a className='logo-container' href='#'>
                 <svg className='logo desktop' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 686 161" fill="none">
                     <path d="M31.6571 25.8997H0.748047V122.235H31.6571V25.8997Z" fill="#ffffff" />
                     <path fillRule="evenodd" clipRule="evenodd"
@@ -36,6 +36,7 @@ const Header = () => {
                         fill="#ffffff" />
                 </svg>
             </a>
+            </Link>
             <div className="links">
                 <Link href="/About"><a>Quem somos?</a></Link>
                 <a href='impactosocial.html'>Impacto Social</a>
