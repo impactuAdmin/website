@@ -36,7 +36,7 @@ const Stats = () => {
                     <div className="card-slider">
                         <a href='#'>
                             <div className="news-card">
-                                <Image src='/arch.jpeg' alt='news' width="640" height="640"/>
+                                <Image src='/pipo.jpg' alt='news' width="640" height="640" objectFit="cover" objectPosition="50% 50%"/>
                                 <div className="card-info">
                                     <h2>Covid-19</h2>
                                     <p>Plano de Prevenção e Contingência</p>
@@ -107,7 +107,7 @@ const Stats = () => {
                         </a>
                         <a href='#'>
                             <div className="news-card">
-                                <Image src='/arch.jpeg' alt='news' width="640" height="640"/>
+                                <Image src='/arch.jpeg' alt='news' width="640" height="640" objectFit="cover"/>
                                 <div className="card-info">
                                     <h2>Reunião com a União de Freguesias do...</h2>
                                     <p>Plano de Prevenção e Contingência</p>
