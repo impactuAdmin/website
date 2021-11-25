@@ -1,6 +1,6 @@
-const getLogo = document.querySelectorAll('.logo.desktop path');
-const getNavbarLinks = document.querySelectorAll('.links a');
-const getSticker = document.querySelectorAll('.sticker');
+var getLogo = document.querySelectorAll('.logo.desktop path');
+var getNavbarLinks = document.querySelectorAll('.links a');
+var getSticker = document.querySelectorAll('.sticker');
 
 window.addEventListener('scroll', function () { // altera os estilos da navbar com scroll (a height, cor de background, cor dos elementos, etc)
     if (window.scrollY > 100) {
@@ -35,9 +35,9 @@ window.addEventListener('scroll', function () { // altera os estilos da navbar c
 // ----------------------------------------
 
 
-const getBurgerMenu = document.getElementsByClassName('burger-menu')[0];
-const getDismissButton = document.getElementsByClassName('menu-dismiss')[0];
-const getOverlayMenu = document.getElementsByClassName('menu-wrapper')[0];
+var getBurgerMenu = document.getElementsByClassName('burger-menu')[0];
+var getDismissButton = document.getElementsByClassName('menu-dismiss')[0];
+var getOverlayMenu = document.getElementsByClassName('menu-wrapper')[0];
 
 getBurgerMenu.addEventListener('click', function () { //abre o menu em modo mobile, com o evento de click
     getOverlayMenu.style.display = 'flex';
@@ -120,27 +120,3 @@ counters.forEach(counter => {
     }
     updateCount();
 })
-
-
-// Função para "ler mais" e "ler menos"
-// var departamentos = document.querySelector('#departamentos');
-
-// departamentos.addEventListener('click', function(e) {
-//   var target = e.target;
-//   if (target.classList.contains('ver-mais-underline')) {
-//     var serviceItem = target.parentNode;
-//     var open = target.dataset.open === 'true';
-//     target.dataset.open = !open;
-//     if (open) {
-//       target.innerText = 'Ver mais';
-//       serviceItem.classList.remove('open');
-//     } else {
-//       target.innerText = 'Ver menos';
-//       serviceItem.classList.add('open');
-//     }
-//   }
-// });
-
-
-
-

@@ -187,33 +187,52 @@ h3 {
 .hero-wrapper {
   width: 100vw;
   height: 100vh;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 6em;
-  position: sticky;
-  top: 0;
+  padding: 6em 10% 6em 10%;
 }
 
 .title-hero {
-  position: fixed;
-  top: 60vh;
-  width: 70%;
-  max-width: 1220px;
+  /* padding: 10% 0 0 0; */
+  width: 100%;
+  height: 100%;
 }
-.title-hero h1 {
-  color: white;
+
+.title-hero .animate-title h1 {
   font-weight: 800;
-  font-size: 4.5em;
+  font-size: 12vw;
   line-height: 0.9em;
   display: inline-block;
-  background-color: rgba(16, 132, 90, 0.6);
-  padding: 10px 20px 10px 20px;
-  white-space: nowrap;
+  /* background-color: rgba(16, 132, 90, 0.6); */
+  padding: 10px 0 10px 0;
+  /* white-space: nowrap; */
+  opacity: 0.8;
+  color: #dbfff5;
 }
+
+@media (min-width: 1501px) {
+  .title-hero .animate-title h1 {
+    font-size: 11.8vw;
+  }
+}
+
+@media (max-width: 1500px) {
+  .title-hero .animate-title h1 {
+    font-size: 15vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .title-hero .animate-title h1 {
+    font-size: 17.8vw;
+  }
+}
+
 .title-hero h1:nth-of-type(2) {
   padding-bottom: 20px;
 }
+
 .title-hero h3 {
+  display: none;
+
   position: relative;
   top: 1.5em;
   color: white;
@@ -224,6 +243,10 @@ h3 {
 }
 
 .animate-title {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   animation: fadein2 1.5s ease-in-out;
 }
 
@@ -242,11 +265,13 @@ video {
     opacity: 0;
     transform: translateY(10%);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
 /* -------------------------
 ----------------------------
 ----------------------------
@@ -259,16 +284,19 @@ video {
   position: relative;
   background-color: #c8e5dd;
 }
+
 .intro-wrapper h1 {
   font-weight: 400;
   margin-bottom: 1em;
 }
+
 .intro-wrapper h3 {
   width: 17%;
   min-width: 251px;
   font-weight: 300;
   margin-top: -4em;
 }
+
 .intro-wrapper h3 strong {
   font-weight: 500;
 }
@@ -289,9 +317,11 @@ video {
 .link {
   min-width: fit-content;
 }
+
 .link:hover .link-underline::after {
   transform: translateX(100%);
 }
+
 .link a {
   text-decoration: none;
   width: 100%;
@@ -299,6 +329,7 @@ video {
   flex-direction: row;
   align-items: center;
 }
+
 .link h4 {
   color: black;
   letter-spacing: 0.2em;
@@ -330,6 +361,7 @@ video {
   margin-left: 0.8em;
   margin-bottom: 0.1em;
 }
+
 .arrow path {
   stroke: black;
   transition: stroke 0.3s ease-in-out;
@@ -353,6 +385,7 @@ video {
   transform: rotate(0deg);
   transition: transform 1s ease;
 }
+
 .sticker svg:hover {
   transform: rotate(360deg);
 }
@@ -393,7 +426,7 @@ video {
   gap: 2em;
 }
 
-.title > h1 {
+.title>h1 {
   font-size: 5em;
   font-weight: 800;
   color: #10845a;
@@ -401,7 +434,7 @@ video {
   line-height: 1.2em;
 }
 
-.title > h3 {
+.title>h3 {
   width: 40%;
   min-width: 350px;
 }
@@ -419,11 +452,13 @@ video {
   transition: 0.3s;
   padding: 70px;
 }
+
 .card h1 {
   color: black;
   font-size: 5em;
   font-weight: 500;
 }
+
 .card h2 {
   text-transform: uppercase;
   font-size: 1em;
@@ -431,6 +466,7 @@ video {
   color: black;
   letter-spacing: 0.2em;
 }
+
 .card:hover {
   transform: scale(1.05);
 }
@@ -454,7 +490,7 @@ video {
 .img-wrapper {
   height: 100vh;
   width: 100vw;
-  background-image: url(../assets/img/como-ajudar.jpg);
+  background-image: url(../assets/img/como-ajudar.webp);
   background-repeat: no-repeat;
   background-size: 80%;
   background-position: center;
@@ -471,11 +507,13 @@ video {
   justify-content: space-evenly;
   align-items: center;
 }
+
 .content-wrapper .content-foo {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .content-wrapper .content-foo h1 {
   font-size: 3em;
   color: white;
@@ -487,12 +525,15 @@ video {
 .link.help:hover .link-underline h4 {
   color: white;
 }
+
 .link.help:hover .link-underline.help::after {
   background-color: white;
 }
+
 .link.help:hover .arrow path {
   stroke: white;
 }
+
 .link.help h4 {
   color: white;
 }
@@ -565,13 +606,16 @@ video {
 .news-title {
   width: 100%;
 }
+
 .news-title h1 {
   font-size: 2.6em;
   line-height: 1.2em;
 }
+
 .news-title h1 strong {
   color: #10845a;
 }
+
 .news-title p {
   margin-top: 20px;
   width: 80%;
@@ -599,6 +643,7 @@ video {
   padding: 0 2em 0 2em;
   margin-left: -2em;
 }
+
 .card-slider a {
   color: black;
   text-decoration: none;
@@ -607,9 +652,11 @@ video {
   max-height: 540px;
   transition: 0.3s ease-out;
 }
+
 .card-slider a:hover {
   transform: scale(1.06);
 }
+
 .card-slider a:hover h2 {
   color: #10845a;
 }
@@ -626,6 +673,7 @@ video {
   min-height: fit-content;
   overflow-y: hidden;
 }
+
 .news-card img {
   width: 100%;
   max-height: 70%;
@@ -639,17 +687,20 @@ video {
   flex-direction: column;
   align-items: flex-start;
 }
+
 .card-info h2 {
   font-size: 1.2em;
   font-weight: 500;
   margin-bottom: 0.3em;
   line-height: 1.3em;
 }
+
 .card-info p:nth-of-type(1) {
   line-height: 1.5em;
   margin-bottom: 1em;
   font-size: 0.9em;
 }
+
 .card-info p:nth-of-type(2) {
   text-transform: uppercase;
   color: gray;
@@ -693,28 +744,36 @@ video {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .footer-about .logo.footer {
   width: 7em;
 }
+
 .footer-about .logo.footer path {
   fill: #10845a;
 }
+
 .footer-about .address {
   margin-top: 8px;
   font-size: 0.8em;
 }
+
 .footer-about .address p:last-of-type {
   margin-top: 7px;
 }
+
 .footer-about .social-media svg {
   margin-right: 10px;
 }
+
 .footer-about .social-media svg path {
   transition: 0.2s ease-out;
 }
+
 .footer-about .social-media svg:hover path {
   fill: #8bc393;
 }
+
 .footer-about .social-media .instagram {
   position: relative;
   top: 2px;
@@ -724,37 +783,44 @@ video {
   display: flex;
   flex-direction: row;
 }
+
 .footer-links-wrapper h3 {
   font-weight: 600;
   font-size: 0.8em;
   color: #10845a;
 }
+
 .footer-links-wrapper p {
   margin-top: 7px;
   font-weight: 400;
   font-size: 0.8em;
 }
+
 .footer-links-wrapper p a {
   color: black;
   text-decoration: none;
   transition: 0.1s ease-out;
 }
+
 .footer-links-wrapper p a:hover {
   color: #a4a4a4;
 }
+
 .footer-links-wrapper .footer-links {
-  margin-top: 20px;
+  margin-top: 17px;
 }
+
 .footer-links-wrapper .left-column {
   flex: 1 1 auto;
-  height: 100%;
   display: flex;
   flex-direction: column;
 }
+
 .footer-links-wrapper .center-column {
   flex: 1 1 auto;
   height: 100%;
 }
+
 .footer-links-wrapper .right-column {
   flex: 1 1 auto;
   height: 100%;
@@ -765,11 +831,13 @@ video {
   align-items: center;
   text-align: center;
 }
+
 .footer-sticker svg {
   height: 9vh;
   min-width: 120px;
   transition: transform 1s ease;
 }
+
 .footer-sticker svg:hover {
   transform: rotate(360deg);
 }
@@ -798,7 +866,7 @@ video {
   min-height: 100vh;
   height: 100vh;
   width: 100%;
-  background-image: url("../assets/img/about.jpg");
+  background-image: url("../assets/img/about2.webp");
   background-size: cover;
   background-position: center center;
 }
@@ -816,6 +884,7 @@ video {
   justify-content: center;
   align-items: center;
 }
+
 
 .about-hero-wrapper .about-hero-content .about-title h1 {
   color: white;
@@ -867,11 +936,13 @@ video {
   min-width: 400px;
 }
 
+
 .about-intro-content .about-intro-title h2 {
   color: #10845a;
   font-size: 10em;
   flex: 1;
 }
+
 
 .about-intro-title-2 {
   padding-top: 4em;
@@ -903,8 +974,8 @@ video {
 }
 
 .about-intro-title-2 .about-intro-text h3 {
-  width: 50%;
-  font-size: 1.7em;
+  width: 70%;
+  font-size: 1.6em;
 }
 
 @media (max-width: 1124px) {
@@ -918,15 +989,6 @@ video {
   }
 }
 
-@media (max-width: 800px) {
-  .about-intro-content {
-    padding: 15% 10% 15% 10%;
-  }
-
-  .about-pillars {
-    padding: 15% 10% 15% 10%;
-  }
-}
 
 @media (max-width: 630px) {
   .about-intro-text {
@@ -938,7 +1000,7 @@ video {
   }
 
   .about-intro-title-2 .about-intro-text h3 {
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -957,6 +1019,7 @@ video {
     width: initial;
   }
 }
+
 
 /*-------------------------------------
 ---------------------------------------
@@ -977,6 +1040,7 @@ video {
   flex-direction: column;
   justify-content: center;
 }
+
 
 .about-pillars-wrapper {
   display: flex;
@@ -1002,6 +1066,12 @@ video {
 
   .about-pillars-wrapper {
     gap: 1em;
+  }
+  .about-background .about-intro-content .about-intro-title {
+    font-size: 0.8em;
+  }
+  .about-intro-text {
+    font-size: 0.8em;
   }
 }
 
@@ -1047,7 +1117,7 @@ figcaption {
 ---------------------------------------
 ---------------------------------------
 ---------------------------------------
------ PORQUÃŠ NA CIDADE DO PORTO? ------
+----- PORQUÊ NA CIDADE DO PORTO? ------
 ---------------------------------------
 ---------------------------------------
 ---------------------------------------
@@ -1144,10 +1214,12 @@ figcaption {
 @media (max-width: 630px) {
   .about-porto-content-bottom-text {
     width: 100%;
+    min-width: initial;
   }
 }
 
 @media (max-width: 979px) {
+
   .about-porto-content-bottom-text h1 {
     width: 80%;
   }
@@ -1164,11 +1236,12 @@ figcaption {
   }
 }
 
+
 /*-------------------------------------
 ---------------------------------------
 ---------------------------------------
 ---------------------------------------
--------- COMO TUDO COMEÃ‡OU ------------
+-------- COMO TUDO COMEÇOU ------------
 ---------------------------------------
 ---------------------------------------
 ---------------------------------------
@@ -1221,10 +1294,11 @@ figcaption {
   padding-bottom: 1em;
 }
 
+
 /*----------------------------------------
 ------------------------------------------
 ------------------------------------------
----------- NotÃ­cia Recrutamento -----------
+---------- Notícia Recrutamento -----------
 ------------------------------------------
 ------------------------------------------
 ----------------------------------------*/
@@ -1240,7 +1314,7 @@ figcaption {
 .manel-wrapper {
   height: 70%;
   width: 100%;
-  background-image: url(../assets/img/manel1.png);
+  background-image: url(../assets/img/manel1.webp);
   background-repeat: no-repeat;
   background-size: 80%;
   background-position: center;
@@ -1314,6 +1388,7 @@ figcaption {
   stroke: white;
 }
 
+
 /*---------------------------------------------
 -----------------------------------------------
 -----------------------------------------------
@@ -1329,7 +1404,7 @@ figcaption {
   height: 100vh;
   width: 100%;
   
-  background-image: url("../assets/img/contacts.JPG");
+  background-image: url("../assets/img/contacts.webp");
   background-size: cover;
   background-position-y: 70%;
   
@@ -1525,7 +1600,7 @@ input[type="submit"]:hover {
 .recrutamento-hero-wrapper {
   height: 100vh;
   width: 100%;
-  background-image: url("../assets/img/recrutamento.png");
+  background-image: url("../assets/img/recrutamento.webp");
   background-size: cover;
   background-position-y: 70%;
 }
@@ -1638,7 +1713,7 @@ input[type="submit"]:hover {
   min-height: 100vh;
   height: 100vh;
   width: 100%;
-  background-image: url("../assets/img/senhor.jpg");
+  background-image: url("../assets/img/senhor.webp");
   background-size: cover;
   background-position-y: center center;
 }
@@ -1786,6 +1861,13 @@ input[type="submit"]:hover {
     padding-bottom: 60%;
   }
 
+  .about-porto .about-porto-content h2 {
+    font-size: 5.6em;
+  }
+
+  .about-porto-content-bottom-text {
+    font-size: 0.8em;
+  }
 
 }
 
@@ -2299,6 +2381,10 @@ No mobile fica em 2 e 1 colunas
   .footer-sticker {
     display: none;
   }
+
+  .manel-text-wrapper{
+    transform: scale(0.7) translateX(10em);
+  }
 }
 @media (max-width: 1000px) {
   .navigation_wrapper {
@@ -2416,7 +2502,7 @@ No mobile fica em 2 e 1 colunas
   }
 
   .stats-content {
-    transform: scale(0.8) !important;
+    transform: scale(0.8);
   }
   .stats-content .title h1 {
     font-size: 4em;
@@ -2433,7 +2519,7 @@ No mobile fica em 2 e 1 colunas
   .img-wrapper {
     height: 100vh;
     width: 100vw;
-    background-image: url("../assets/img/como-ajudar.jpg");
+    background-image: url("../assets/img/como-ajudar.webp");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -2463,9 +2549,13 @@ No mobile fica em 2 e 1 colunas
 
   /*------------- ABOUT ------------*/
   .about-hero-wrapper {
-    background-image: url("../assets/img/about-mobile.jpg");
+    background-image: url("../assets/img/about2.webp");
     background-size: cover;
     background-position-y: 70%;
+  }
+
+  .manel-wrapper {
+    height: 100%;
   }
 
   /*-----PROJETOS IMPACTO-----*/
@@ -2493,12 +2583,7 @@ No mobile fica em 2 e 1 colunas
     bottom: 28px;
   }
 
-  /*------------- ABOUT ------------*/
-  .about-background .about-intro-content .about-intro-title {
-    height: 80%;
-    width: 18em;
-    font-size: 0.8em;
-  }
+
   .about-background .about-intro-content .about-intro-title h2 {
     font-size: 7em;
   }
@@ -2522,6 +2607,8 @@ No mobile fica em 2 e 1 colunas
     flex: 50%;
     max-width: 50%;
   }
+
+  
 
   /*-----PROJETOS IMPACTO-----*/
   .column-projetos {
@@ -2573,6 +2660,20 @@ No mobile fica em 2 e 1 colunas
 
 
 }
+
+@media (max-width: 700px) {
+  .manel-text-wrapper{
+    gap: 0;
+  }
+  .manel-content-wrapper .content-recrutamento {
+    width: 250px;
+    line-height: 3em;
+  }
+  .content-recrutamento h3 {
+    display: none;
+  }
+}
+
 @media (max-width: 550px) {
   .title-hero h1 {
     font-size: 2em;
@@ -2605,11 +2706,49 @@ No mobile fica em 2 e 1 colunas
     flex-direction: column;
     justify-content: space-between;
   }
+  .footer-links-wrapper>div:not(:first-child) {
+    margin-top: 3em;
+  }
   .footer-links-wrapper .left-column,
   .footer-links-wrapper .center-column,
   .footer-links-wrapper .right-column {
     height: fit-content;
     height: -moz-fit-content;
+  }
+
+  .recrutamento-home-wrapper {
+    min-height: 100vh;
+  }
+
+  .manel-wrapper {
+    background-size: cover;
+    background-position: 30%;
+  }
+  .manel-content-wrapper {
+    width: 70%;
+    height: 100%;
+  }
+  .manel-text-wrapper{
+    height: 100%;
+    width: 100%;
+    transform: scale(1);
+    justify-content: center;
+  }
+  .manel-content-wrapper .content-recrutamento {
+    width: initial;
+  }
+  .manel-content-wrapper .content-recrutamento h1 {
+    font-size: 5em;
+    line-height: 1em;
+  }
+  .link.recrutamento h4 {
+    font-size: 1em;
+    white-space: initial;
+    max-width: fit-content;
+  }
+  .arrow.recrutamento {
+    height: 20px;
+    width: 25px;
   }
 }
 @media (max-width: 450px) {
