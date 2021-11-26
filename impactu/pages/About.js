@@ -5,6 +5,10 @@ import AboutIntro from '../components/AboutIntro'
 import AboutHero from '../components/AboutHero'
 import Pilars from '../components/Pilars'
 import Porto from '../components/Porto'
+import AboutStarted from '../components/AboutStarted'
+import RecruitmentNews from '../components/RecruitmentNews'
+import Footer from '../components/Footer'
+import Script from 'next/script'
 
 const About = () => {
     return (
@@ -17,7 +21,11 @@ const About = () => {
                 <AboutIntro />
                 <Pilars />
                 <Porto />
+                <AboutStarted/>
+                <RecruitmentNews/>
             </section>
+            <Footer/>
+            <Script src="./scripts/app.js" />
         </>
     )
 }
