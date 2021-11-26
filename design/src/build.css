@@ -490,7 +490,7 @@ video {
 .img-wrapper {
   height: 100vh;
   width: 100vw;
-  background-image: url(../assets/img/como-ajudar.webp);
+  background-image: url(../assets/img/como-ajudar.jpg);
   background-repeat: no-repeat;
   background-size: 80%;
   background-position: center;
@@ -866,7 +866,7 @@ video {
   min-height: 100vh;
   height: 100vh;
   width: 100%;
-  background-image: url("../assets/img/about2.webp");
+  background-image: url("../assets/img/about2.jpg");
   background-size: cover;
   background-position: center center;
 }
@@ -1314,7 +1314,7 @@ figcaption {
 .manel-wrapper {
   height: 70%;
   width: 100%;
-  background-image: url(../assets/img/manel1.webp);
+  background-image: url(../assets/img/manel1.png);
   background-repeat: no-repeat;
   background-size: 80%;
   background-position: center;
@@ -1404,7 +1404,7 @@ figcaption {
   height: 100vh;
   width: 100%;
   
-  background-image: url("../assets/img/contacts.webp");
+  background-image: url("../assets/img/contacts.JPG");
   background-size: cover;
   background-position-y: 70%;
   
@@ -1600,7 +1600,7 @@ input[type="submit"]:hover {
 .recrutamento-hero-wrapper {
   height: 100vh;
   width: 100%;
-  background-image: url("../assets/img/recrutamento.webp");
+  background-image: url("../assets/img/recrutamento.png");
   background-size: cover;
   background-position-y: 70%;
 }
@@ -1713,7 +1713,7 @@ input[type="submit"]:hover {
   min-height: 100vh;
   height: 100vh;
   width: 100%;
-  background-image: url("../assets/img/senhor.webp");
+  background-image: url("../assets/img/senhor.jpg");
   background-size: cover;
   background-position-y: center center;
 }
@@ -2519,7 +2519,7 @@ No mobile fica em 2 e 1 colunas
   .img-wrapper {
     height: 100vh;
     width: 100vw;
-    background-image: url("../assets/img/como-ajudar.webp");
+    background-image: url("../assets/img/como-ajudar.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -2549,7 +2549,7 @@ No mobile fica em 2 e 1 colunas
 
   /*------------- ABOUT ------------*/
   .about-hero-wrapper {
-    background-image: url("../assets/img/about2.webp");
+    background-image: url("../assets/img/about2.jpg");
     background-size: cover;
     background-position-y: 70%;
   }
