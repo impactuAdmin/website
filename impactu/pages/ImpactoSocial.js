@@ -33,7 +33,7 @@ const ImpactoSocial = () => {
                         </div>
 
                         <div className="impactosocial-intro-text">
-                            <h3>A Impac'tu é uma associação de Impacto Social, composta por estudantes universitários
+                            <h3>A Impac&rsquo;tu é uma associação de Impacto Social, composta por estudantes universitários
                                 das Academias do Porto e Lisboa, com a missão de apoiar famílias em situação
                                 socioeconómica mais debilitada.
                                 <br/>
