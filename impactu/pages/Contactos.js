@@ -1,6 +1,5 @@
 import PageHead from '../components/PageHead'
 import Header from '../components/Header'
-import MenuLayover from '../components/MenuLayover'
 import Footer from '../components/Footer'
 import Script from 'next/script'
 import Link from 'next/link'
@@ -11,7 +10,6 @@ const Contactos = () => {
         <>
             <PageHead/>
             <Header/>
-            <MenuLayover/>
             <section className="contacts-hero-wrapper">
                 <div className="contacts-hero-content">
                     <div className="contacts-title">

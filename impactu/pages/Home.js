@@ -1,4 +1,3 @@
-import MenuLayover from '../components/MenuLayover'
 import Hero from '../components/Hero'
 import Intro from '../components/Intro'
 import Stats from '../components/Stats'
@@ -8,7 +7,6 @@ import Script from 'next/script'
 const Home = () => {
     return (
         <>
-            <MenuLayover/>
             <Hero/>
             <Intro />
             <Stats />

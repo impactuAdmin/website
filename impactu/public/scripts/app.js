@@ -1,6 +1,6 @@
-var getLogo = document.querySelectorAll('.logo.desktop path');
-var getNavbarLinks = document.querySelectorAll('.links a');
-var getSticker = document.querySelectorAll('.sticker');
+const getLogo = document.querySelectorAll('.logo.desktop path');
+const getNavbarLinks = document.querySelectorAll('.links a');
+const getSticker = document.querySelectorAll('.sticker');
 
 window.addEventListener('scroll', function () { // altera os estilos da navbar com scroll (a height, cor de background, cor dos elementos, etc)
     if (window.scrollY > 100) {
@@ -29,30 +29,6 @@ window.addEventListener('scroll', function () { // altera os estilos da navbar c
     changeStyle(getLogo, 'logo-scrolling-active');
     changeStyle(getSticker, 'sticker-scrolling-active');
 })
-
-
-
-// ----------------------------------------
-
-
-var getBurgerMenu = document.getElementsByClassName('burger-menu')[0];
-var getDismissButton = document.getElementsByClassName('menu-dismiss')[0];
-var getOverlayMenu = document.getElementsByClassName('menu-wrapper')[0];
-
-getBurgerMenu.addEventListener('click', function () { //abre o menu em modo mobile, com o evento de click
-    getOverlayMenu.style.display = 'flex';
-    getOverlayMenu.style.opacity = '1'; //tentei utilziar opacity para ter uma animação (coloquei a propriedade transition nas css) mas não resultou
-})
-
-getDismissButton.addEventListener('click', function () { //fecha o menu
-    getOverlayMenu.style.display = 'none';
-    getOverlayMenu.style.opacity = '0';
-})
-
-
-
-// ----------------------------------------
-
 
 
 getMobileHeader = document.getElementsByClassName('mobile-header-wrapper')[0]; // faz aparecer e desaparecer a navbar com scroll
@@ -100,8 +76,8 @@ function reveal() {
 
 // Este precisei de ir ver às internets. Contador que fiz para os números da página inicial, mas que inicia quando a página é carregada e não quando os elementos são mostrados (eu percebo o porquê disso, mas ainda ão consegui resolver)
 
-var counters = document.querySelectorAll('.counter');
-var speed = 250;
+const counters = document.querySelectorAll('.counter');
+const speed = 250;
 
 counters.forEach(counter => {
     var updateCount = () => {

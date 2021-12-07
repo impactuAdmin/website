@@ -1,6 +1,5 @@
 import PageHead from '../components/PageHead'
 import Header from '../components/Header'
-import MenuLayover from '../components/MenuLayover'
 import Footer from '../components/Footer'
 import Projects from '../components/Projects'
 import Departments from '../components/Departments'
@@ -12,7 +11,6 @@ const ImpactoSocial = () => {
         <>
             <PageHead/>
             <Header/>
-            <MenuLayover/>
             <section className="impactosocial-hero-wrapper">
                 <div className="impactosocial-hero-content">
                     <div className='impactosocial-title'>

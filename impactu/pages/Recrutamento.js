@@ -1,6 +1,5 @@
 import Script from 'next/script'
 import Header from '../components/Header';
-import MenuLayover from '../components/MenuLayover';
 import RecruitmentForm from '../components/RecruitmentForm';
 import Footer from '../components/Footer';
 
@@ -8,7 +7,6 @@ const Recrutamento = () => {
     return (
         <>
             <Header />
-            <MenuLayover />
             <section className="recrutamento-hero-wrapper">
                 <div className="recrutamento-hero-content">
                     <div className="recrutamento-title">
