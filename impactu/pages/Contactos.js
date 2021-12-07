@@ -1,15 +1,10 @@
-import PageHead from '../components/PageHead'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-import Script from 'next/script'
 import Link from 'next/link'
+import Footer from '../components/Footer'
 
 const Contactos = () => {
 
     return (
         <>
-            <PageHead/>
-            <Header/>
             <section className="contacts-hero-wrapper">
                 <div className="contacts-hero-content">
                     <div className="contacts-title">
@@ -98,7 +93,6 @@ const Contactos = () => {
                 </section>
             </section>
             <Footer/>
-            <Script src="./scripts/app.js" />
         </>
     )
 }

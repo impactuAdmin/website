@@ -9,8 +9,6 @@ import Image from 'next/image'
 const ImpactoSocial = () => {
     return (
         <>
-            <PageHead/>
-            <Header/>
             <section className="impactosocial-hero-wrapper">
                 <div className="impactosocial-hero-content">
                     <div className='impactosocial-title'>
@@ -56,7 +54,6 @@ const ImpactoSocial = () => {
                 <Departments />
             </section>
             <Footer/>
-            <Script src="./scripts/app.js" />
         </>
     )
 }

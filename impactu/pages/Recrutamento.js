@@ -1,12 +1,9 @@
-import Script from 'next/script'
-import Header from '../components/Header';
-import RecruitmentForm from '../components/RecruitmentForm';
 import Footer from '../components/Footer';
+import RecruitmentForm from '../components/RecruitmentForm';
 
 const Recrutamento = () => {
     return (
         <>
-            <Header />
             <section className="recrutamento-hero-wrapper">
                 <div className="recrutamento-hero-content">
                     <div className="recrutamento-title">
@@ -27,7 +24,6 @@ const Recrutamento = () => {
             </section>
             <RecruitmentForm/>
             <Footer />
-            <Script src="./scripts/app.js" />
         </>
     )
 }

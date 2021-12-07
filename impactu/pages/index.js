@@ -1,16 +1,15 @@
-import Header from '../components/Header'
-import PageHead from '../components/PageHead'
-import Home from './Home'
+import Hero from '../components/Hero'
+import Intro from '../components/Intro'
+import Stats from '../components/Stats'
+import News from '../components/News'
 
 export default function App() {
   return (
-    <div >
-      <PageHead/>
-
-      <main>
-        <Header/>
-        <Home/>
-      </main>
-    </div>
+    < >
+        <Hero/>
+        <Intro />
+        <Stats />
+        <News />
+    </>
   )
 }

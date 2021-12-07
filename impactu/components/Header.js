@@ -127,27 +127,27 @@ const Header = () => {
                 <div className="menu-content">
                     <div className='menu-dismiss' onClick={closeButtonClick}>O</div>
                     <Link href="/About">
-                        <a>
+                        <a onClick={closeButtonClick}>
                             <h1>Quem somos?</h1>
                         </a>
                     </Link>
                     <Link href="/ImpactoSocial">
-                        <a>
+                        <a onClick={closeButtonClick}>
                             <h1>Impacto Social</h1>
                         </a>
                     </Link>
                     <Link href="/Recrutamento">
-                        <a>
+                        <a onClick={closeButtonClick}>
                             <h1>Recrutamento</h1>
                         </a>
                     </Link>
                     <Link href="/Contactos">
-                        <a className="nth-of-type-wasnt-working">
+                        <a className="nth-of-type-wasnt-working" onClick={closeButtonClick}>
                             <h1>Contactos</h1>
                         </a>
                     </Link>
                     <Link href="/QueroAjudar">
-                        <a>
+                        <a onClick={closeButtonClick}>
                             <button className='donate_button overlay-menu' type='button'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 14 12" fill="none">
                                     <path
