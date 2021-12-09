@@ -1,10 +1,6 @@
-import PageHead from '../components/PageHead'
-import Header from '../components/Header'
+import Departments from '../components/Departments'
 import Footer from '../components/Footer'
 import Projects from '../components/Projects'
-import Departments from '../components/Departments'
-import Script from 'next/script'
-import Image from 'next/image'
 
 const ImpactoSocial = () => {
     return (
@@ -24,7 +20,6 @@ const ImpactoSocial = () => {
                     </div>
                     <div className="impactosocial-intro-title-2">
                         <div className="impactosocial-intro-img">
-                            {/* <Image src="/senhora.webp" width="480" height="677" layout="fixed" objectFit="contain"/> */}
                             <img src="/senhora.webp" alt="senhora"/>
                         </div>
 

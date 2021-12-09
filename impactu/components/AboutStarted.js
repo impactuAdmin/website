@@ -1,4 +1,3 @@
-import Image from 'next/image'
 
 const phases = [
     {
@@ -22,7 +21,7 @@ const phases = [
 const AboutStarted = () => {
     const listItems = phases.map((phase) =>
     <div key={phase.title}>
-        <Image src={phase.imsgSrc} alt={phase.alt} layout="intrinsic" width={phase.width} height={phase.height} objectFit="contain"/>
+        <img src={phase.imsgSrc} alt={phase.alt}/>
         <h3>
             <strong>{phase.title}</strong><br />
         </h3>

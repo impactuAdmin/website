@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 const AboutIntro = () => {
     return (
         <section className="about-intro-content">
@@ -10,7 +8,7 @@ const AboutIntro = () => {
             </div>
             <div className="about-intro-title-2">
                 <div className="about-intro-img">
-                    <Image src='/pipo.webp' alt='news' width="417" height="625" layout='intrinsic'/>
+                    <img src='/pipo.webp' alt='news' />
                 </div>
                 <div className="about-intro-text">
                     <h3>A Impac’tu é uma associação sem fins lucrativos, composta por jovens universitários da Academia

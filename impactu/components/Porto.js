@@ -1,4 +1,3 @@
-import Image from 'next/image'
 
 const Porto = () => {
     return (
@@ -9,7 +8,7 @@ const Porto = () => {
                 </div>
                 <div className="about-porto-content-bottom">
                     <div className="teste">
-                        <Image src="/porto.webp" alt="Rio Douro" layout="fixed" width="360" height="540"/>
+                        <img src="/porto.webp" alt="Rio Douro" />
                     </div>
                     <div className="about-porto-content-bottom-text">
                         <h1>A nossa área de ação</h1>
