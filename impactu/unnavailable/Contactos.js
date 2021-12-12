@@ -16,7 +16,7 @@ const Contactos = () => {
                 <section className="contacts-intro-content">
                     <div className="contacts-intro-title">
                         <h2>
-                            <img src="../sede.webp" alt="Sede" className="sede"/>
+                            <img src="../../sede.webp" alt="Sede" className="sede"/>
                             Praça de Carlos Alberto nº25 <br />
                             4050-153 Porto <br />
                         </h2>
