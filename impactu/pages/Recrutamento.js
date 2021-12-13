@@ -1,7 +1,11 @@
-import Footer from '../components/Footer';
+import Link from 'next/link';
 import RecruitmentForm from '../components/RecruitmentForm';
 
-const Recrutamento = () => {
+import datas from '../public/data/dados';
+
+const Recrutamento = ( { datas } ) => {
+
+    console.log("DATAS", datas);
     return (
         <>
             <section className="recrutamento-hero-wrapper">
@@ -17,14 +21,34 @@ const Recrutamento = () => {
                         diferença. Achas que tens o que é preciso?</h2>
                     </div>
                     <div className="space_button" href=''>
-                        <a href="https://docs.google.com/forms/d/1zcyufYI4HtjwWEua-cY0QvN-FSmmzkecGd4pMBsxQY8/edit?usp=sharing"
-                        className="recrutar_button" > Inscreve-te aqui!</a>
+                        <Link href="https://docs.google.com/forms/d/1zcyufYI4HtjwWEua-cY0QvN-FSmmzkecGd4pMBsxQY8/edit?usp=sharing">
+                            <a className="recrutar_button" > 
+                                Inscreve-te aqui!
+                            </a>
+                        </Link>
                     </div>
                 </div>
             </section>
             <RecruitmentForm/>
         </>
     )
+}
+
+export async function getStaticProps() {
+    if(datas.length === 0) {
+        return {
+            redirect: {
+              destination: '/',
+              permanent: false,
+            },
+          }
+    }
+
+    return {
+        props: {
+            datas
+        },
+    }
 }
 
 export default Recrutamento;
