@@ -92,7 +92,6 @@ const Contactos = () => {
                     </div>
                 </section>
             </section>
-            <Footer/>
         </>
     )
 }

@@ -23,7 +23,6 @@ const Recrutamento = () => {
                 </div>
             </section>
             <RecruitmentForm/>
-            <Footer />
         </>
     )
 }
