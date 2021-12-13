@@ -9,16 +9,16 @@ const Stats = () => {
             </div>
             <div className='stats'>
                 <div className='card one'>
-                    <h1 className='counter' data-target='17'>0</h1>
-                    <h2>Famílias Ajudadas</h2>
+                    <h1 className='counter' data-target='19'>0</h1>
+                    <h2>Famílias apoiadas</h2>
                 </div>
                 <div className='card two'>
-                    <h1 className='counter' data-target='6'>0</h1>
-                    <h2>Casas reabilitadas</h2>
+                    <h1 className='counter' data-target='15'>0</h1>
+                    <h2>Casas a serem apoiadas</h2>
                 </div>
                 <div className='card three'>
-                    <h1 className='counter' data-target='3'>0</h1>
-                    <h2>Casos Jurídicos</h2>
+                    <h1 className='counter' data-target='5'>0</h1>
+                    <h2>Casas reabilitadas</h2>
                 </div>
             </div>
         </div>
