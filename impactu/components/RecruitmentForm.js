@@ -2,8 +2,13 @@ const RecruitmentForm = () => {
     return (
         <section className="formulario-wrapper">
             <div className="container-formulario">
-                <div style={{textAlign: "center"}}>
+                <div className="titulo">
                     <h1>Candidatura Impac&quot;tu</h1>
+                </div>
+                <div className="container-formulario-2">
+                    <form name="candidaturas" method="POST" data-netlify="true" action="/Success">
+
+                    </form>
                 </div>
             </div>
             <div className="container-formulario">

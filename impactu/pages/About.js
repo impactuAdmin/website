@@ -17,7 +17,6 @@ const About = () => {
                 <AboutStarted/>
                 <RecruitmentNews/>
             </section>
-            <Footer/>
         </>
     )
 }

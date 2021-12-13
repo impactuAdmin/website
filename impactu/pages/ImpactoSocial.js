@@ -48,7 +48,6 @@ const ImpactoSocial = () => {
                 <Projects />
                 <Departments />
             </section>
-            <Footer/>
         </>
     )
 }
