@@ -480,7 +480,7 @@ video {
 ---------------------------- */
 .help-wrapper {
   position: relative;
-  height: 100vh;
+  height: 115vh;
   width: 100vw;
   background-color: #e8f6f4;
   display: flex;
@@ -490,7 +490,7 @@ video {
 .img-wrapper {
   height: 100vh;
   width: 100vw;
-  background-image: url("../public/como-ajudar.webp");
+  background-image: url(../assets/img/como-ajudar.jpg);
   background-repeat: no-repeat;
   background-size: 80%;
   background-position: center;
@@ -701,7 +701,7 @@ video {
   min-height: 100vh;
   height: 100vh;
   width: 100%;
-  background-image: url("../public/about2.jpg");
+  background-image: url("../assets/img/about2.jpg");
   background-size: cover;
   background-position: center center;
 }
@@ -758,7 +758,7 @@ video {
     font-size: 3em;
     line-height: 1.2em;
     font-weight: 500;
-    text-align: left;
+    text-align: center;
 }
 
 
@@ -893,7 +893,7 @@ video {
 -------------------------------------*/
 
 .about-pillars {
-  min-height: 90vh;
+  min-height: 100vh;
   background-color: #e8f6f4;
   width: 100%;
   padding: 0% 10% 10% 10%;
@@ -1142,49 +1142,142 @@ figcaption {
 .about-comecou {
   background-color: white;
   min-height: 70vh;
-  padding: 15vh 10% 10vh 10%;
+  padding: 0vh 10% 10vh 10%;
 }
 
 .about-comecou h1 {
   font-weight: 800;
   font-size: 3em;
-  color: #10845a;
+  color: black;
 }
 
 .about-comecou img {
   width: 200px;
 }
 
-.horizontal-scroll-wrapper {
-  margin: 0 -10vw 0 -10vw;
+
+
+
+
+
+
+/*----------------------------------------
+------------------------------------------
+------------------------------------------
+--------------- Slideshow ----------------
+------------------------------------------
+------------------------------------------
+----------------------------------------*/
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 45vw;
+  position: relative;
+  margin: auto;
 }
 
-.horizontal-scroll-content {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 500px;
-  overflow-x: scroll;
 
-  padding: 5em 0 0 10%;
-  margin-left: -100px;
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #10845a;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-.horizontal-scroll-content div {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  padding: 5% 20% 5% 20%;
-  align-items: center;
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-.horizontal-scroll-content div h3 {
-  padding-top: 3em;
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #c8e5dd;
 }
 
-.horizontal-scroll-content div h3 {
+
+.mySlides {
+  width: 100%;
+}
+/* Caption text */
+.slideshow-container .text {
+  color: black;
+  font-size: 1em;
+  line-height: 1.4em;
+  bottom: 0.5em;
+  width: 100%;
   text-align: center;
-  padding-bottom: 1em;
+  padding-left: 25%;
+  padding-right: 25%;
 }
+
+/* Number text (1/4 etc) */
+.numbertext {
+  color: #10845a;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #c8e5dd;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.about-comecou .active, .dot:hover {
+  background-color: #10845a;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 800px) {
+  .prev, .next,.text {font-size: 0.8em}
+
+  .slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+  .slideshow-container .text {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+}
+
 
 
 /*----------------------------------------
@@ -1206,7 +1299,7 @@ figcaption {
 .manel-wrapper {
   height: 70%;
   width: 100%;
-  background-image: url("../public/manel1.webp");
+  background-image: url(../assets/img/manel1.png);
   background-repeat: no-repeat;
   background-size: 80%;
   background-position: center;
@@ -1373,7 +1466,7 @@ figcaption {
   height: 100vh;
   width: 100%;
   
-  background-image: url("../public/contacts.JPG");
+  background-image: url("../assets/img/contacts.JPG");
   background-size: cover;
   background-position-y: 70%;
   
@@ -1571,7 +1664,7 @@ input[type="submit"]:hover {
 .recrutamento-hero-wrapper {
   height: 100vh;
   width: 100%;
-  background-image: url("../public/recrutamento.webp");
+  background-image: url("../assets/img/recrutamento.png");
   background-size: cover;
   background-position-y: 70%;
 }
@@ -1684,7 +1777,7 @@ input[type="submit"]:hover {
   min-height: 100vh;
   height: 100vh;
   width: 100%;
-  background-image: url("../public/senhor.webp");
+  background-image: url("../assets/img/senhor.jpg");
   background-size: cover;
   background-position-y: center center;
 }
@@ -2359,7 +2452,7 @@ No mobile fica em 2 e 1 colunas
   .img-wrapper {
     height: 100vh;
     width: 100vw;
-    background-image: url("../public/como-ajudar.webp");
+    background-image: url("../assets/img/como-ajudar.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -2389,7 +2482,7 @@ No mobile fica em 2 e 1 colunas
 
   /*------------- ABOUT ------------*/
   .about-hero-wrapper {
-    background-image: url("../public/about2.jpg");
+    background-image: url("../assets/img/about2.jpg");
     background-size: cover;
     background-position-y: 70%;
   }
