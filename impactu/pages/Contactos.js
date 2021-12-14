@@ -91,18 +91,18 @@ const Contactos = () => {
                             width="600" height="450" frameBorder="0" style={{border:0}} allowFullScreen></iframe>
                     </div>
                 </section>
-                <section class='contactar-wrapper'>
-                    <div class="container-contactos">
+                <section className='contactar-wrapper'>
+                    <div className="container-contactos">
                         <div style={{textAlign: "center"}}>
                             <h1>Fala connosco</h1>
                         </div>
-                        <div class="container">
+                        <div className="container">
                             <form action="/action_page.php">
-                                <label for="fname">Nome</label>
+                                <label htmlFor="fname">Nome</label>
                                 <input type="text" id="fname" name="firstname" placeholder="Nome"/>
-                                <label for="lname">Email</label>
+                                <label htmlFor="lname">Email</label>
                                 <input type="text" id="lname" name="lastname" placeholder="Email"/>
-                                <label for="subject">Assunto/Mensagem</label>
+                                <label htmlFor="subject">Assunto/Mensagem</label>
                                 <textarea id="subject" name="subject" placeholder="Escreve a tua mensagem" style={{heigth: "200px"}}/>
 
                                 <input type="submit" value="Enviar"/>
