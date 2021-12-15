@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const Footer = () => {
     return (
         <footer className="footer-wrapper">
@@ -40,20 +42,25 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="social-media">
-                        <a href="https://www.linkedin.com/company/impac%E2%80%99tu" target="blank"><svg className='linkedin'
-                                xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                                fill="none">
-                                <g>
-                                    <path d="M4.44989 6.56006H0.389893V19.6801H4.44989V6.56006Z" fill="#10845A" />
-                                    <path
-                                        d="M2.4 4.84C3.73 4.84 4.8 3.76 4.8 2.42C4.8 1.08 3.73 0 2.4 0C1.07 0 0 1.08 0 2.42C0 3.76 1.07 4.84 2.4 4.84Z"
-                                        fill="#10845A" />
-                                    <path
-                                        d="M10.94 12.7899C10.94 10.9499 11.79 9.84991 13.41 9.84991C14.9 9.84991 15.62 10.8999 15.62 12.7899C15.62 14.6799 15.62 19.6799 15.62 19.6799H19.66C19.66 19.6799 19.66 14.8899 19.66 11.3699C19.66 7.85991 17.67 6.15991 14.89 6.15991C12.11 6.15991 10.94 8.32991 10.94 8.32991V6.55991H7.04004V19.6799H10.94C10.94 19.6799 10.94 14.8099 10.94 12.7899Z"
-                                        fill="#10845A" />
-                                </g>
-                            </svg></a>
-                        <a href="https://www.facebook.com/associacaoimpactu/" target="blank"><svg className='facebook'
+                        <Link href="https://www.linkedin.com/company/impac%E2%80%99tu">
+                            <a  target="blank">
+                                <svg className='linkedin'
+                                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                    fill="none">
+                                    <g>
+                                        <path d="M4.44989 6.56006H0.389893V19.6801H4.44989V6.56006Z" fill="#10845A" />
+                                        <path
+                                            d="M2.4 4.84C3.73 4.84 4.8 3.76 4.8 2.42C4.8 1.08 3.73 0 2.4 0C1.07 0 0 1.08 0 2.42C0 3.76 1.07 4.84 2.4 4.84Z"
+                                            fill="#10845A" />
+                                        <path
+                                            d="M10.94 12.7899C10.94 10.9499 11.79 9.84991 13.41 9.84991C14.9 9.84991 15.62 10.8999 15.62 12.7899C15.62 14.6799 15.62 19.6799 15.62 19.6799H19.66C19.66 19.6799 19.66 14.8899 19.66 11.3699C19.66 7.85991 17.67 6.15991 14.89 6.15991C12.11 6.15991 10.94 8.32991 10.94 8.32991V6.55991H7.04004V19.6799H10.94C10.94 19.6799 10.94 14.8099 10.94 12.7899Z"
+                                            fill="#10845A" />
+                                    </g>
+                                </svg>
+                            </a>
+                        </Link>
+                        <Link href="https://www.facebook.com/associacaoimpactu/">
+                            <a target="blank"><svg className='facebook'
                                 xmlns="http://www.w3.org/2000/svg" width="10" height="20" viewBox="0 0 10 20"
                                 fill="none">
                                 <g>
@@ -62,7 +69,10 @@ const Footer = () => {
                                         fill="#10845A" />
                                 </g>
                             </svg></a>
-                        <a href="https://www.instagram.com/impac.tu/" target="blank"><svg className='instagram' width="21"
+                        </Link>
+                        <Link href="https://www.instagram.com/impac.tu/">
+                            <a target="blank">
+                                <svg className='instagram' width="21"
                                 height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g>
                                     <path
@@ -75,7 +85,9 @@ const Footer = () => {
                                         d="M17.44 4.69999C17.44 5.36999 16.9 5.90999 16.23 5.90999C15.56 5.90999 15.02 5.36999 15.02 4.69999C15.02 4.02999 15.56 3.48999 16.23 3.48999C16.9 3.48999 17.44 4.02999 17.44 4.69999Z"
                                         fill="#10845A" />
                                 </g>
-                            </svg></a>
+                                </svg>
+                            </a>
+                        </Link>
                     </div>
                 </div>
                 <div className="footer-sticker">
@@ -170,17 +182,39 @@ const Footer = () => {
                     <div className="left-column">
                         <h3>Transparência</h3>
                         <div className='footer-links'>
-                            <p><a href="">Livro de reclamações</a></p>
-                            <p><a href="">Relatório de Contas</a></p>
-                            <p><a href="">Estatutos</a></p>
-                            <p><a href="">Órgãos Sociais</a></p>
+                            <p>
+                                <a href="">Livro de reclamações</a>
+                            </p>
+                            <p>
+                                <Link href="/Documentos/RelatorioContas">
+                                    <a>Relatório de Contas</a>
+                                </Link>
+                            </p>
+                            <p>
+                                <Link href="/Documentos/Estutos">
+                                    <a>Estatutos</a>
+                                </Link>
+                            </p>
+                            <p>
+                                <Link href="/OrgaosSociais">
+                                    <a>Orgãos Sociais</a>
+                                </Link>
+                            </p>
                         </div>
                     </div>
                     <div className="center-column">
                         <h3>Associação</h3>
                         <div className='footer-links'>
-                            <p><a href="queroajudar.html">Ser Sócio</a></p>
-                            <p><a href="recrutamento.html">Recrutamento</a></p>
+                            <p>
+                                <Link href="/QueroAjudar">
+                                    <a>Ser Sócio</a>
+                                </Link>
+                            </p>
+                            <p>
+                                <Link href="/Recrutamento">
+                                    <a>Recrutamento</a>
+                                </Link>
+                            </p>
                             <p><a href="">Notícias</a></p>
                         </div>
                     </div>
