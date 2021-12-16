@@ -1,6 +1,11 @@
-const datas = [
+export const datas = [
     {
-        data: "11/02/1997",
+        id: 1,
+        data: "17/12/2021"
+    },
+    {
+        id: 2,
+        data: "20/12/2021",
     }
 ];
 
@@ -22,4 +27,30 @@ export const pdfs = [
     }
 ];
 
-export default datas;
+export const departamentos = [
+    {
+        id: 1,
+        name: "Departamento Social (intervenção social)",
+        value: "Social"
+    },
+    {
+        id: 2,
+        name: "Departamento Jurídico (apoio jurídico)",
+        value: "Juridico"
+    },
+    {
+        id: 3,
+        name: "Departamento Comunicação e Marketing",
+        value: "Marketing"
+    },
+    {
+        id: 4,
+        name: "Departamento Relações Externas",
+        value: "Relacoesexternas"
+    },
+    {
+        id: 5,
+        name: "Departamento de Recursos Humanos",
+        value: "Recursoshumanos"
+    },
+];

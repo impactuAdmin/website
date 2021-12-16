@@ -1618,7 +1618,7 @@ figcaption {
   justify-content: center;
   align-items: center;
 }
-input[type="text"],
+input[type="text"], input[type="email"], input[type="date"], input[type="url"], input[type="tel"],
 select,
 textarea {
   width: 100%;
