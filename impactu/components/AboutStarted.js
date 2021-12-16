@@ -48,7 +48,7 @@ const AboutStarted = () => {
         <div className="numbertext">{phase.slideNumber} / 4</div>
         <img src={phase.imsgSrc} alt={phase.alt} style={{width: "100%"}}/>
         <div className="text">
-            <strong>A IDEIA</strong>
+            <strong>{phase.title}</strong>
             <br/>
             <br/>
             {phase.description}
