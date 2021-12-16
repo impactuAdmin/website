@@ -191,7 +191,7 @@ const Footer = () => {
                                 </Link>
                             </p>
                             <p>
-                                <Link href="/Documentos/Estutos">
+                                <Link href="/Documentos/Estatutos">
                                     <a>Estatutos</a>
                                 </Link>
                             </p>
