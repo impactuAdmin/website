@@ -34,7 +34,7 @@ const Recrutamento = () => {
     )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
     if(datas.length === 0) {
         return {
             redirect: {
@@ -43,12 +43,13 @@ export async function getStaticProps() {
             },
           }
     }
-
-    return {
-        props: {
-            datas,
-            departamentos
-        },
+    else {
+        return {
+            props: {
+                datas,
+                departamentos
+            },
+        }
     }
 }
 
