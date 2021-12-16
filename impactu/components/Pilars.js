@@ -4,8 +4,7 @@ const Pilars = () => {
         <section className="about-pillars">
             <div className="about-pillars-wrapper">
                 <div className="about-pillars-content">
-                    <h1>Regemo-nos <br />
-                        por estes pilares</h1>
+                    <h1>Regemo-nos por estes pilares</h1>
                 </div>
             </div>
             <div className="pilares">
