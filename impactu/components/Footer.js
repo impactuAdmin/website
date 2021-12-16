@@ -183,7 +183,9 @@ const Footer = () => {
                         <h3>Transparência</h3>
                         <div className='footer-links'>
                             <p>
-                                <a href="">Livro de reclamações</a>
+                                <Link href="/Documentos/PlanoDeAtividades">
+                                    <a>Plano de Atividades</a>
+                                </Link>
                             </p>
                             <p>
                                 <Link href="/Documentos/RelatorioContas">
@@ -215,7 +217,11 @@ const Footer = () => {
                                     <a>Recrutamento</a>
                                 </Link>
                             </p>
-                            <p><a href="">Notícias</a></p>
+                            <p>
+                                <Link href="https://www.instagram.com/impac.tu/">
+                                    <a>Notícias</a>
+                                </Link>
+                            </p>
                         </div>
                     </div>
                     <div className="right-column">
