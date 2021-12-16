@@ -41,7 +41,7 @@ const Intro = () => {
                 </h3>
                 <div className='link intro'>
                     <div className='link-underline intro'>
-                        <Link href="/About">
+                        <Link href="/QuemSomos">
                             <a>
                                 <h4>Ler História</h4>
                                 <svg className='arrow' xmlns="http://www.w3.org/2000/svg" width="19" height="14" viewBox="0 0 19 14"
