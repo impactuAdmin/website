@@ -2742,4 +2742,37 @@ No mobile fica em 2 e 1 colunas
   }
 }
 
+  /*----------------------------------------------
+------------------------------------------------
+------------------- qrcode ------------------
+------------------------------------------------
+------------------------------------------------
+----------------------------------------------*/
+.qrcode{
+  width: 100%;
+  height: 100%;
+}
+.qrcode h2 {
+  width: 30%;
+  color: black;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 800px) {
+  .qrcode h2 {
+    width: 100%;
+  }
+
+}
+
 /*# sourceMappingURL=build.css.map */
