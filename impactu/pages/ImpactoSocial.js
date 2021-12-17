@@ -15,8 +15,9 @@ const ImpactoSocial = () => {
             <section className="impactosocial-background reveal">
                 <section className="impactosocial-intro-content">
                     <div className="impactosocial-intro-title">
-                        <h1>O nosso impacto:</h1>
-                        <h2>Social</h2>
+                    <h1>O nosso impacto:</h1>
+                    <h2>Social</h2>
+                    <p id="demo"></p>
                     </div>
                     <div className="impactosocial-intro-title-2">
                         <div className="impactosocial-intro-img">
