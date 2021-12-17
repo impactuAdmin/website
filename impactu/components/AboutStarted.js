@@ -1,44 +1,76 @@
-import Image from 'next/image'
-
+import React, { useEffect, useState } from "react";
 const phases = [
     {
+        slideNumber: 1,
         imsgSrc: "/ideia.webp",
         alt: "Grupo de amigos",
-        width: "200",
-        height: "127",
         title: "A IDEIA",
-        description: "Em 2018, um grupo de amigos juntou-se com\nvontade de ajudar e de fazer a diferença no\ncentro histórico do Porto."
+        description: "Em 2017, um grupo de amigos idealizava criar um projeto\nque marcasse a diferença no centro histórico do Porto."
     },
     {
-        imsgSrc: "/ideia2.webp",
+        slideNumber: 2,
+        imsgSrc: "/baloes.png",
         alt: "Grupo de amigos",
-        width: "200",
-        height: "145",
-        title: "DEPOIS",
-        description: "Surgiu a impac’tu, com a missão\nde criar impacto social em famílias carenciadas."
-    }
+        title: "O SONHO",
+        description: "Sonharam, tentaram e alcançaram."
+    },
+    {
+        slideNumber: 3,
+        imsgSrc: "/2018.png",
+        alt: "Grupo de amigos",
+        title: "ALCANCE DO SONHO",
+        description: "Em 2018, o projeto foi criado, nasceu a Impac’tu\ncomposta por membros estudantes da Academia do Porto."
+    },
+    {
+        slideNumber: 4,
+        imsgSrc: "/Bairro-porto.png",
+        alt: "Grupo de amigos",
+        title: "CRESCIMENTO",
+        description: "Muitos casos têm passado pelas mãos destes membros que nunca baixam\nos braços e já ajudaram várias famílias e pessoas com necessidades diferentes."
+    },
 ];
 
 const AboutStarted = () => {
+
+    const [slideIndex, setSlideIndex] = useState(1);
+
+    function increaseSlideIndex(increment) {
+        const index = (slideIndex + increment) % phases.length;
+        setSlideIndex(index  === -1 ? phases.length - 1 : index);
+    }
+
+    function setCurrentSlide(index) {
+        setSlideIndex(index);
+    }
+
     const listItems = phases.map((phase) =>
-    <div key={phase.title}>
-        <Image src={phase.imsgSrc} alt={phase.alt} layout="intrinsic" width={phase.width} height={phase.height} objectFit="contain"/>
-        <h3>
-            <strong>{phase.title}</strong><br />
-        </h3>
-        <p>
+    <div key={phase.slideNumber} className="mySlides fade" style={phase.slideNumber === slideIndex + 1 ? {display: "block"} : {display: "none"}}>
+        <div className="numbertext">{phase.slideNumber} / 4</div>
+        <img src={phase.imsgSrc} alt={phase.alt} style={{width: "100%"}}/>
+        <div className="text">
+            <strong>{phase.title}</strong>
+            <br/>
+            <br/>
             {phase.description}
-        </p>
+        </div>
     </div>
+    );
+
+    const dots = phases.map((phase) => 
+        <span key={phase.slideNumber} className={phase.slideNumber === slideIndex + 1 ? "dot active" : "dot"} onClick={() => setCurrentSlide(phase.slideNumber)}></span>
     );
 
     return (
         <section className="about-comecou">
             <h1>Como tudo começou</h1>
-            <div className="horizontal-scroll-wrapper">
-                <div className="horizontal-scroll-content">
-                    {listItems}
-                </div>
+            <div className="slideshow-container">
+                {listItems}
+                <a className="prev" onClick={() => increaseSlideIndex(-1)}>&#10094;</a>
+                <a className="next" onClick={() => increaseSlideIndex(1)}>&#10095;</a>
+            </div>
+            <br/>
+            <div style={{textAlign: "center"}}>
+                {dots}
             </div>
         </section>
     )

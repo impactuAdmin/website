@@ -10,31 +10,31 @@ const projects = [
     {
         link: "https://www.instagram.com/p/B_FKUkdnQMs/",
         imgSrc: "/bagosdouro.webp",
-        projectName: "Partilha o teu Presente",
+        projectName: "Educação D'ouro ",
         year: "2020"
     },
     {
         link: "https://www.instagram.com/p/B9sLvjjHUHW/",
         imgSrc: "/portaimpactu.webp",
-        projectName: "Partilha o teu Presente",
+        projectName: "Porta de Impacto",
         year: "2020"
     },
     {
         link: "https://www.instagram.com/p/CDZl9t4n1qP/",
         imgSrc: "/pesca.webp",
-        projectName: "Partilha o teu Presente",
+        projectName: "Mãos à Pesca",
         year: "2020"
     },
     {
         link: "https://www.instagram.com/p/CMdPBmNnlR6/",
         imgSrc: "/jornadas.webp",
-        projectName: "Partilha o teu Presente",
-        year: "2020"
+        projectName: "ornadas de Direito e impacto social",
+        year: "2021"
     },
     {
         link: "https://www.instagram.com/p/CNlKAV1n8Nc/",
         imgSrc: "/atequando.webp",
-        projectName: "Partilha o teu Presente",
+        projectName: "Até Quando?",
         year: "2020"
     },
 ];

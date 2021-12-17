@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 const AboutHero = () => {
     return (
         <section className="about-hero-wrapper">
