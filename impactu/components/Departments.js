@@ -4,21 +4,25 @@ const departments = [
         department: "Social",
         imgSrc: "/social.webp",
         membersNumber: 20,
-        description: "Estar no terreno e no contacto direto com as famílias que apoiamos são as palavras-chave\ndeste departamento.\nOs membros do Social são responsáveis pelo acompanhamento dos casos da Associação."
+        description: "Estar no terreno e no contacto direto com as famílias que apoiamos são as palavras-chave\n\
+                        deste departamento.\nOs membros do Social são responsáveis pelo acompanhamento dos \
+                        casos da Associação."
     },
     {
         department: "Legal",
         imgSrc: "/juridico.webp",
         membersNumber: 8,
-        description: "Constituído por estudantes de Direito, procura dar apoio às famílias apoiadas pela Impac´tu numa vertente diferente, mas sem nunca perder a proximidade junto daqueles que procuramos criar impacto!"
+        description: "Constituído por estudantes de Direito, procura dar apoio às famílias apoiadas pela \
+                    Impac´tu numa vertente diferente, mas sem nunca perder a proximidade junto daqueles \
+                    que procuramos criar impacto!"
     },
     {
         department: "Marketing",
         imgSrc: "/marketing.webp",
         membersNumber: 7,
         description: "É aqui que nasce tudo o que vês da Impac’tu. Não só têm a função de comunicar e divulgar\
-        através das nossas redes como dão forma a todos os projetos e campanhas que chegam até\
-        ti!"
+                        através das nossas redes como dão forma a todos os projetos e campanhas que chegam até\
+                        ti!"
     },
     {
         department: "Relações Externas",
