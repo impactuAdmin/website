@@ -11,3 +11,24 @@ export default function App() {
     </>
   )
 }
+
+App.layout = "L1";
+
+export async function getServerSideProps() {
+  const premierDate = new Date("Dec 17, 2021 21:45:00").getTime();
+  const difference = premierDate - +new Date();
+
+  if(difference >= 0) {
+      return {
+          redirect: {
+            destination: '/CountDown',
+            permanent: false,
+          },
+        }
+  }
+  else {
+      return {
+          props: {}
+      }
+  }
+}

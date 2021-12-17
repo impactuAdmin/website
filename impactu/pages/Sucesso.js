@@ -1,6 +1,4 @@
-import Footer from '../components/Footer';
-
-export default function Success() {
+export default function Sucesso() {
     return (
 		<>
 			<section className="ajudar-hero-wrapper">
@@ -23,4 +21,25 @@ export default function Success() {
 			</section>
 		</>
   	)
+}
+
+Sucesso.layout = "L1";
+
+export async function getServerSideProps() {
+    const premierDate = new Date("Dec 17, 2021 21:45:00").getTime();
+    const difference = premierDate - +new Date();
+
+    if(difference >= 0) {
+        return {
+            redirect: {
+              destination: '/CountDown',
+              permanent: false,
+            },
+          }
+    }
+    else {
+        return {
+            props: {}
+        }
+    }
 }

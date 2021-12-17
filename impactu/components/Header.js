@@ -53,7 +53,7 @@ const Header = () => {
                     </a>
                 </Link>
                 <div className="links">
-                    <Link href="/About"><a>Quem somos?</a></Link>
+                    <Link href="/QuemSomos"><a>Quem somos?</a></Link>
                     <Link href="/ImpactoSocial"><a>Impacto Social</a></Link>
                     {datas.length === 0 ? null: <Link href="/Recrutamento"><a>Recrutamento</a></Link>}
                     <Link href="/Contactos"><a>Contactos</a></Link>
@@ -166,7 +166,7 @@ const Header = () => {
                         </div>
                     </div>
                 </nav>
-                <Link href="/About">
+                <Link href="/QuemSomos">
                     <a onClick={closeButtonClick}>
                         <h1>Quem somos?</h1>
                     </a>
@@ -186,7 +186,7 @@ const Header = () => {
                         </Link>
                 }
                 <Link href="/Contactos">
-                    <a className="nth-of-type-wasnt-working" onClick={closeButtonClick}>
+                    <a className="nth-of-type-wasnt-working" style={{marginBottom: "2em"}} onClick={closeButtonClick}>
                         <h1>Contactos</h1>
                     </a>
                 </Link>

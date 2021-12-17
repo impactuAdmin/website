@@ -15,8 +15,9 @@ const ImpactoSocial = () => {
             <section className="impactosocial-background reveal">
                 <section className="impactosocial-intro-content">
                     <div className="impactosocial-intro-title">
-                        <h1>O nosso impacto:</h1>
-                        <h2>Social</h2>
+                    <h1>O nosso impacto:</h1>
+                    <h2>Social</h2>
+                    <p id="demo"></p>
                     </div>
                     <div className="impactosocial-intro-title-2">
                         <div className="impactosocial-intro-img">
@@ -53,3 +54,24 @@ const ImpactoSocial = () => {
 }
 
 export default ImpactoSocial;
+
+ImpactoSocial.layout = "L1";
+
+export async function getServerSideProps() {
+    const premierDate = new Date("Dec 17, 2021 21:45:00").getTime();
+    const difference = premierDate - +new Date();
+
+    if(difference >= 0) {
+        return {
+            redirect: {
+              destination: '/CountDown',
+              permanent: false,
+            },
+          }
+    }
+    else {
+        return {
+            props: {}
+        }
+    }
+}

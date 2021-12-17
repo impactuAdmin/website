@@ -4,7 +4,7 @@ const Porto = () => {
         <section className="about-porto">
             <div className="about-porto-content">
                 <div className="about-porto-content-top">
-                    <h1>A nossa <br/>área de ação</h1>
+                    <h1 style={{textAlign: "left"}}>A nossa <br/>área de ação</h1>
                     <h2>Onde?</h2>
                 </div>
                 <div className="about-porto-content-bottom">

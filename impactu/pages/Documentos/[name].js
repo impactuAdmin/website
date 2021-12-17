@@ -20,15 +20,19 @@ const Document = ( { pdf } ) => {
     )
 }
 
-export async function getStaticPaths() {
-    const paths = pdfs.map((pdf) => ({
-            params: { name: pdf.linkParam },
-        }))
+// export async function getStaticPaths() {
+//     const paths = pdfs.map((pdf) => ({
+//             params: { name: pdf.linkParam },
+//         }))
 
-    return {paths, fallback: false};
-}
+//     return {paths, fallback: false};
+// }
 
-export async function getStaticProps({ params }) {
+export default Document;
+
+Document.layout = "L1";
+
+export async function getServerSideProps({ params }) {
     for(let i = 0; i < pdfs.length; i++) {
         if(pdfs[i].linkParam === params.name) {
             return { props: { pdf: pdfs[i] } };
@@ -36,4 +40,21 @@ export async function getStaticProps({ params }) {
     }
 }
 
-export default Document;
+// export async function getServerSideProps() {
+//     const premierDate = new Date("Dec 17, 2021 21:45:00").getTime();
+//     const difference = premierDate - +new Date();
+
+//     if(difference < 0) {
+//         return {
+//             redirect: {
+//               destination: '/',
+//               permanent: false,
+//             },
+//           }
+//     }
+//     else {
+//         return {
+//             props: {}
+//         }
+//     }
+// }

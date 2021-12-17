@@ -2,7 +2,7 @@ const AboutIntro = () => {
     return (
         <section className="about-intro-content">
             <div className="about-intro-title">
-                <h1>Uma família,<br />
+                <h1 style={{textAlign: "left"}}>Uma família,<br />
                     unida pelo mesmo objetivo</h1>
                 <h2>Ajudar</h2>
             </div>

@@ -54,3 +54,5 @@ export async function getServerSideProps() {
 }
 
 export default Recrutamento;
+
+Recrutamento.layout = "L1";
