@@ -1,8 +1,7 @@
 import Link from 'next/link'
 import { useState } from 'react';
-import { datas } from '../public/data/dados'; 
 
-const Header = () => {
+const Header = ( { datasDeRecrutamento } ) => {
 
     const [overlayMenuStyle, setOverlayMenuStyle] = useState({display: "none", opacity: "0"});
     
@@ -55,7 +54,7 @@ const Header = () => {
                 <div className="links">
                     <Link href="/QuemSomos"><a>Quem somos?</a></Link>
                     <Link href="/ImpactoSocial"><a>Impacto Social</a></Link>
-                    {datas.length === 0 ? null: <Link href="/Recrutamento"><a>Recrutamento</a></Link>}
+                    {datasDeRecrutamento.length === 0 ? null: <Link href="/Recrutamento"><a>Recrutamento</a></Link>}
                     <Link href="/Contactos"><a>Contactos</a></Link>
                 </div>
                 <Link href="/QueroAjudar">
@@ -177,7 +176,7 @@ const Header = () => {
                     </a>
                 </Link>
                 {
-                    datas.length === 0 ? 
+                    datasDeRecrutamento.length === 0 ? 
                         null :
                         <Link href="/Recrutamento">
                             <a onClick={closeButtonClick}>

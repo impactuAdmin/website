@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const Footer = () => {
+const Footer = ( {datasDeRecrutamento} ) => {
     return (
         <footer className="footer-wrapper">
             <div className="footer-content">
@@ -207,28 +207,31 @@ const Footer = () => {
                     <div className="center-column">
                         <h3>Associação</h3>
                         <div className='footer-links'>
-                            <p>
+                            {/* <p>
                                 <Link href="/QueroAjudar">
                                     <a>Ser Sócio</a>
                                 </Link>
-                            </p>
-                            <p>
-                                <Link href="/Recrutamento">
-                                    <a>Recrutamento</a>
-                                </Link>
-                            </p>
-                            <p>
+                            </p> */}
+                            {datasDeRecrutamento.length === 0 ? 
+                                null :
+                                <p>
+                                    <Link href="/Recrutamento">
+                                        <a>Recrutamento</a>
+                                    </Link>
+                                </p>
+                            }
+                            {/* <p>
                                 <Link href="https://www.instagram.com/impac.tu/">
                                     <a>Notícias</a>
                                 </Link>
-                            </p>
+                            </p> */}
                         </div>
                     </div>
                     <div className="right-column">
                         <h3>Legal</h3>
                         <div className='footer-links'>
                             <p><a href="">Política de Privacidade</a></p>
-                            <p><a href="">Termos e condições</a></p>
+                            {/* <p><a href="">Termos e condições</a></p> */}
                         </div>
                     </div>
                 </div>
