@@ -97,7 +97,7 @@ const Contactos = () => {
                         </div>
                         <div className="container">
                             <form name="contactos" method="POST" data-netlify="true" action="/Sucesso">
-                                <input type="hidden" name="form-name" value="candidaturas" required/>
+                                <input type="hidden" name="form-name" value="contactos" required/>
                                 <label htmlFor="nameInput">Nome</label>
                                 <input type="text" id="nameInput" name="nome" placeholder="Nome"/>
                                 <label htmlFor="emailInput">Email</label>
