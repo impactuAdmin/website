@@ -18,7 +18,7 @@ const Header = ( { datasDeRecrutamento } ) => {
         <>
         <nav className='navigation_wrapper'>
             <div className='navigation'>
-                <Logo />
+                <Logo isMobile={false}/>
                 <div className="links">
                     <Link href="/QuemSomos"><a>Quem somos?</a></Link>
                     <Link href="/ImpactoSocial"><a>Impacto Social</a></Link>
@@ -53,7 +53,7 @@ const Header = ( { datasDeRecrutamento } ) => {
                     </div>
                 </div>
                 <div className="logo mobile">
-                    <Logo />
+                    <Logo isMobile={true}/>
                 </div>
             </div>
         </nav>
@@ -64,7 +64,7 @@ const Header = ( { datasDeRecrutamento } ) => {
                     <div className="mobile-header-wrapper">
                         <div className='menu-dismiss' onClick={closeButtonClick}>X</div>
                         <div className="logo mobile">
-                            <Logo closeMenuFunction={closeButtonClick}/>
+                            <Logo closeMenuFunction={closeButtonClick} isMobile={true}/>
                         </div>
                     </div>
                 </nav>
