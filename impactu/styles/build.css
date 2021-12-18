@@ -753,7 +753,7 @@ video {
   min-height: 100vh;
   height: 100vh;
   width: 100%;
-  background-image: url("../public/about2.jpg");
+  background-image: url("../public/about2.webp");
   background-size: cover;
   background-position: center center;
 }
@@ -2534,7 +2534,7 @@ No mobile fica em 2 e 1 colunas
 
   /*------------- ABOUT ------------*/
   .about-hero-wrapper {
-    background-image: url("../public/about2.jpg");
+    background-image: url("../public/about2.webp");
     background-size: cover;
     background-position-y: 70%;
   }
