@@ -205,7 +205,7 @@ const Footer = ( {datasDeRecrutamento} ) => {
                         </div>
                     </div>
                     <div className="center-column">
-                        <h3>Associação</h3>
+                        {/* <h3>Associação</h3> */}
                         <div className='footer-links'>
                             {/* <p>
                                 <Link href="/QueroAjudar">

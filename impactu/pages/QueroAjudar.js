@@ -14,7 +14,7 @@ const QueroAjudar = () => {
                         </h2>
                         <br/>
                         <p> *IBAN: <strong>PT50 0033 0000 4553 2412 3620 5</strong></p>
-                        <p> *MBWAY: <strong>+351 960 123 456</strong></p>
+                        <p> *MBWAY: <strong>+351 919 965 088</strong></p>
                         <br/>
                         <p> *Pedimos para nos enviar o comprovativo da transferência <br/>
                             para o email <strong>sociosimpactu@gmail.com</strong></p>
