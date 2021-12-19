@@ -9,21 +9,21 @@ const phases = [
     },
     {
         slideNumber: 2,
-        imsgSrc: "/baloes.png",
+        imsgSrc: "/baloes.webp",
         alt: "Grupo de amigos",
         title: "O SONHO",
         description: "Sonharam, tentaram e alcançaram."
     },
     {
         slideNumber: 3,
-        imsgSrc: "/2018.png",
+        imsgSrc: "/2018.webp",
         alt: "Grupo de amigos",
         title: "ALCANCE DO SONHO",
         description: "Em 2018, o projeto foi criado, nasceu a Impac’tu\ncomposta por membros estudantes da Academia do Porto."
     },
     {
         slideNumber: 4,
-        imsgSrc: "/Bairro-porto.png",
+        imsgSrc: "/Bairro-porto.webp",
         alt: "Grupo de amigos",
         title: "CRESCIMENTO",
         description: "Muitos casos têm passado pelas mãos destes membros que nunca baixam\nos braços e já ajudaram várias famílias e pessoas com necessidades diferentes."

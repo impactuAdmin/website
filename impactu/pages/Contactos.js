@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Footer from '../components/Footer'
 
 const Contactos = () => {
 
@@ -97,11 +96,12 @@ const Contactos = () => {
                             <h1>Fala connosco</h1>
                         </div>
                         <div className="container">
-                            <form action="/action_page.php">
-                                <label htmlFor="fname">Nome</label>
-                                <input type="text" id="fname" name="firstname" placeholder="Nome"/>
-                                <label htmlFor="lname">Email</label>
-                                <input type="text" id="lname" name="lastname" placeholder="Email"/>
+                            <form name="contactos" method="POST" data-netlify="true" action="/Sucesso">
+                                <input type="hidden" name="form-name" value="contactos" required/>
+                                <label htmlFor="nameInput">Nome</label>
+                                <input type="text" id="nameInput" name="nome" placeholder="Nome"/>
+                                <label htmlFor="emailInput">Email</label>
+                                <input type="email" id="emailInput" name="email" placeholder="Email"/>
                                 <label htmlFor="subject">Assunto/Mensagem</label>
                                 <textarea id="subject" name="subject" placeholder="Escreve a tua mensagem" style={{heigth: "200px"}}/>
 

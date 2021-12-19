@@ -11,7 +11,7 @@ const PageHead = () => {
             <meta property="og:title" content="Impac&apos;tu" />
             <meta property="og:url" content="https://www.impactu.org" />
             <meta property="og:description" content="Somos uma Associação de estudantes do Porto que ajuda pessoas e famílias carenciadas. Vamos criar impacto?"/>
-            <meta property="og:image" content="./favicon.png"/>
+            <meta property="og:image" content="./favicon.webp"/>
             <link rel="preconnect" href="https://fonts.gstatic.com"/>
             <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
         </Head>

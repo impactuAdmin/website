@@ -1,9 +1,8 @@
 import Link from 'next/link';
 import RecruitmentForm from '../components/RecruitmentForm';
+import { datas, departamentos } from '../public/data/dados';
 
-import { datas, departamentos} from '../public/data/dados';
-
-const Recrutamento = () => {
+const Recrutamento = ({datasDeRecrutamento, departamentosDisponiveis}) => {
 
     return (
         <>
@@ -29,27 +28,20 @@ const Recrutamento = () => {
                     </div>
                 </div>
             </section>
-            <RecruitmentForm dates={datas} departments={departamentos}/>
+            <RecruitmentForm dates={datasDeRecrutamento} departments={departamentosDisponiveis}/>
         </>
     )
 }
 
-export async function getServerSideProps() {
-    if(datas.length === 0) {
-        return {
-            redirect: {
-              destination: '/',
-              permanent: false,
-            },
-          }
-    }
-    else {
-        return {
-            props: {
-                datas,
-                departamentos
-            },
-        }
+export async function getStaticProps() {
+    const datasDeRecrutamento = datas;
+    const departamentosDisponiveis = departamentos;
+
+    return {
+        props: {
+            datasDeRecrutamento,
+            departamentosDisponiveis
+        },
     }
 }
 

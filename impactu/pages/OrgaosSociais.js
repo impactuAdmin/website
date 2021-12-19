@@ -5,32 +5,32 @@ const organs = [
             {
                 name: ["Filipe Ribeiro"],
                 role: "Presidente",
-                imgSrc: "membros-02.png"
+                imgSrc: "membros-02.webp"
             },
             {
                 name: ["Matilde Borges"],
                 role: "Vice-Presidente",
-                imgSrc: "membros-02.png"
+                imgSrc: "membros-02.webp"
             },
             {
                 name: ["Margarida Santos"],
                 role: "Tesoureira",
-                imgSrc: "membros-02.png"
+                imgSrc: "membros-02.webp"
             },
             {
                 name: ["Sofia Santos"],
                 role: "Vogal",
-                imgSrc: "membros-02.png"
+                imgSrc: "membros-02.webp"
             },
             {
                 name: ["Sara Pereira"],
                 role: "Vogal",
-                imgSrc: "membros-02.png"
+                imgSrc: "membros-02.webp"
             },
             {
                 name: ["Manuel Menezes"],
                 role: "Vogal",
-                imgSrc: "membros-02.png"
+                imgSrc: "membros-02.webp"
             },
         ]
     },
@@ -40,17 +40,17 @@ const organs = [
             {
                 name: ["Filipe Ribeiro"],
                 role: "Presidente",
-                imgSrc: "membros-02.png"
+                imgSrc: "membros-02.webp"
             },
             {
                 name: ["Tomás Taipa"],
                 role: "Secretário",
-                imgSrc: "membros-02.png"
+                imgSrc: "membros-02.webp"
             },
             {
                 name: ["Camila Queiroz"],
                 role: "Secretária",
-                imgSrc: "membros-02.png"
+                imgSrc: "membros-02.webp"
             },
         ]
     },
@@ -60,17 +60,17 @@ const organs = [
             {
                 name: ["Rita Lima"],
                 role: "Presidente",
-                imgSrc: "membros-02.png"
+                imgSrc: "membros-02.webp"
             },
             {
                 name: ["Catarina Best"],
                 role: "Relatora",
-                imgSrc: "membros-02.png"
+                imgSrc: "membros-02.webp"
             },
             {
                 name: ["Luís Paiva"],
                 role: "Relator",
-                imgSrc: "membros-02.png"
+                imgSrc: "membros-02.webp"
             },
         ]
     },
@@ -80,22 +80,22 @@ const organs = [
             {
                 name: ["Ana Abrantes", "e Margarida Pereira"],
                 role: "Social",
-                imgSrc: "membros-02.png"
+                imgSrc: "membros-02.webp"
             },
             {
                 name: ["Francisca Vieira de Castro"],
                 role: "Recursos Humanos",
-                imgSrc: "membros-03.png"
+                imgSrc: "membros-03.webp"
             },
             {
                 name: ["Manuel Menezes", "e Bruna Martins"],
                 role: "Relações Externas",
-                imgSrc: "membros-04.png"
+                imgSrc: "membros-04.webp"
             },
             {
                 name: ["Carolina Centeio"],
                 role: "Marketing",
-                imgSrc: "membros-05.png"
+                imgSrc: "membros-05.webp"
             },
         ]
     },

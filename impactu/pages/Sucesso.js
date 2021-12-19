@@ -1,6 +1,4 @@
-import Footer from '../components/Footer';
-
-export default function Success() {
+export default function Sucesso() {
     return (
 		<>
 			<section className="ajudar-hero-wrapper">

@@ -1,5 +1,4 @@
 import Departments from '../components/Departments'
-import Footer from '../components/Footer'
 import Projects from '../components/Projects'
 
 const ImpactoSocial = () => {
