@@ -10,7 +10,7 @@ const projects = [
     {
         link: "https://www.instagram.com/p/B_FKUkdnQMs/",
         imgSrc: "/bagosdouro.webp",
-        projectName: "Educação D'ouro ",
+        projectName: "Educação D'ouro",
         year: "2020"
     },
     {
@@ -28,7 +28,7 @@ const projects = [
     {
         link: "https://www.instagram.com/p/CMdPBmNnlR6/",
         imgSrc: "/jornadas.webp",
-        projectName: "ornadas de Direito e impacto social",
+        projectName: "Jornadas de Direito e impacto social",
         year: "2021"
     },
     {
@@ -40,14 +40,14 @@ const projects = [
 ];
 
 const Projects = () => {
-    const projectList = projects.map((project) => 
+    const projectList = projects.map((project) =>
         <div className="column-projetos" key={project.imgSrc}>
             <Link href={project.link}>
                 <a>
-                    <img src={project.imgSrc} style={{width: "100%"}}/>
+                    <img src={project.imgSrc} style={{ width: "100%" }} />
                 </a>
             </Link>
-            <p>{project.projectName}<br/>{project.year}</p>
+            <p>{project.projectName}<br />{project.year}</p>
         </div>
     );
     return (
@@ -58,7 +58,7 @@ const Projects = () => {
             <div className="projetos">
                 {projectList}
             </div>
-                    
+
         </section>
     )
 }
