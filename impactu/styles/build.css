@@ -23,10 +23,11 @@ body#countdown {
 ------------------------------------------------
 ------------------------------------------------
 ----------------------------------------------*/
-.countdown{
+.countdown {
   width: 100%;
   height: 100%;
 }
+
 .countdown h2 {
   width: 100%;
   color: black;
@@ -37,7 +38,7 @@ body#countdown {
   transform: translateX(-50%) translateY(-50%);
 }
 
-.countdown p{
+.countdown p {
   font-size: 3em;
   line-height: 1em;
   font-weight: 500;
@@ -56,10 +57,11 @@ body#countdown {
   }
 
   .logo-countdown {
-      width: 120px;
-    }
+    width: 120px;
+  }
 
 }
+
 /* COUNTDOWN */
 
 body {
@@ -166,11 +168,11 @@ h3 {
 }
 
 .links a:hover {
-  color: #10845a;
+  color: white;
   font-weight: 400;
   text-decoration: none;
   overflow-x: hidden;
-  border-bottom: 2px solid #10845a;
+  border-bottom: 2px solid white;
   transition: 0.2s ease-out;
   font-size: 0.9em;
 }
@@ -775,36 +777,38 @@ video {
   width: 100%;
   height: 50%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .orgaosociais-box {
-  min-height: 50vh;
-  height: 50vh;
+  height: 30vh;
   width: 100%;
+  padding: 10em 10% 0 10%;
 }
 
 .orgaosociais-box .orgaosociais-title {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .orgaosociais-box .orgaosociais-title h3 {
   color: black;
-  font-size: 3.5em;
+  font-size: 4em;
   line-height: 1em;
-  font-weight: 500;
+  font-weight: 700;
+  max-width: 400px;
 }
 
 .about-hero-wrapper .about-hero-content .about-title h1 {
   color: white;
-  font-size: 3.5em;
+  font-size: 4em;
   line-height: 1em;
-  font-weight: 500;
+  font-weight: 700;
+  max-width: 450px;
 }
 
 .about-background {
@@ -835,7 +839,7 @@ video {
   min-height: 90vh;
   justify-content: left;
   align-items: center;
-  padding: 4% 10% 7% 10%;
+  padding: 0 10% 7% 10%;
   transform: scale(0.8);
 }
 
@@ -851,7 +855,7 @@ video {
   flex: 1;
   justify-self: center;
   padding-right: 2em;
-  font-size: 2.3em;
+  font-size: 3em;
 
   min-width: 400px;
 }
@@ -1079,7 +1083,7 @@ figcaption {
 
 .about-porto {
   min-height: 90vh;
-  padding: 5vh 10% 10vh 10%;
+  padding: 0 10% 10vh 10%;
   transform: scale(0.8);
 }
 
@@ -1208,7 +1212,7 @@ figcaption {
 }
 
 .about-comecou h1 {
-  font-weight: 800;
+  font-weight: 500;
   font-size: 3em;
   color: black;
 }
@@ -1263,15 +1267,15 @@ figcaption {
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: #c8e5dd;
-}
-
 
 .mySlides {
   width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mySlides img {
+  width: 65%;
 }
 
 /* Caption text */
@@ -1282,6 +1286,7 @@ figcaption {
   bottom: 0.5em;
   width: 100%;
   text-align: center;
+  padding-top: 2em;
   padding-left: 25%;
   padding-right: 25%;
 }
@@ -1291,14 +1296,15 @@ figcaption {
   color: #10845a;
   font-size: 12px;
   text-align: center;
+  display: none;
 }
 
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
+  height: 8px;
+  width: 8px;
+  margin: 3em 10px;
   background-color: #c8e5dd;
   border-radius: 50%;
   display: inline-block;
@@ -1475,6 +1481,10 @@ figcaption {
   justify-content: center;
 }
 
+#__next section:nth-of-type(5) {
+  padding-bottom: 10em;
+}
+
 
 .orgaosociais-wrapper {
   display: flex;
@@ -1556,8 +1566,6 @@ figcaption {
 */
 
 .contacts-hero-wrapper {
-  min-height: 55vh;
-  height: 55vh;
   width: 100%;
 }
 
@@ -1569,26 +1577,28 @@ figcaption {
 
 .contacts-hero-wrapper .contacts-title {
   width: 100%;
-  height: 100%;
+  height: 50vh;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .contacts-hero-wrapper .contacts-hero-content .contacts-title h1 {
   color: black;
-  font-size: 3.5em;
+  font-size: 4em;
   line-height: 1em;
-  font-weight: 500;
+  font-weight: 700;
+  max-width: 600px;
 }
 
 .contacts-background {
   background-color: #c8e5dd;
+  padding-top: 3.5em;
 }
 
 .contacts-background h1 {
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding-top: 2em;
+  padding-bottom: 1.5em;
   font-size: 3.5em;
   font-weight: 500;
   display: flex;
@@ -1604,6 +1614,10 @@ figcaption {
 .contacts-intro-content {
   justify-content: center;
   align-items: center;
+}
+
+.contacts-intro-title {
+  padding-bottom: 9em;
 }
 
 .contacts-intro-content .contacts-intro-title h2 {
@@ -1636,6 +1650,7 @@ figcaption {
 
 .contacts-intro-title .icons {
   text-align: center;
+  padding-top: 10px;
 }
 
 .contacts-intro-title .icons a {
@@ -1655,6 +1670,7 @@ figcaption {
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 0px;
+  margin-bottom: 10em;
   height: 0;
   overflow: hidden;
 }
@@ -1667,7 +1683,7 @@ figcaption {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 5%;
+  padding: 10%;
 }
 
 .contactar-wrapper {
@@ -1682,7 +1698,7 @@ figcaption {
 .container-contactos {
   width: 40%;
   padding-top: 3%;
-  padding-bottom: 5%;
+  padding-bottom: 10%;
 }
 
 .contacts-intro-title img:hover {
@@ -1719,6 +1735,7 @@ textarea {
   margin-top: 6px;
   margin-bottom: 20px;
   resize: vertical;
+  font-family: "Poppins", sans-serif;
 }
 
 input[type="submit"] {
@@ -1882,15 +1899,16 @@ input[type="submit"]:hover {
   width: 100%;
   height: 50%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .impactosocial-hero-wrapper .impactosocial-title h1 {
   color: white;
-  font-size: 3.5em;
+  font-size: 4em;
   line-height: 1em;
-  font-weight: 500;
+  font-weight: 700;
+  max-width: 400px;
 }
 
 .impactosocial-background {
@@ -2086,7 +2104,7 @@ input[type="submit"]:hover {
   width: 100%;
   padding-left: 5%;
   padding-right: 5%;
-  padding-bottom: 5%;
+  padding-bottom: 13%;
 }
 
 .section-projetos .section-projetos-content {
@@ -2122,6 +2140,7 @@ No mobile fica em 2 e 1 colunas
   padding-left: 5%;
   padding-right: 5%;
   transition: 0.3s;
+  transform: scale(0.9);
 }
 
 .column-projetos img {
@@ -2142,7 +2161,7 @@ No mobile fica em 2 e 1 colunas
 }
 
 .column-projetos:hover {
-  transform: scale(1.04);
+  transform: scale(0.85);
   transition: 0.4s;
   color: #10845a;
 }
@@ -2188,7 +2207,7 @@ No mobile fica em 2 e 1 colunas
 .row-card-departamento {
   margin: 0 5px;
   padding-left: 8%;
-  padding-right: 10%;
+  padding-right: 8%;
   padding-bottom: 10%;
 }
 
@@ -2238,7 +2257,7 @@ No mobile fica em 2 e 1 colunas
 
 .card-departamento:hover {
   box-shadow: 4px 4px 20px 0 rgba(0, 0, 0, 0.2);
-  transform: scale(1.06);
+  transform: scale(0.97);
 }
 
 .column-card-departamento:hover {
@@ -2264,7 +2283,7 @@ No mobile fica em 2 e 1 colunas
 .ajudar-hero-wrapper .ajudar-hero-content {
   height: 100%;
   width: 100%;
-  padding: 15% 10% 0 10%;
+  padding: 0 10% 0 10%;
 }
 
 
@@ -2278,7 +2297,8 @@ No mobile fica em 2 e 1 colunas
   width: 100%;
   height: 100%;
   justify-content: center;
-  display: block;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -2883,3 +2903,4 @@ No mobile fica em 2 e 1 colunas
     flex: 100%;
     max-width: 100%;
   }
+}
