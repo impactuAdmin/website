@@ -36,7 +36,7 @@ const AboutStarted = () => {
 
     function increaseSlideIndex(increment) {
         const index = (slideIndex + increment) % phases.length;
-        setSlideIndex(index  === -1 ? phases.length - 1 : index);
+        setSlideIndex(index === -1 ? phases.length - 1 : index);
     }
 
     function setCurrentSlide(index) {
@@ -44,19 +44,19 @@ const AboutStarted = () => {
     }
 
     const listItems = phases.map((phase) =>
-    <div key={phase.slideNumber} className="mySlides fade" style={phase.slideNumber === slideIndex + 1 ? {display: "block"} : {display: "none"}}>
-        <div className="numbertext">{phase.slideNumber} / 4</div>
-        <img src={phase.imsgSrc} alt={phase.alt} style={{width: "100%"}}/>
-        <div className="text">
-            <strong>{phase.title}</strong>
-            <br/>
-            <br/>
-            {phase.description}
+        <div key={phase.slideNumber} className="mySlides fade" style={phase.slideNumber === slideIndex + 1 ? { display: "flex" } : { display: "none" }}>
+            <div className="numbertext">{phase.slideNumber} / 4</div>
+            <img src={phase.imsgSrc} alt={phase.alt} />
+            <div className="text">
+                <strong>{phase.title}</strong>
+                <br />
+                <br />
+                {phase.description}
+            </div>
         </div>
-    </div>
     );
 
-    const dots = phases.map((phase) => 
+    const dots = phases.map((phase) =>
         <span key={phase.slideNumber} className={phase.slideNumber === slideIndex + 1 ? "dot active" : "dot"} onClick={() => setCurrentSlide(phase.slideNumber)}></span>
     );
 
@@ -68,8 +68,8 @@ const AboutStarted = () => {
                 <a className="prev" onClick={() => increaseSlideIndex(-1)}>&#10094;</a>
                 <a className="next" onClick={() => increaseSlideIndex(1)}>&#10095;</a>
             </div>
-            <br/>
-            <div style={{textAlign: "center"}}>
+            <br />
+            <div style={{ textAlign: "center" }}>
                 {dots}
             </div>
         </section>
