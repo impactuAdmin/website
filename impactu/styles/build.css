@@ -787,6 +787,11 @@ video {
   padding: 10em 10% 0 10%;
 }
 
+.orgaosociais-box.docs {
+  height: initial;
+  padding: 7em 10% 3em 10%;
+}
+
 .orgaosociais-box .orgaosociais-title {
   width: 100%;
   height: 100%;
@@ -2208,7 +2213,7 @@ No mobile fica em 2 e 1 colunas
   margin: 0 5px;
   padding-left: 8%;
   padding-right: 8%;
-  padding-bottom: 10%;
+  padding-bottom: 16%;
 }
 
 /* Clear floats after the columns */
@@ -2633,6 +2638,17 @@ No mobile fica em 2 e 1 colunas
     flex: 50%;
     max-width: 50%;
   }
+
+  /*------MAPA-----*/
+
+  .responsive-map-container {
+    height: 60vh;
+    margin-bottom: 0;
+  }
+
+  .responsive-map-container iframe {
+    padding: 0;
+  }
 }
 
 @media (max-width: 900px) {
@@ -2736,7 +2752,6 @@ No mobile fica em 2 e 1 colunas
   }
 
   .ajudar-hero-wrapper .ajudar-hero-content {
-    padding-top: 50%;
     height: 100%;
     width: 100%;
   }
@@ -2758,6 +2773,12 @@ No mobile fica em 2 e 1 colunas
 
   .content-recrutamento h3 {
     display: none;
+  }
+}
+
+@media (max-width: 572px) {
+  .contacts-title {
+    padding-top: 3em;
   }
 }
 
@@ -2888,6 +2909,10 @@ No mobile fica em 2 e 1 colunas
 
   .news-content-wrapper .cenas .text {
     font-size: 0.87em;
+  }
+
+  .contacts-hero-wrapper .contacts-hero-content .contacts-title h1 {
+    font-size: 3.3em;
   }
 
   .footer-wrapper {

@@ -43,7 +43,7 @@ const Projects = () => {
     const projectList = projects.map((project) =>
         <div className="column-projetos" key={project.imgSrc}>
             <Link href={project.link}>
-                <a>
+                <a target="_blank">
                     <img src={project.imgSrc} style={{ width: "100%" }} />
                 </a>
             </Link>
