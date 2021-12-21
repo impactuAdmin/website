@@ -108,10 +108,6 @@ h3 {
   display: none;
 }
 
-.menu-wrapper {
-  display: none;
-}
-
 .navigation_wrapper {
   width: 100%;
   height: 6em;
@@ -2456,7 +2452,7 @@ No mobile fica em 2 e 1 colunas
     left: 0;
     z-index: 99999;
     width: 100%;
-    height: 6em;
+    height: 80px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -2485,6 +2481,7 @@ No mobile fica em 2 e 1 colunas
   .mobile-header-wrapper .burger-menu .rect {
     width: 2.1em;
     height: 2px;
+    border-radius: 100px;
     background-color: white;
   }
 
@@ -2501,10 +2498,9 @@ No mobile fica em 2 e 1 colunas
     width: 100%;
     background-color: #10845a;
     z-index: 99999;
-    display: none;
     justify-content: center;
     align-items: center;
-    transition: all 0.3s ease-in-out;
+    animation: menu-slide-in 0.6s ease-in;
   }
 
   .menu-wrapper .menu-content {
@@ -2521,12 +2517,13 @@ No mobile fica em 2 e 1 colunas
 
   .menu-wrapper .menu-content .menu-dismiss {
     position: fixed;
-    top: 0.5em;
-    right: 1.3em;
+    top: 10px;
+    right: 12%;
     font-size: 2.5em;
     font-weight: 300;
     color: white;
     cursor: pointer;
+    animation: dismiss 1s ease-in;
   }
 
   .menu-wrapper .menu-content a {
@@ -2927,5 +2924,37 @@ No mobile fica em 2 e 1 colunas
   .column {
     flex: 100%;
     max-width: 100%;
+  }
+}
+
+@keyframes menu-slide-in {
+  from {
+    position: fixed;
+    top: 100vh;
+  }
+
+  to {
+    top: 0;
+  }
+}
+
+@keyframes menu-slide-out {
+  from {
+    position: fixed;
+    top: 0;
+  }
+
+  to {
+    top: 100vh;
+  }
+}
+
+@keyframes dismiss {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
