@@ -76,7 +76,7 @@ function reveal() {
 
 // Este precisei de ir ver às internets. Contador que fiz para os números da página inicial, mas que inicia quando a página é carregada e não quando os elementos são mostrados (eu percebo o porquê disso, mas ainda ão consegui resolver)
 
-const counters = document.querySelectorAll('.counter');
+/*const counters = document.querySelectorAll('.counter');
 const speed = 250;
 
 counters.forEach(counter => {
@@ -95,4 +95,4 @@ counters.forEach(counter => {
         }
     }
     updateCount();
-})
+})*/
