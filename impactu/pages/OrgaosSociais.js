@@ -105,13 +105,13 @@ const OrgaoSocial = (orgao) => {
 
     const elementsList = (element) => {
 
-        const names = element.name.map((personName) => 
-            <>{personName}<br/></>
+        const names = element.name.map((personName) =>
+            <>{personName}<br /></>
         );
 
         return (
             <div className="column">
-                <img src={"/" + element.imgSrc}/>
+                <img src={"/" + element.imgSrc} />
                 <h2>{names}
                     <strong>{element.role}</strong>
                 </h2>
@@ -137,13 +137,13 @@ const OrgaoSocial = (orgao) => {
 
 export default function OrgaosSociais() {
     return (
-      < >
-            <section className="orgaosociais-box">
-                <div className='orgaosociais-title'>
+        < >
+            <section className="orgaosociais-box docs">
+                <div className='orgaosociais-title docs'>
                     <h3>Orgãos Sociais</h3>
                 </div>
             </section>
-            {organs.map((organ)=> OrgaoSocial(organ))}
-      </>
+            {organs.map((organ) => OrgaoSocial(organ))}
+        </>
     )
-  }
+}

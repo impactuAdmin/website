@@ -1017,6 +1017,14 @@ video {
     padding: 0% 10% 0% 10%;
   }
 
+  .orgaosociais-title.docs {
+    padding: 0;
+  }
+
+  .orgaosociais-title.docs h3 {
+    font-size: 3em;
+  }
+
   .about-background .about-intro-content .about-intro-title {
     font-size: 0.8em;
   }
