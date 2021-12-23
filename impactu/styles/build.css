@@ -841,7 +841,7 @@ video {
   justify-content: left;
   align-items: center;
   padding: 0 10% 7% 10%;
-  transform: scale(0.8);
+  transform: scale(0.8) !important;
 }
 
 .about-intro-title {
@@ -1015,6 +1015,14 @@ video {
 
   .orgaosociais-title {
     padding: 0% 10% 0% 10%;
+  }
+
+  .orgaosociais-title.docs {
+    padding: 0;
+  }
+
+  .orgaosociais-title.docs h3 {
+    font-size: 3em;
   }
 
   .about-background .about-intro-content .about-intro-title {
@@ -1618,7 +1626,7 @@ figcaption {
 }
 
 .contacts-intro-title {
-  padding-bottom: 9em;
+  padding-bottom: 7em;
 }
 
 .contacts-intro-content .contacts-intro-title h2 {
@@ -1702,8 +1710,15 @@ figcaption {
   padding-bottom: 10%;
 }
 
+.contacts-intro-title img {
+  transform: initial;
+  transition: 0.4s;
+
+  padding-bottom: 1.6em;
+}
+
 .contacts-intro-title img:hover {
-  transform: scale(1.06);
+  transform: scale(0.94);
   transition: 0.4s;
 }
 
@@ -1930,7 +1945,7 @@ input[type="submit"]:hover {
   justify-content: left;
   align-items: center;
   padding: 0% 10% 0% 10%;
-  transform: scale(0.8);
+  transform: scale(0.8) !important;
 }
 
 .impactosocial-intro-title {
@@ -2147,6 +2162,7 @@ No mobile fica em 2 e 1 colunas
 .column-projetos img {
   vertical-align: middle;
   height: 100%;
+  cursor: pointer;
 }
 
 .column-projetos figcaption {
@@ -2722,6 +2738,7 @@ No mobile fica em 2 e 1 colunas
     margin-right: auto;
     width: 80px;
     padding-bottom: 1%;
+    transition: none;
   }
 
   /*-----título "Projetos Impactu"----*/

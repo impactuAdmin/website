@@ -5,10 +5,8 @@ const getSticker = document.querySelectorAll('.sticker');
 window.addEventListener('scroll', function () { // altera os estilos da navbar com scroll (a height, cor de background, cor dos elementos, etc)
     if (window.scrollY > 100) {
         getMobileHeader.style.backgroundColor = '#10845A';
-        getMobileHeader.style.height = '80px';
     } else {
         getMobileHeader.style.backgroundColor = 'transparent';
-        getMobileHeader.style.height = '6em';
     }
 
     function changeStyle(e, classe) { // criei esta função porque achei que ia precisar de manipular a dom mesmo muitas vezes, mas acabei por enquanto só precisar dela 3 vezes xD (para já)

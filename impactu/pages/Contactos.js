@@ -11,11 +11,11 @@ const Contactos = () => {
                     </div>
                 </div>
             </section>
-            <section className="contacts-background reveal">
+            <section className="contacts-background">
                 <section className="contacts-intro-content">
                     <div className="contacts-intro-title">
                         <h2>
-                            <img src="../sede.webp" alt="Sede" className="sede"/>
+                            <img src="../sede.webp" alt="Sede" className="sede" />
                             Praça de Carlos Alberto nº25 <br />
                             4050-153 Porto <br />
                         </h2>
@@ -32,24 +32,24 @@ const Contactos = () => {
                             </p>
                             <br />
                             <p>
-                                <strong>Segue a impac&rsquo;tu</strong>
+                                <strong>Segue a Impac&rsquo;tu</strong>
                             </p>
                         </div>
                         <div className="icons">
                             <Link href="https://www.linkedin.com/company/impac%E2%80%99tu">
                                 <a target="_blank">
-                                <svg
-                                className='linkedin' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <g>
-                                    <path d="M4.44989 6.56006H0.389893V19.6801H4.44989V6.56006Z" fill="black" />
-                                    <path
-                                        d="M2.4 4.84C3.73 4.84 4.8 3.76 4.8 2.42C4.8 1.08 3.73 0 2.4 0C1.07 0 0 1.08 0 2.42C0 3.76 1.07 4.84 2.4 4.84Z"
-                                        fill="black" />
-                                    <path
-                                        d="M10.94 12.7899C10.94 10.9499 11.79 9.84991 13.41 9.84991C14.9 9.84991 15.62 10.8999 15.62 12.7899C15.62 14.6799 15.62 19.6799 15.62 19.6799H19.66C19.66 19.6799 19.66 14.8899 19.66 11.3699C19.66 7.85991 17.67 6.15991 14.89 6.15991C12.11 6.15991 10.94 8.32991 10.94 8.32991V6.55991H7.04004V19.6799H10.94C10.94 19.6799 10.94 14.8099 10.94 12.7899Z"
-                                        fill="black" />
-                                </g>
-                            </svg>
+                                    <svg
+                                        className='linkedin' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <g>
+                                            <path d="M4.44989 6.56006H0.389893V19.6801H4.44989V6.56006Z" fill="black" />
+                                            <path
+                                                d="M2.4 4.84C3.73 4.84 4.8 3.76 4.8 2.42C4.8 1.08 3.73 0 2.4 0C1.07 0 0 1.08 0 2.42C0 3.76 1.07 4.84 2.4 4.84Z"
+                                                fill="black" />
+                                            <path
+                                                d="M10.94 12.7899C10.94 10.9499 11.79 9.84991 13.41 9.84991C14.9 9.84991 15.62 10.8999 15.62 12.7899C15.62 14.6799 15.62 19.6799 15.62 19.6799H19.66C19.66 19.6799 19.66 14.8899 19.66 11.3699C19.66 7.85991 17.67 6.15991 14.89 6.15991C12.11 6.15991 10.94 8.32991 10.94 8.32991V6.55991H7.04004V19.6799H10.94C10.94 19.6799 10.94 14.8099 10.94 12.7899Z"
+                                                fill="black" />
+                                        </g>
+                                    </svg>
                                 </a>
                             </Link>
                             <Link href="https://www.facebook.com/associacaoimpactu/">
@@ -84,28 +84,28 @@ const Contactos = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className="responsive-map-container">
+                    <div className="responsive-map-container reveal">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.0845826769427!2d-8.616641770750023!3d41.148968208559054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2465309c670e5b%3A0x9eb91bbabfd13a89!2sImpac&#39;tu!5e0!3m2!1spt-PT!2spt!4v1632066576066!5m2!1spt-PT!2spt"
-                            width="600" height="450" frameBorder="0" style={{border:0}} allowFullScreen></iframe>
+                            width="600" height="450" frameBorder="0" style={{ border: 0 }} allowFullScreen></iframe>
                     </div>
                 </section>
                 <section className='contactar-wrapper'>
-                    <div className="container-contactos">
-                        <div style={{textAlign: "center"}}>
+                    <div className="container-contactos reveal">
+                        <div style={{ textAlign: "center" }}>
                             <h1>Fala connosco</h1>
                         </div>
                         <div className="container">
                             <form name="contactos" method="POST" data-netlify="true" action="/Sucesso">
-                                <input type="hidden" name="form-name" value="contactos" required/>
+                                <input type="hidden" name="form-name" value="contactos" required />
                                 <label htmlFor="nameInput">Nome</label>
-                                <input type="text" id="nameInput" name="nome" placeholder="Nome"/>
+                                <input type="text" id="nameInput" name="nome" placeholder="Nome" />
                                 <label htmlFor="emailInput">Email</label>
-                                <input type="email" id="emailInput" name="email" placeholder="Email"/>
+                                <input type="email" id="emailInput" name="email" placeholder="Email" />
                                 <label htmlFor="subject">Assunto/Mensagem</label>
-                                <textarea id="subject" name="subject" placeholder="Escreve a tua mensagem" style={{heigth: "200px"}}/>
+                                <textarea id="subject" name="subject" placeholder="Escreve a tua mensagem" style={{ heigth: "200px" }} />
 
-                                <input type="submit" value="Enviar"/>
+                                <input type="submit" value="Enviar" />
                             </form>
                         </div>
                     </div>

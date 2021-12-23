@@ -10,12 +10,12 @@ const About = () => {
     return (
         <>
             <AboutHero />
-            <section className="about-background reveal">
+            <section className="about-background">
                 <AboutIntro />
                 <Pilars />
                 <Porto />
-                <AboutStarted/>
-                {datas.length === 0 ? null: <RecruitmentNews/>}
+                <AboutStarted />
+                {datas.length === 0 ? null : <RecruitmentNews />}
             </section>
         </>
     )
