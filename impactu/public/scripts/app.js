@@ -43,8 +43,11 @@ window.onscroll = function () {
         getMobileHeader.style.top = "-100px";
     }
     prevScrollpos = currentScrollPos;
-}
 
+    if (currentScrollPos <= 0) {
+        getMobileHeader.style.top = "0";
+    }
+}
 
 
 // ----------------------------------------
