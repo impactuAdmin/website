@@ -52,10 +52,10 @@ const Projects = () => {
     );
     return (
         <section className="section-projetos">
-            <div className="section-projetos-content">
+            <div className="section-projetos-content reveal">
                 <h1>Projetos Impac&rsquo;tu</h1>
             </div>
-            <div className="projetos">
+            <div className="projetos reveal">
                 {projectList}
             </div>
 

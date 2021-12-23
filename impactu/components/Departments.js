@@ -55,15 +55,15 @@ const departments = [
 
 const Departments = () => {
 
-    const departmentsList = departments.map((department) => 
-        <div className="column-card-departamento" key={department.department}>
+    const departmentsList = departments.map((department) =>
+        <div className="column-card-departamento reveal" key={department.department}>
             <div className="card-departamento">
-                <img src={department.imgSrc} alt={department.department} style={{width: "100%", paddingBottom: "10%",}} />
+                <img src={department.imgSrc} alt={department.department} style={{ width: "100%", paddingBottom: "10%", }} />
                 <h3><strong>{department.department}</strong></h3>
                 <h4>{department.membersNumber} membros</h4>
-                <br/>
-                <hr/>
-                <br/>
+                <br />
+                <hr />
+                <br />
                 <p>
                     {department.description}
                 </p>
@@ -73,10 +73,10 @@ const Departments = () => {
 
     return (
         <section className="departamentos">
-            <div className="departamentos-content">
+            <div className="departamentos-content reveal">
                 <h1>Departamentos</h1>
             </div>
-            <div className="row-card-departamento">
+            <div className="row-card-departamento reveal">
                 {departmentsList}
             </div>
         </section>

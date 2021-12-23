@@ -61,7 +61,7 @@ const AboutStarted = () => {
     );
 
     return (
-        <section className="about-comecou">
+        <section className="about-comecou reveal">
             <h1>Como tudo começou</h1>
             <div className="slideshow-container">
                 {listItems}
