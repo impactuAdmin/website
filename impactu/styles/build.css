@@ -183,6 +183,10 @@ h3 {
   width: 100vw;
   height: 100vh;
   padding: 6em 10% 6em 10%;
+  background-image: url(../public/videoGif.gif);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 .title-hero {
