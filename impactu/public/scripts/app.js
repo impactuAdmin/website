@@ -70,30 +70,3 @@ function reveal() {
         }
     }
 }
-
-
-
-// ----------------------------------------
-
-// Este precisei de ir ver às internets. Contador que fiz para os números da página inicial, mas que inicia quando a página é carregada e não quando os elementos são mostrados (eu percebo o porquê disso, mas ainda ão consegui resolver)
-
-/*const counters = document.querySelectorAll('.counter');
-const speed = 250;
-
-counters.forEach(counter => {
-    var updateCount = () => {
-        var target = Number(counter.getAttribute('data-target'));
-        var count = Number(counter.innerText);
-
-        var inc = target / speed;
-
-        if (count < target) {
-            num = count + inc;
-            counter.innerText = num.toFixed(2); //tentei colocar 0 aqui para que mostrasse apenas as unidades sem casas decimais, mas não resultou
-            setTimeout(updateCount, 1);
-        } else {
-            counter.innerText = target;
-        }
-    }
-    updateCount();
-})*/
