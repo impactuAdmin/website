@@ -183,6 +183,10 @@ h3 {
   width: 100vw;
   height: 100vh;
   padding: 6em 10% 6em 10%;
+  background-image: url(../public/videoGif.gif);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 .title-hero {
@@ -569,6 +573,7 @@ video {
 
 .footer-about .address {
   margin-top: 8px;
+  margin-bottom: 8px;
   font-size: 0.8em;
 }
 
@@ -631,6 +636,7 @@ video {
 }
 
 .footer-links-wrapper .center-column {
+  display: none;
   flex: 1 1 auto;
   height: 100%;
 }
@@ -2184,6 +2190,18 @@ No mobile fica em 2 e 1 colunas
 /*----------------------------------------------
 --------------------- MOBILE -------------------
 ----------------------------------------------*/
+
+.menu-wrapper .menu-content .menu-dismiss {
+  position: fixed;
+  top: 14px;
+  right: 11.3%;
+  font-size: 2.5em;
+  font-weight: 300;
+  color: white;
+  cursor: pointer;
+  animation: dismiss 1s ease-in;
+}
+
 @media (max-width: 1400px) {
   .navigation_wrapper .links {
     width: 60%;
@@ -2284,7 +2302,7 @@ No mobile fica em 2 e 1 colunas
     left: 0;
     z-index: 99999;
     width: 100%;
-    height: 96px;
+    height: 84px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -2345,17 +2363,6 @@ No mobile fica em 2 e 1 colunas
 
   .menu-wrapper .menu-content a:nth-of-type(4) {
     margin-bottom: 2em;
-  }
-
-  .menu-wrapper .menu-content .menu-dismiss {
-    position: fixed;
-    top: 16px;
-    right: 12.5%;
-    font-size: 2.5em;
-    font-weight: 300;
-    color: white;
-    cursor: pointer;
-    animation: dismiss 1s ease-in;
   }
 
   .menu-wrapper .menu-content a {
@@ -2603,6 +2610,12 @@ No mobile fica em 2 e 1 colunas
 
   .content-recrutamento h3 {
     display: none;
+  }
+}
+
+@media (max-width: 630px) {
+  .menu-wrapper .menu-content .menu-dismiss {
+    right: 12.5%;
   }
 }
 
