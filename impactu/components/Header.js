@@ -96,7 +96,7 @@ const Header = ({ datasDeRecrutamento }) => {
                             </Link>
                     }
                     <Link href="/Contactos">
-                        <a className="nth-of-type-wasnt-working" style={{ marginBottom: "2em" }} onClick={closeButtonClick}>
+                        <a onClick={closeButtonClick}>
                             <h1>Contactos</h1>
                         </a>
                     </Link>

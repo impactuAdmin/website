@@ -32,7 +32,7 @@ const phases = [
 
 const AboutStarted = () => {
 
-    const [slideIndex, setSlideIndex] = useState(1);
+    const [slideIndex, setSlideIndex] = useState(0);
 
     function increaseSlideIndex(increment) {
         const index = (slideIndex + increment) % phases.length;
@@ -57,7 +57,7 @@ const AboutStarted = () => {
     );
 
     const dots = phases.map((phase) =>
-        <span key={phase.slideNumber} className={phase.slideNumber === slideIndex + 1 ? "dot active" : "dot"} onClick={() => setCurrentSlide(phase.slideNumber)}></span>
+        <span key={phase.slideNumber} className={phase.slideNumber === slideIndex + 1 ? "dot active" : "dot"} onClick={() => setCurrentSlide(phase.slideNumber - 1)}></span>
     );
 
     return (
