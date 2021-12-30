@@ -184,9 +184,12 @@ h3 {
   height: 100vh;
   padding: 6em 10% 6em 10%;
   background-image: url(../public/videoGif.gif);
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
 }
 
 .title-hero {
@@ -2361,8 +2364,12 @@ No mobile fica em 2 e 1 colunas
     height: fit-content;
   }
 
-  .menu-wrapper .menu-content a:nth-of-type(4) {
+  .menu-wrapper .menu-content a:nth-of-type(3) {
     margin-bottom: 2em;
+  }
+
+  .menu-wrapper .menu-content a:nth-of-type(4) button {
+    color: black;
   }
 
   .menu-wrapper .menu-content a {

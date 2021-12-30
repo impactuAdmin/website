@@ -73,26 +73,26 @@ function reveal() {
 
 /* VIDEO LOW POWER MODE iOS */
 
-Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
-    get: function () {
-        return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
-    }
-});
+if (window.location.href.indexOf('') > -1) {
+    Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
+        get: function () {
+            return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
+        }
+    });
 
-const bodyElement = document.getElementsByTagName('body')[0];
+    var playVideoiOS = function () {
+        const videoElement = document.getElementById('video');
+        if (videoElement.playing) {
 
-var playVideoiOS = function () {
-    const videoElement = document.getElementById('video');
-    if (videoElement.playing) {
+        }
+        else {
+            videoElement.play();
+        }
+    }
 
-    }
-    else {
-        videoElement.play();
-    }
+    document.addEventListener('touchstart', playVideoiOS, false);
+    document.addEventListener('click', playVideoiOS, false);
 }
-
-document.addEventListener('touchstart', playVideoiOS, false);
-document.addEventListener('click', playVideoiOS, false);
 
 
 
