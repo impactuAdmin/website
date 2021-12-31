@@ -96,7 +96,7 @@ const Contactos = () => {
                             <h1>Fala connosco</h1>
                         </div>
                         <div className="container">
-                            <form name="contactos" method="POST" data-netlify="true" action="/Sucesso">
+                            <form name="contactos" method="POST" data-netlify="true" action="/PedidoDeContactoSubmetido">
                                 <input type="hidden" name="form-name" value="contactos" required />
                                 <label htmlFor="nameInput">Nome</label>
                                 <input type="text" id="nameInput" name="nome" placeholder="Nome" />
