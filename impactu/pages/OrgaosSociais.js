@@ -78,7 +78,7 @@ const organs = [
         name: "Coordenadores",
         elements: [
             {
-                name: ["Ana Abrantes", "e Margarida Pereira"],
+                name: ["Ana Arantes", "e Margarida Ferreira"],
                 role: "Social",
                 imgSrc: "membros-02.webp"
             },
