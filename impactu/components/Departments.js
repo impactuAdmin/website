@@ -3,7 +3,7 @@ const departments = [
     {
         department: "Social",
         imgSrc: "/social.webp",
-        membersNumber: 20,
+        membersNumber: 22,
         description: "Estar no terreno e no contacto direto com as famílias que apoiamos são as palavras-chave\n\
                         deste departamento.\nOs membros do Social são responsáveis pelo acompanhamento dos \
                         casos da Associação."
@@ -36,7 +36,7 @@ const departments = [
     {
         department: "Recursos Humanos",
         imgSrc: "/recursoshumanos.webp",
-        membersNumber: 20,
+        membersNumber: 7,
         description: "Alicerçado em três áreas principais de atuação: a gestão interna da associação,\
                         a receção de novos casos que chegam até nós e ainda pelos\
                         recrutamentos semestrais para novos membros."

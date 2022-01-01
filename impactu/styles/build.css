@@ -2205,6 +2205,19 @@ No mobile fica em 2 e 1 colunas
   animation: dismiss 1s ease-in;
 }
 
+.menu-content .social-media svg {
+  margin-right: 30px;
+}
+
+.menu-content .social-media a:nth-child(3) svg {
+  margin-right: 0;
+}
+
+.menu-content .social-media a:nth-child(3) {
+  position: relative;
+  top: 2px;
+}
+
 @media (max-width: 1400px) {
   .navigation_wrapper .links {
     width: 60%;
@@ -2370,6 +2383,8 @@ No mobile fica em 2 e 1 colunas
 
   .menu-wrapper .menu-content a:nth-of-type(4) button {
     color: black;
+    font-family: Poppins, sans-serif;
+    margin-bottom: 60px;
   }
 
   .menu-wrapper .menu-content a {
