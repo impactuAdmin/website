@@ -19,17 +19,17 @@ const organs = [
             },
             {
                 name: ["Sofia Santos"],
-                role: "Vogal",
+                role: "Responsável Lisboa",
                 imgSrc: "membros-02.webp"
             },
             {
                 name: ["Sara Pereira"],
-                role: "Vogal",
+                role: "Gestora de Impacto Social",
                 imgSrc: "membros-02.webp"
             },
             {
-                name: ["Manuel Menezes"],
-                role: "Vogal",
+                name: ["Francisca Vieira de Castro"],
+                role: "Gestora de Operações",
                 imgSrc: "membros-02.webp"
             },
         ]
@@ -38,7 +38,7 @@ const organs = [
         name: "MAG",
         elements: [
             {
-                name: ["Filipe Ribeiro"],
+                name: ["Luís Archer"],
                 role: "Presidente",
                 imgSrc: "membros-02.webp"
             },
@@ -83,12 +83,17 @@ const organs = [
                 imgSrc: "membros-02.webp"
             },
             {
-                name: ["Francisca Vieira de Castro"],
-                role: "Recursos Humanos",
+                name: ["Mariana Marques", "e Raquel Alves"],
+                role: "Legal",
                 imgSrc: "membros-03.webp"
             },
             {
-                name: ["Manuel Menezes", "e Bruna Martins"],
+                name: ["Beatriz Machado"],
+                role: "Recursos Humanos",
+                imgSrc: "membros-02.webp"
+            },
+            {
+                name: ["Bruna Martins", "e Martim Moraes Sarmento"],
                 role: "Relações Externas",
                 imgSrc: "membros-04.webp"
             },
@@ -96,6 +101,16 @@ const organs = [
                 name: ["Carolina Centeio"],
                 role: "Marketing",
                 imgSrc: "membros-05.webp"
+            },
+            {
+                name: ["Francisco Durães"],
+                role: "Coordenador de Estratégia e Desenvolvimento",
+                imgSrc: "membros-02.webp"
+            },
+            {
+                name: ["Beatriz Polidoro"],
+                role: "Coordenadora Operacional",
+                imgSrc: "membros-02.webp"
             },
         ]
     },
