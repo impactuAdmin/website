@@ -585,7 +585,7 @@ video {
 }
 
 .footer-about .social-media svg {
-  margin-right: 10px;
+  margin-right: 16px;
 }
 
 .footer-about .social-media svg path {
@@ -599,6 +599,12 @@ video {
 .footer-about .social-media .instagram {
   position: relative;
   top: 2px;
+}
+
+.footer-about .social-media a:nth-of-type(4) svg {
+  position: relative;
+  top: 7.3px;
+  right: 3px;
 }
 
 .footer-links-wrapper {
@@ -2209,13 +2215,19 @@ No mobile fica em 2 e 1 colunas
   margin-right: 30px;
 }
 
-.menu-content .social-media a:nth-child(3) svg {
+.menu-content .social-media a:nth-child(4) svg {
   margin-right: 0;
 }
 
 .menu-content .social-media a:nth-child(3) {
   position: relative;
   top: 2px;
+}
+
+.menu-content .social-media a:nth-child(4) svg {
+  position: relative;
+  top: 7.3px;
+  right: 3px;
 }
 
 @media (max-width: 1400px) {
