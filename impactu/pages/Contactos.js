@@ -16,7 +16,7 @@ const Contactos = () => {
                     <div className="contacts-intro-title">
                         <h2>
                             <img src="../sede.webp" alt="Sede" className="sede" />
-                            Praça de Carlos Alberto nº25 <br />
+                            Praça de Carlos Alberto nº52 <br />
                             4050-153 Porto <br />
                         </h2>
                         <div className="localiza">
