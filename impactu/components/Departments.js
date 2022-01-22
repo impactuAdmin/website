@@ -58,7 +58,7 @@ const Departments = () => {
     const departmentsList = departments.map((department) =>
         <div className="column-card-departamento reveal" key={department.department}>
             <div className="card-departamento">
-                <img src={department.imgSrc} alt={department.department} style={{ width: "100%", paddingBottom: "10%", }} />
+                <img src={department.imgSrc} alt={department.department} />
                 <h3><strong>{department.department}</strong></h3>
                 <h4>{department.membersNumber} membros</h4>
                 <br />
