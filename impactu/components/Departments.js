@@ -42,7 +42,7 @@ const departments = [
                         recrutamentos semestrais para novos membros."
     },
     {
-        department: "IMPAC'TU 2022",
+        department: "Impac'tu 2022",
         imgSrc: "/logo-simples.webp",
         membersNumber: 57,
         description: "Somos no total 57 membros divididos entre Porto e Lisboa\
