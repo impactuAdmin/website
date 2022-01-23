@@ -17,7 +17,7 @@ const Help = () => {
                         <div className='link-underline help'>
                             <Link href="/QueroAjudar">
                                 <a href='#'>
-                                    <h4>Sabe como</h4>
+                                    <h4>Fazer doação</h4>
                                     <svg className='arrow help' xmlns="http://www.w3.org/2000/svg" width="19" height="14"
                                         viewBox="0 0 19 14" fill="none">
                                         <path d="M17.6151 7.0705H0.515381V7.99454H17.6151V7.0705Z" fill="black"
