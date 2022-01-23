@@ -1545,6 +1545,15 @@ figcaption {
 .contacts-intro-title .icons a {
   padding-left: 5px;
   padding-right: 5px;
+  position: relative;
+}
+
+.contacts-intro-title .icons a:nth-child(3) {
+  top: 2px;
+}
+
+.contacts-intro-title .icons a:nth-child(4) {
+  top: 8px;
 }
 
 .sede {
@@ -2021,10 +2030,9 @@ No mobile fica em 2 e 1 colunas
 */
 .column-projetos {
   flex: 33%;
-  max-width: 33%;
   margin-bottom: auto;
   padding-left: 5%;
-  padding-right: 5%;
+  padding-right: 4.3%;
   transition: 0.3s;
   transform: scale(0.9);
 }
@@ -2084,7 +2092,7 @@ No mobile fica em 2 e 1 colunas
   flex-wrap: wrap;
 
   justify-content: space-between;
-  padding: 0 10% 8em 10%;
+  padding: 0 10.1% 8em 10.5%;
   margin-top: -30px;
 }
 
@@ -2122,7 +2130,7 @@ No mobile fica em 2 e 1 colunas
 }
 
 .card-departamento h3 {
-  font-size: 3em;
+  font-size: 2em;
   text-align: center;
   line-height: 1em;
 }
@@ -2168,6 +2176,7 @@ No mobile fica em 2 e 1 colunas
 
   .card-departamento p {
     font-size: 0.9em;
+    line-height: 1.9em;
   }
 }
 

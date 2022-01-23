@@ -10,11 +10,11 @@ export default function Sucesso() {
 								stroke="#10845a" strokeWidth="4.5" strokeMiterlimit="10" />
 						</svg><br />
 						<h2>
-							PARABÉNS<br />
+							OBRIGADO<br />
 						</h2>
 						<br/>
-						<p> A tua candidatura foi <strong>submetida com sucesso</strong>.</p>
-						<p> Serás contactado brevemente.</p>
+						<p> A tua mensagem foi <strong>enviada com sucesso</strong>.</p>
+						<p> Serás contactado(a) brevemente!</p>
 						<br/>
 					</div>
 				</div>
