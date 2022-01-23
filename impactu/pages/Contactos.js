@@ -98,12 +98,12 @@ const Contactos = () => {
                         <div className="container">
                             <form name="contactos" method="POST" data-netlify="true" action="/PedidoDeContactoSubmetido">
                                 <input type="hidden" name="form-name" value="contactos" required />
-                                <label htmlFor="nameInput">Nome</label>
-                                <input type="text" id="nameInput" name="nome" placeholder="Nome" />
-                                <label htmlFor="emailInput">Email</label>
-                                <input type="email" id="emailInput" name="email" placeholder="Email" />
-                                <label htmlFor="subject">Assunto/Mensagem</label>
-                                <textarea id="subject" name="subject" placeholder="Escreve a tua mensagem" style={{ heigth: "200px" }} />
+                                <label htmlFor="nameInput">Nome<span class="asterisk"> *</span></label>
+                                <input type="text" id="nameInput" name="nome" placeholder="Nome" required />
+                                <label htmlFor="emailInput">Email<span class="asterisk"> *</span></label>
+                                <input type="email" id="emailInput" name="email" placeholder="Email" required />
+                                <label htmlFor="subject">Assunto/Mensagem<span class="asterisk"> *</span></label>
+                                <textarea id="subject" name="subject" placeholder="Escreve a tua mensagem" required style={{ heigth: "200px" }} />
 
                                 <input type="submit" value="Enviar" />
                             </form>

@@ -1650,6 +1650,14 @@ input[type="submit"]:hover {
   padding: 20px;
 }
 
+.asterisk {
+  color: red;
+  font-size: 0.85em;
+  position: relative;
+  bottom: 2px;
+  right: 1px;
+}
+
 
 
 /*----------------------------------------------
