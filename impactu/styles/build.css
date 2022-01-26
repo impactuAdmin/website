@@ -320,6 +320,33 @@ video {
   transform: translateX(100%);
 }
 
+.link.intro.contactos {
+  display: flex;
+  justify-content: center;
+}
+
+.link.contactos {
+  margin-top: 20px;
+}
+
+.link-underline.contactos.intro {
+  cursor: pointer;
+  max-width: fit-content;
+  max-height: 33px;;
+}
+
+.link.contactos svg path{
+  stroke: black;
+}
+
+.link.contactos a {
+  justify-content: center;
+}
+
+.hidden-button {
+  display: none;
+}
+
 .link a {
   text-decoration: none;
   width: 100%;
