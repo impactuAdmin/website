@@ -99,5 +99,15 @@ if (videoElement) {
     document.addEventListener('click', playVideoiOS, false);
 }
 
+const getContactFormButton = document.querySelectorAll(".link-underline.contactos.intro");
+const getContactFormSubmit = document.querySelectorAll(".container-contactos form input[type=submit]");
+currentPage = window.location.href;
+
+if(currentPage === "https://impactu.org/Contactos" || currentPage === "http://localhost:3000/Contactos"){
+    getContactFormButton[0].addEventListener('click', () => {
+       getContactFormSubmit[0].click();
+    })
+}
+
 
 

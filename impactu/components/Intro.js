@@ -37,7 +37,7 @@ const Intro = () => {
                         fill="#10845A" />
                 </svg>
                 <h3>Somos uma associação de&nbsp; <strong>estudantes do Porto</strong>, sem fins lucrativos, que ajuda pessoas e <strong>famílias carenciadas&nbsp;</strong>
-                    do Porto!
+                    do Porto e Lisboa!
                 </h3>
                 <div className='link intro'>
                     <div className='link-underline intro'>
