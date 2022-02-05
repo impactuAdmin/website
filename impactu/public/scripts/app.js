@@ -102,6 +102,7 @@ if (videoElement) {
 
 
 var contactButton = document.querySelectorAll(".links a:nth-child(3)")[0];
+var contactButtonMobile = document.querySelectorAll(".menu-wrapper .menu-content a:nth-of-type(3)")[0];
 
 contactButton.addEventListener("click", function timeFunction() {
     setTimeout( ()=> {
@@ -111,5 +112,13 @@ contactButton.addEventListener("click", function timeFunction() {
         })
     }, 4000);
 });
- 
 
+
+contactButtonMobile.addEventListener("click", function timeFunction() {
+    setTimeout( ()=> {
+        sendButton = document.querySelectorAll(".link-underline.contactos.intro")[0];
+        sendButton.addEventListener("click", ()=> {
+            document.querySelectorAll(".container-contactos form input[type=submit]")[0].click();
+        })
+    }, 4000);
+});
