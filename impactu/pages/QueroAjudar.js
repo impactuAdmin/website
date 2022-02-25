@@ -17,7 +17,7 @@ const QueroAjudar = () => {
                         {/* <p> *MBWAY: <strong>+351 919 965 088</strong></p> */}
                         <br />
                         <p> *Pedimos para nos enviar o comprovativo da transferência <br />
-                            para o email <strong>sociosimpactu@gmail.com</strong></p>
+                            para o email <strong>socios@impactu.org</strong></p>
                     </div>
                 </div>
             </section>
