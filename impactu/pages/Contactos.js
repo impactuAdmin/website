@@ -24,7 +24,7 @@ const Contactos = () => {
                             <br />
                             <p>
                                 <strong>Email</strong>
-                                <a href="mailto:geral@gmail.org" style={{ color: "#10845A" }}>geral@impactu.org</a><br /></p>
+                                <a href="mailto:geral@impactu.org" style={{ color: "#10845A" }}>geral@impactu.org</a><br /></p>
                             <br />
                             <p>
                                 <strong>Telemóvel</strong>
