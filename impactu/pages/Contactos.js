@@ -24,11 +24,11 @@ const Contactos = () => {
                             <br />
                             <p>
                                 <strong>Email</strong>
-                                <a href="mailto:associacaoimpactu@gmail.com" style={{ color: "#10845A" }}>associacaoimpactu@gmail.com</a><br /></p>
+                                <a href="mailto:geral@impactu.org" style={{ color: "#10845A" }}>geral@impactu.org</a><br /></p>
                             <br />
                             <p>
                                 <strong>Telemóvel</strong>
-                                961 234 567
+                                917 777 227
                             </p>
                             <br />
                             <p>

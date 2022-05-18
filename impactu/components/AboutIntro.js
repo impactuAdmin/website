@@ -16,12 +16,10 @@ const AboutIntro = () => {
                         condições socioeconómicas debilitadas, para a criação de impacto social. <br />
                         <br />
                         <strong>Os nossos objetivos são:</strong> <br />
-                        • Integração na comunidade e combate à solidão <br />
-                        • Inclusão social <br />
-                        • Combate à pobreza <br />
-                        • Empoderamento para autonomia familiar <br />
-                        • Apoio habitacional <br />
-                        • Apoio no aumento da literacia jurídica
+                        • Erradicação da pobreza <br />
+                        • Educação de qualidade <br />
+                        • Redução das desigualdades <br />
+                        • Cidades e comunidades sustentáveis
                     </h3>
                 </div>
             </div>

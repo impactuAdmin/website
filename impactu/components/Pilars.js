@@ -10,11 +10,11 @@ const Pilars = () => {
             <div className="pilares reveal">
                 <div className="column">
                     <img src='/solidariedade.webp' alt="solidariedade" />
-                    <figcaption>SOLIDARIEDADE</figcaption>
+                    <figcaption>CONSCIÊNCIA SOCIAL</figcaption>
                 </div>
                 <div className="column">
                     <img src="/honestidade.webp" alt="honestidade" />
-                    <figcaption>HONESTIDADE</figcaption>
+                    <figcaption>LIDERANÇA SOCIAL</figcaption>
                 </div>
                 <div className="column">
                     <img src="/empatia.webp" alt="empatia" />
@@ -22,7 +22,11 @@ const Pilars = () => {
                 </div>
                 <div className="column">
                     <img src="/compromisso.webp" alt="solidariedade" />
-                    <figcaption>COMPROMISSO</figcaption>
+                    <figcaption>SERVIÇO</figcaption>
+                </div>
+                <div className="column">
+                    <img src="/compromisso.webp" alt="solidariedade" />
+                    <figcaption>RESPONSABILIDADE SOCIAL</figcaption>
                 </div>
             </div>
         </section>
