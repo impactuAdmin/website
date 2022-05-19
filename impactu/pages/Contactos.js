@@ -28,7 +28,7 @@ const Contactos = () => {
                             <br />
                             <p>
                                 <strong>Telemóvel</strong>
-                                917 777 227
+                                913 36 36 73
                             </p>
                             <br />
                             <p>
