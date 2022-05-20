@@ -25,7 +25,7 @@ const Pilars = () => {
                     <figcaption>SERVIÇO</figcaption>
                 </div>
                 <div className="column">
-                    <img src="/compromisso.webp" alt="solidariedade" />
+                    <img src="/icons responsabilidade social-15.png" alt="solidariedade" />
                     <figcaption>RESPONSABILIDADE SOCIAL</figcaption>
                 </div>
             </div>

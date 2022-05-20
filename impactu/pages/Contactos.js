@@ -28,7 +28,7 @@ const Contactos = () => {
                             <br />
                             <p>
                                 <strong>Telemóvel</strong>
-                                913 36 36 73
+                                913 363 673
                             </p>
                             <br />
                             <p>
