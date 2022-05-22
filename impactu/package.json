@@ -2,11 +2,13 @@
   "name": "impactu",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./build_dir/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "mv build ./build_dir/"
   },
   "dependencies": {
     "next": "^11.1.2",
