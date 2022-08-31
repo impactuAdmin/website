@@ -1,12 +1,8 @@
 export const datas = [
-    // {
-    //     id: 1,
-    //     data: "17/12/2021"
-    // },
-    // {
-    //     id: 2,
-    //     data: "20/12/2021",
-    // }
+    {
+        id: 1,
+        data: "12/09/2022"
+    }
 ];
 
 export const pdfs = [
