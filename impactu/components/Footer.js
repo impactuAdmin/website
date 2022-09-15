@@ -239,7 +239,12 @@ const Footer = ( {datasDeRecrutamento} ) => {
                     <div className="right-column">
                         <h3>Legal</h3>
                         <div className='footer-links'>
-                            <p><a href="">Política de Privacidade</a></p>
+                            <p>
+                                <Link href="/Documentos/PoliticaPrivacidade">
+                                    <a>Política de Privacidade</a>
+                                </Link>
+                            </p>
+                            <a href=""></a>
                             {/* <p><a href="">Termos e condições</a></p> */}
                         </div>
                     </div>

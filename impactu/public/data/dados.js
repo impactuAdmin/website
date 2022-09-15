@@ -1,8 +1,44 @@
 export const datas = [
-    // {
-    //     id: 1,
-    //     data: "12/09/2022"
-    // }
+    {
+        id: 1,
+        data: "7 de outubro (manhã) - Lisboa"
+    },
+    {
+        id: 2,
+        data: "7 de outubro (tarde) - Lisboa"
+    },
+    {
+        id: 3,
+        data: "8 de outubro (manhã) - Lisboa"
+    },
+    {
+        id: 4,
+        data: "8 de outubro (tarde) - Lisboa"
+    },
+    {
+        id: 5,
+        data: "10 de outubro (manhã) - Porto"
+    },
+    {
+        id: 6,
+        data: "10 de outubro (tarde) - Porto"
+    },
+    {
+        id: 7,
+        data: "11 de outubro (manhã) - Porto"
+    },
+    {
+        id: 8,
+        data: "11 de outubro (tarde) - Porto"
+    },
+    {
+        id: 9,
+        data: "12 de outubro (manhã) - Porto"
+    },
+    {
+        id: 10,
+        data: "12 de outubro (tarde) - Porto"
+    },
 ];
 
 export const pdfs = [
@@ -18,8 +54,13 @@ export const pdfs = [
     },
     {
         linkParam: "RelatorioContas",
-        title: "Relatório de Contas 2020",
+        title: "Relatório de Contas 2021",
         file: "RelatorioContas2020.pdf"
+    },
+    {
+        linkParam: "PoliticaPrivacidade",
+        title: "Política de Privacidade",
+        file: "politicaDePrivacidade.pdf"
     }
 ];
 
@@ -31,8 +72,8 @@ export const departamentos = [
     },
     {
         id: 2,
-        name: "Departamento Jurídico (apoio jurídico)",
-        value: "Juridico"
+        name: "Projectos",
+        value: "Projecto"
     },
     {
         id: 3,

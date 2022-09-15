@@ -8,9 +8,9 @@ const Hero = () => {
             <div className='title-hero'>
                 <div className='animate-title'>
                     <h1>O impacto social começa em ti.</h1>
-                    <h3>Somos uma Associação de estudantes do Porto&nbsp;<br />
-                        que ajuda pessoas e famílias carenciadas.<br />
-                        Vamos criar impacto?
+                    <h3>Somos uma associação que sonha em criar uma sociedade&nbsp;<br />
+                        equitativa e, sobretudo, mais inclusiva, onde<br />
+                        todas as famílias têm igualdade de oportunidades.
                     </h3>
                 </div>
             </div>

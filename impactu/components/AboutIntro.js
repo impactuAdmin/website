@@ -11,9 +11,7 @@ const AboutIntro = () => {
                     <img src='/pipo.webp' alt='pipo' />
                 </div>
                 <div className="about-intro-text">
-                    <h3>A Impac&rsquo;tu é uma associação sem fins lucrativos, composta por jovens universitários da Academia
-                        do Porto, que tem como missão acompanhar e apoiar pessoas e famílias que se encontram em
-                        condições socioeconómicas debilitadas, para a criação de impacto social. <br />
+                    <h3>A Impac&rsquo; é uma associação sem fins lucrativos, constituída por jovens do Porto e de Lisboa, cuja missão é apoiar e capacitar pessoas e famílias em situação vulnerável, para a sua inserção social.<br />
                         <br />
                         <strong>Os nossos objetivos são:</strong> <br />
                         • Erradicação da pobreza <br />

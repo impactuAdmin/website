@@ -6,11 +6,11 @@ module.exports = {
   },
   async redirects() {
     return [
-      {
-        source: '/Recrutamento',
-        destination: '/',
-        permanent: false,
-      },
+      // {
+      //   source: '/Recrutamento',
+      //   destination: '/',
+      //   permanent: false,
+      // },
     ]
   },
 }

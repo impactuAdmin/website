@@ -13,15 +13,13 @@ const Porto = () => {
                     </div>
                     <div className="about-porto-content-bottom-text">
                         <h3>
-                            A Impac&rsquo;tu nasceu na cidade Invicta e durante 3 anos marcou a diferença na comunidade
-                            Portuense.<br />
-                            Impactante, Dinâmica e solidária, esta organização começou a crescer e surgiu a necessidade
-                            de expandir a sua área de atuação para a capital, Lisboa, no ano 2021.<br />
-                            Movidos pela vontade de ajudar, todos os membros partilham entre si a vontade de realizar
-                            ações que ajudem a nossa sociedade.<br />
+                            A Impac&rsquo;tu nasceu na cidade Invicta e durante 3 anos marcou a diferença na comunidade Portuense.<br />
+                            Impactante, Dinâmica e solidária, esta organização começou a crescer e surgiu a necessidade de expandir, 
+                            em 2021, a sua área de atuação para Lisboa e em 2022 para a Região do Douro.<br />
+                            Movidos pela vontade de ajudar, todos os membros partilham entre si a vontade de realizar ações que 
+                            ajudem a nossa sociedade.<br />
                             <br />
-                            <strong>Porto</strong> e <strong>Lisboa</strong> têm Impac&rsquo;tu.
-
+                            <strong>Porto</strong>, <strong>Lisboa</strong> e o <strong>Douro</strong> têm Impac’tu.
                         </h3>
                     </div>
                 </div>
