@@ -44,7 +44,7 @@ const RecruitmentForm = ( {dates, departments} ) => {
                         <select id="departamento2" name="2 departamento">
                             {departmentOptions}
                         </select>
-                        <label htmlFor="dataEscolhida">No caso de passares às dinâmicas de grupo, assinala a/as tua/s disponibilidade/s<br/><br/><p>Atenção: seleciona as opções tendo em conta se te estás a candidatar para a Impac´tu em Lisboa ou no Porto</p></label>
+                        <label htmlFor="dataEscolhida">No caso de passares às dinâmicas de grupo, assinala a/as tua/s disponibilidade/s<br/><br/><p>Atenção: seleciona as opções tendo em conta se te estás a candidatar para a Impac&rsquo;tu em Lisboa ou no Porto</p></label>
                         <select id="dataEscolhida" name="Data preferencia">
                             {dateOptions}
                         </select>
