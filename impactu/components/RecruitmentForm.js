@@ -52,8 +52,6 @@ const RecruitmentForm = ( {dates, departments} ) => {
                         <input type="text" id="description" name="description" placeholder="Texto de resposta livre" required/>
                         <label htmlFor="convence">O que te motivou  a candidatar à Impac&rsquo;tu?</label>
                         <input type="text" id="convence" name="Pessoa Indicada" placeholder="Texto de resposta livre" required/>
-                        <label htmlFor="linkCurriculo">Currículo</label>
-                        <input type="url" id="linkCurriculo" name="curriculo" placeholder="Insere um link"/>
                         <input type="submit" value="Enviar"/>
                     </form>
                 </div>

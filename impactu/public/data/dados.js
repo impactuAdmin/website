@@ -72,8 +72,8 @@ export const departamentos = [
     },
     {
         id: 2,
-        name: "Projectos",
-        value: "Projecto"
+        name: "Projetos",
+        value: "Projetos"
     },
     {
         id: 3,
