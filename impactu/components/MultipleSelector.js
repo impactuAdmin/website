@@ -16,7 +16,7 @@ const MultipleSelector = ( { dates } ) => {
     }
 
     return (
-        <select id="dataEscolhida" name="Data preferencia" multiple size="4" value={selectedDates} onChange={(e) => handleChange(e)}>
+        <select id="dataEscolhida" name="Data preferencia" multiple size="4" value={selectedDates} onChange={(e) => handleChange(e)} required>
             {dates.map((date) =>
                 <option key={date.id} id={date.id} value={date.data} >{date.data}</option>
             )}
