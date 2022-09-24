@@ -1409,6 +1409,15 @@ figcaption {
   stroke: white;
 }
 
+div#dataEscolhida {
+  margin-bottom: 2rem;
+}
+
+div#dataEscolhida > div {
+  font-size: 0.85em;
+  border: 1px solid #10845a;
+}
+
 /*-------------------------------------
 ------------ Orgãos Sociais -----------
 -------------------------------------*/
