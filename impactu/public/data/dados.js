@@ -34,11 +34,7 @@ export const datas = [
     {
         id: 9,
         data: "12 de outubro (manhã) - Porto"
-    },
-    {
-        id: 10,
-        data: "12 de outubro (tarde) - Porto"
-    },
+    }
 ];
 
 export const pdfs = [
