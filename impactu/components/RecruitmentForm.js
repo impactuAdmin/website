@@ -1,11 +1,9 @@
+import MultipleSelector from "./MultipleSelector";
+
 const RecruitmentForm = ( {dates, departments} ) => {
 
     const departmentOptions = departments.map((department) => 
         <option key={department.id} value={department.value}>{department.name}</option>
-    );
-
-    const dateOptions = dates.map((date) => 
-        <option key={date.id} value={date.data}>{date.data}</option>
     );
 
     return (
@@ -45,9 +43,7 @@ const RecruitmentForm = ( {dates, departments} ) => {
                             {departmentOptions}
                         </select>
                         <label htmlFor="dataEscolhida">No caso de passares às dinâmicas de grupo, assinala a/as tua/s disponibilidade/s<br/><br/><p>Atenção: seleciona as opções tendo em conta se te estás a candidatar para a Impac&rsquo;tu em Lisboa ou no Porto</p></label>
-                        <select id="dataEscolhida" name="Data preferencia" multiple="true" size="1">
-                            {dateOptions}
-                        </select>
+                        <MultipleSelector dates={dates}/>
                         <label htmlFor="description">O que é para ti criar impacto? Achas que o tens criado ao longo do teu percurso?</label>
                         <input type="text" id="description" name="description" placeholder="Texto de resposta livre" required/>
                         <label htmlFor="convence">O que te motivou  a candidatar à Impac&rsquo;tu?</label>
