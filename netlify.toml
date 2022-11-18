@@ -3,4 +3,10 @@
   publish = "build"
 
 [[plugins]]
-  package = "@netlify/plugin-nextjs"
+  package = "@netlify/plugin-nextjs@4.28.6"
+
+[[redirects]]
+  from = "/recrutamento"
+  to = "/"
+  status = 302
+  force = true
