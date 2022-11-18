@@ -3,7 +3,7 @@
   publish = "build"
 
 [[plugins]]
-  package = "@netlify/plugin-nextjs@4.28.6"
+  package = "@netlify/plugin-nextjs"
 
 [[redirects]]
   from = "/recrutamento"
