@@ -12,7 +12,7 @@ html {
 
 body {
   background-color: #c8e5dd;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: black;
   overflow-x: hidden;
   animation: load 1.5s ease-in-out;
@@ -332,10 +332,10 @@ video {
 .link-underline.contactos.intro {
   cursor: pointer;
   max-width: fit-content;
-  max-height: 33px;;
+  max-height: 33px;
 }
 
-.link.contactos svg path{
+.link.contactos svg path {
   stroke: black;
 }
 
@@ -371,7 +371,7 @@ video {
 }
 
 .link-underline::after {
-  content: "";
+  content: '';
   position: relative;
   bottom: 13px;
   right: 100%;
@@ -447,7 +447,7 @@ video {
   gap: 2em;
 }
 
-.title>h1 {
+.title > h1 {
   font-size: 5em;
   font-weight: 800;
   color: #10845a;
@@ -455,7 +455,7 @@ video {
   line-height: 1.2em;
 }
 
-.title>h3 {
+.title > h3 {
   width: 40%;
   min-width: 350px;
 }
@@ -562,7 +562,6 @@ video {
 .arrow.help path {
   stroke: white;
 }
-
 
 /* -------------------------
 ----------- FOOTER ---------
@@ -718,7 +717,7 @@ video {
   min-height: 100vh;
   height: 100vh;
   width: 100%;
-  background-image: url("../public/about2.webp");
+  background-image: url('../public/about2.webp');
   background-size: cover;
   background-position: center center;
 }
@@ -785,8 +784,6 @@ video {
   text-align: center;
 }
 
-
-
 .about-background .about-intro-content .about-intro-title h3 {
   font-size: 1.2em;
   width: 50%;
@@ -821,13 +818,11 @@ video {
   min-width: 400px;
 }
 
-
 .about-intro-content .about-intro-title h2 {
   color: #10845a;
   font-size: 10em;
   flex: 1;
 }
-
 
 .about-intro-title-2 {
   padding-top: 4em;
@@ -874,7 +869,6 @@ video {
   }
 }
 
-
 @media (max-width: 630px) {
   .about-intro-text {
     min-width: auto;
@@ -905,7 +899,6 @@ video {
   }
 }
 
-
 /*-------------------------------------
 --------------- 4 PILARES -------------
 -------------------------------------*/
@@ -920,14 +913,12 @@ video {
   justify-content: center;
 }
 
-
 .about-pillars-wrapper {
   display: flex;
   flex-direction: column;
   gap: 4em;
   min-height: fit-content;
 }
-
 
 @media (max-width: 1500px) {
   .about-pillars {
@@ -1001,8 +992,6 @@ video {
   justify-content: center;
   align-items: center;
 }
-
-
 
 .pilares {
   display: flex;
@@ -1139,7 +1128,6 @@ figcaption {
 }
 
 @media (max-width: 979px) {
-
   .about-porto-content-bottom-text h1 {
     width: 80%;
   }
@@ -1155,7 +1143,6 @@ figcaption {
     align-items: center;
   }
 }
-
 
 /*-------------------------------------
 -------- COMO TUDO COMEÇOU ------------
@@ -1177,12 +1164,6 @@ figcaption {
   width: 200px;
 }
 
-
-
-
-
-
-
 /*----------------------------------------
 --------------- Slideshow ----------------
 ----------------------------------------*/
@@ -1193,8 +1174,6 @@ figcaption {
   position: relative;
   margin: auto;
 }
-
-
 
 /* Next & previous buttons */
 .prev,
@@ -1218,7 +1197,6 @@ figcaption {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
 
 .mySlides {
   width: 100%;
@@ -1268,7 +1246,6 @@ figcaption {
   background-color: #10845a;
 }
 
-
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -1279,31 +1256,30 @@ figcaption {
 
 @-webkit-keyframes fade {
   from {
-    opacity: .4
+    opacity: 0.4;
   }
 
   to {
-    opacity: 1
+    opacity: 1;
   }
 }
 
 @keyframes fade {
   from {
-    opacity: .4
+    opacity: 0.4;
   }
 
   to {
-    opacity: 1
+    opacity: 1;
   }
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 800px) {
-
   .prev,
   .next,
   .text {
-    font-size: 0.8em
+    font-size: 0.8em;
   }
 
   .slideshow-container {
@@ -1317,8 +1293,6 @@ figcaption {
     padding-right: 1%;
   }
 }
-
-
 
 /*----------------------------------------
 ---------- Notícia Recrutamento ----------
@@ -1371,6 +1345,7 @@ figcaption {
   font-weight: 500;
   text-align: left;
   margin-bottom: 0.3em;
+  padding: 0;
 }
 
 .manel-content-wrapper .content-recrutamento h3 {
@@ -1423,7 +1398,6 @@ div#dataEscolhida > div {
 -------------------------------------*/
 
 .orgaosociais {
-
   background-color: #c8e5dd;
   width: 100%;
   padding: 5% 10% 5% 10%;
@@ -1435,7 +1409,6 @@ div#dataEscolhida > div {
 #__next section:nth-of-type(5) {
   padding-bottom: 10em;
 }
-
 
 .orgaosociais-wrapper {
   display: flex;
@@ -1459,7 +1432,6 @@ div#dataEscolhida > div {
   text-align: center;
 }
 
-
 .orgaosociais-wrapper h2 {
   color: black;
   font-size: 1.2em;
@@ -1468,13 +1440,11 @@ div#dataEscolhida > div {
   text-align: center;
 }
 
-
 /*---------------------------------------------
 ----------- relatóriocontas2020.HTML ----------
 ---------------------------------------------*/
 
 .relatoriocontas {
-
   background-color: #c8e5dd;
   width: 100%;
   padding: 0% 10% 5% 10%;
@@ -1488,7 +1458,6 @@ div#dataEscolhida > div {
   flex-direction: column;
   min-height: fit-content;
 }
-
 
 /*---------------------------------------------
 --------------- CONTACTS.HTML -----------------
@@ -1657,11 +1626,11 @@ div#dataEscolhida > div {
   align-items: center;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="date"],
-input[type="url"],
-input[type="tel"],
+input[type='text'],
+input[type='email'],
+input[type='date'],
+input[type='url'],
+input[type='tel'],
 select,
 textarea {
   width: 100%;
@@ -1672,10 +1641,10 @@ textarea {
   margin-top: 6px;
   margin-bottom: 20px;
   resize: vertical;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
-input[type="submit"] {
+input[type='submit'] {
   background-color: #10845a;
   color: white;
   padding: 12px 20px;
@@ -1684,7 +1653,7 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-input[type="submit"]:hover {
+input[type='submit']:hover {
   background-color: black;
   color: white;
 }
@@ -1703,8 +1672,6 @@ input[type="submit"]:hover {
   right: 1px;
 }
 
-
-
 /*----------------------------------------------
 ------------------ RECRUTAMENTO ----------------
 ----------------------------------------------*/
@@ -1712,7 +1679,7 @@ input[type="submit"]:hover {
 .recrutamento-hero-wrapper {
   height: 100vh;
   width: 100%;
-  background-image: url("../public/recrutamento.webp");
+  background-image: url('../public/recrutamento.webp');
   background-size: cover;
   background-position-y: 70%;
 }
@@ -1821,7 +1788,7 @@ input[type="submit"]:hover {
   min-height: 100vh;
   height: 100vh;
   width: 100%;
-  background-image: url("../public/senhor.webp");
+  background-image: url('../public/senhor.webp');
   background-size: cover;
   background-position-y: center center;
 }
@@ -1959,7 +1926,6 @@ input[type="submit"]:hover {
 }
 
 @media (max-width: 800px) {
-
   .impactosocial-intro-content .impactosocial-intro-title h2 {
     font-size: 7em;
   }
@@ -1967,7 +1933,6 @@ input[type="submit"]:hover {
   .impactosocial-hero-wrapper {
     background-position: center center;
   }
-
 
   .recrutamento-hero-content .recrutamento-subtitle h2 {
     display: none;
@@ -1987,7 +1952,6 @@ input[type="submit"]:hover {
   .about-porto-content-bottom-text {
     font-size: 0.8em;
   }
-
 }
 
 @media (max-width: 630px) {
@@ -2222,7 +2186,6 @@ No mobile fica em 2 e 1 colunas
 }
 
 @media screen and (max-width: 750px) {
-
   .row-card-departamento {
     justify-content: center;
   }
@@ -2248,12 +2211,9 @@ No mobile fica em 2 e 1 colunas
   padding: 0 10% 0 10%;
 }
 
-
-
 .ajudar-background {
   background-color: #c8e5dd;
 }
-
 
 .doar {
   width: 100%;
@@ -2511,7 +2471,7 @@ No mobile fica em 2 e 1 colunas
   }
 
   .menu-wrapper .menu-content a h1::after {
-    content: "";
+    content: '';
     display: block;
     position: relative;
     left: 0;
@@ -2562,7 +2522,7 @@ No mobile fica em 2 e 1 colunas
   .img-wrapper {
     height: 100vh;
     width: 100vw;
-    background-image: url("../public/como-ajudar.webp");
+    background-image: url('../public/como-ajudar.webp');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -2592,7 +2552,7 @@ No mobile fica em 2 e 1 colunas
 
   /*------------- ABOUT ------------*/
   .about-hero-wrapper {
-    background-image: url("../public/about2.webp");
+    background-image: url('../public/about2.webp');
     background-size: cover;
     background-position-y: 70%;
   }
@@ -2648,7 +2608,6 @@ No mobile fica em 2 e 1 colunas
     bottom: 28px;
   }
 
-
   .about-background .about-intro-content .about-intro-title h2 {
     font-size: 7em;
   }
@@ -2674,9 +2633,6 @@ No mobile fica em 2 e 1 colunas
     flex: 50%;
     max-width: 50%;
   }
-
-
-
 
   /*-----PROJETOS IMPACTO-----*/
   .column-projetos {
@@ -2730,10 +2686,6 @@ No mobile fica em 2 e 1 colunas
     height: 100%;
     width: 100%;
   }
-
-
-
-
 }
 
 @media (max-width: 700px) {
@@ -2798,7 +2750,7 @@ No mobile fica em 2 e 1 colunas
     justify-content: space-between;
   }
 
-  .footer-links-wrapper>div:not(:first-child) {
+  .footer-links-wrapper > div:not(:first-child) {
     margin-top: 3em;
   }
 
