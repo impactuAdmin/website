@@ -30,7 +30,7 @@ const ImpactoSocial = () => {
                 <br />
                 <br />
                 Enquadrada dentro dos ODS: <br />
-                <ul class="ods-list">
+                <ul className="ods-list">
                   <li>
                     <img className="ods-img" src="/ods 1.webp" alt="ODS 1 Icon"></img>
                     <p>1. Erradicação da pobreza</p>
