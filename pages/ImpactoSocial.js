@@ -32,19 +32,19 @@ const ImpactoSocial = () => {
                 Enquadrada dentro dos ODS: <br />
                 <ul class="ods-list">
                   <li>
-                    <img className="ods-img" src="/ods 1.png" alt="ODS 1 Icon"></img>
+                    <img className="ods-img" src="/ods 1.webp" alt="ODS 1 Icon"></img>
                     <p>1. Erradicação da pobreza</p>
                   </li>
                   <li>
-                    <img className="ods-img" src="/ods 4.png" alt="ODS 1 Icon"></img>
+                    <img className="ods-img" src="/ods 4.webp" alt="ODS 1 Icon"></img>
                     <p>4. Educação de qualidade</p>
                   </li>
                   <li>
-                    <img className="ods-img" src="/ods 10.png" alt="ODS 1 Icon"></img>
+                    <img className="ods-img" src="/ods 10.webp" alt="ODS 1 Icon"></img>
                     <p>10. Redução de desigualdades</p>
                   </li>
                   <li>
-                    <img className="ods-img" src="/ods 11.png" alt="ODS 1 Icon"></img>
+                    <img className="ods-img" src="/ods 11.webp" alt="ODS 1 Icon"></img>
                     <p>11. Cidades e comunidades sustentáveis</p>
                   </li>
                 </ul>

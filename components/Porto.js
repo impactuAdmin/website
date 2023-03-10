@@ -12,11 +12,11 @@ const Porto = () => {
         <div className="about-porto-content-bottom">
           <div className="teste">
             <img
-              src="/onde-timeline.png"
+              src="/onde-timeline.webp"
               alt="Cronologia dos locais de ação"
               className="onde-timeline"
             />
-            <img src="/onde-mapa.png" alt="Mapa da área de ação" className="onde-mapa" />
+            <img src="/onde-mapa.webp" alt="Mapa da área de ação" className="onde-mapa" />
           </div>
           <div className="about-porto-content-bottom-text">
             <h3>
