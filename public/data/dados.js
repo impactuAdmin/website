@@ -1,39 +1,43 @@
 export const datas = [
   {
-    label: '7 de outubro (manhã) - Lisboa',
-    value: '7 de outubro (manhã) - Lisboa',
+    label: 'Impac’tu Porto – 3 de abril (manhã)',
+    value: 'Impac’tu Porto – 3 de abril (manhã)',
   },
   {
-    label: '7 de outubro (tarde) - Lisboa',
-    value: '7 de outubro (tarde) - Lisboa',
+    label: 'Impac’tu Porto – 3 de abril (tarde) ',
+    value: 'Impac’tu Porto – 3 de abril (tarde) ',
   },
   {
-    label: '8 de outubro (manhã) - Lisboa',
-    value: '8 de outubro (manhã) - Lisboa',
+    label: 'Impac’tu Porto – 4 de abril (manhã)',
+    value: 'Impac’tu Porto – 4 de abril (manhã)',
   },
   {
-    label: '8 de outubro (tarde) - Lisboa',
-    value: '8 de outubro (tarde) - Lisboa',
+    label: 'Impac’tu Porto – 4 de abril (tarde)',
+    value: 'Impac’tu Porto – 4 de abril (tarde)',
   },
   {
-    label: '10 de outubro (manhã) - Porto',
-    value: '10 de outubro (manhã) - Porto',
+    label: 'Impac’tu Porto – 5 de abril (manhã)',
+    value: 'Impac’tu Porto – 5 de abril (manhã)',
   },
   {
-    label: '10 de outubro (tarde) - Porto',
-    value: '10 de outubro (tarde) - Porto',
+    label: 'Impac’tu Porto – 5 de abril (tarde)',
+    value: 'Impac’tu Porto – 5 de abril (tarde)',
   },
   {
-    label: '11 de outubro (manhã) - Porto',
-    value: '11 de outubro (manhã) - Porto',
+    label: 'Impac’tu Lisboa – 5 de abril (manhã)',
+    value: 'Impac’tu Lisboa – 5 de abril (manhã)',
   },
   {
-    label: '11 de outubro (tarde) - Porto',
-    value: '11 de outubro (tarde) - Porto',
+    label: 'Impac’tu Lisboa – 5 de abril (tarde)',
+    value: 'Impac’tu Lisboa – 5 de abril (tarde)',
   },
   {
-    label: '12 de outubro (manhã) - Porto',
-    value: '12 de outubro (manhã) - Porto',
+    label: 'Impac’tu Lisboa – 6 de abril (manhã)',
+    value: 'Impac’tu Lisboa – 6 de abril (manhã)',
+  },
+  {
+    label: 'Impac’tu Lisboa – 6 de abril (tarde)',
+    value: 'Impac’tu Lisboa – 6 de abril (tarde)',
   },
 ]
 

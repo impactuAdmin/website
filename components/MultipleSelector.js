@@ -1,24 +1,24 @@
-import { useState } from 'react';
-import Select from "react-select";
+import { useState } from 'react'
+import Select from 'react-select'
 
 const MultipleSelector = ({ dates }) => {
+  const [selectedDates, selectedDatesSet] = useState()
 
-    const [selectedDates, selectedDatesSet] = useState();
+  const handleChange = (data) => {
+    selectedDatesSet(data)
+  }
 
-    const handleChange = (data) => {
-        selectedDatesSet(data)
-    }
-
-    return (
-        <Select
-            id="dataEscolhida"
-            name="Data preferencia"
-            placeholder="Seleciona as tuas preferências"
-            options={dates}
-            value={selectedDates}
-            onChange={handleChange}
-            isMulti />
-    )
+  return (
+    <Select
+      id="dataEscolhida"
+      name="Data preferencia"
+      placeholder="Seleciona as tuas preferências"
+      options={dates}
+      value={selectedDates}
+      onChange={handleChange}
+      isMulti
+    />
+  )
 }
 
-export default MultipleSelector;
+export default MultipleSelector

@@ -1722,6 +1722,7 @@ div#dataEscolhida > div {
 }
 
 input[type='text'],
+input[type='number'],
 input[type='email'],
 input[type='date'],
 input[type='url'],
@@ -1736,6 +1737,17 @@ textarea {
   margin-top: 6px;
   margin-bottom: 20px;
   resize: vertical;
+  font-family: 'Poppins', sans-serif;
+}
+
+input[type='file'] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #10845a;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 20px;
   font-family: 'Poppins', sans-serif;
 }
 
