@@ -2141,7 +2141,7 @@ input[type='submit']:hover {
 No mobile fica em 2 e 1 colunas
 */
 .column-projetos {
-  flex: 33%;
+  width: 33%;
   margin-bottom: auto;
   padding-left: 5%;
   padding-right: 4.3%;

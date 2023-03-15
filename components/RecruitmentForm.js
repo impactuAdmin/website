@@ -36,7 +36,7 @@ const RecruitmentForm = ({ dates, departments }) => {
               placeholder="Texto de resposta curta"
               required
             />
-            <label htmlFor="work">Curso e Faculdade / Ocupação profissional </label>
+            <label htmlFor="work">Ocupação Profissional (Emprego / Curso e Faculdade)</label>
             <input
               type="text"
               id="work"
@@ -65,8 +65,6 @@ const RecruitmentForm = ({ dates, departments }) => {
               <br />
             </label>
             <MultipleSelector dates={dates} />
-            <label htmlFor="description">Anexar Fotografia</label>
-            <input type="file" id="photo" name="photo" required />
             <input type="submit" value="Enviar" />
           </form>
         </div>
