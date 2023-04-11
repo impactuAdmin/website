@@ -39,6 +39,10 @@ export const datas = [
   //     label: 'Impac’tu Lisboa – 6 de abril (tarde)',
   //     value: 'Impac’tu Lisboa – 6 de abril (tarde)',
   //   },
+  //   {
+  //     label: 'Impac’tu – 8 de abril (manhã)',
+  //     value: 'Impac’tu – 8 de abril (manhã)',
+  //   },
 ]
 
 export const pdfs = [
