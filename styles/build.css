@@ -2554,7 +2554,7 @@ No mobile fica em 2 e 1 colunas
     height: fit-content;
   }
 
-  .menu-wrapper .menu-content a:nth-of-type(4) {
+  .menu-wrapper .menu-content a:nth-last-of-type(2) {
     margin-bottom: 2em;
   }
 

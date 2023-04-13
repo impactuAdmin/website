@@ -25,9 +25,6 @@ const Header = ({ datasDeRecrutamento }) => {
             <Link href="/ImpactoSocial">
               <a>Impacto Social</a>
             </Link>
-            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdGyn4V5D2XcT3BoGnHPEvGMxUIdJE-_hJLnMqhycdgdyUcZA/viewform">
-              <a target="_blank">Torna-te Sócio</a>
-            </Link>
             {datasDeRecrutamento.length === 0 ? null : (
               <Link href="/Recrutamento">
                 <a>Recrutamento</a>
@@ -104,14 +101,6 @@ const Header = ({ datasDeRecrutamento }) => {
           <Link href="/ImpactoSocial">
             <a onClick={closeButtonClick}>
               <h1>Impacto Social</h1>
-            </a>
-          </Link>
-          <Link
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdGyn4V5D2XcT3BoGnHPEvGMxUIdJE-_hJLnMqhycdgdyUcZA/viewform"
-            onClick={closeButtonClick}
-          >
-            <a target="_blank">
-              <h1>Torna-te Sócio</h1>
             </a>
           </Link>
           {datasDeRecrutamento.length === 0 ? null : (
