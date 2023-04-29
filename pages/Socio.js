@@ -59,8 +59,8 @@ const Socio = () => {
             />
             <div className="doar-info">
               <p>
-                Para concluir a sua inscrição como novo Sócio da Impac'tu só necessita de realizar a
-                transferência com o valor de {value} (quota anual) para:
+                Para concluir a sua inscrição como novo Sócio da Impac&rsquo;tu só necessita de
+                realizar a transferência com o valor de {value} (quota anual) para:
               </p>
               <br />
               <p>
