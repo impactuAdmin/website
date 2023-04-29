@@ -1850,6 +1850,7 @@ input[type='submit']:hover {
 /*----formulário----*/
 
 .titulo {
+  padding-block: 8em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1857,9 +1858,7 @@ input[type='submit']:hover {
 }
 
 .titulo h1 {
-  padding-top: 3em;
-  padding-bottom: 3em;
-  font-size: 3.5em;
+  font-size: 3em;
   line-height: 1em;
   font-weight: 500;
   text-align: center;
@@ -2310,6 +2309,7 @@ No mobile fica em 2 e 1 colunas
   min-height: 50vh;
   height: 100vh;
   width: 100%;
+  background-color: #e8f6f4;
 }
 
 .ajudar-hero-wrapper .ajudar-hero-content {
@@ -2323,8 +2323,9 @@ No mobile fica em 2 e 1 colunas
 }
 
 .doar {
-  width: 100%;
+  max-width: 800px;
   height: 100%;
+  margin-inline: auto;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -2332,18 +2333,35 @@ No mobile fica em 2 e 1 colunas
 }
 
 .doar h2 {
+  max-width: 600px;
   color: black;
   text-align: center;
-  font-size: 3em;
-  line-height: 1em;
+  font-size: 2.75em;
+  line-height: 1.2;
   font-weight: 500;
   padding-top: 20px;
-  letter-spacing: 0.2em;
+}
+
+.doar h2 span {
+  color: #10845a;
+}
+
+@media (max-width: 800px) {
+  .doar h2 {
+    font-size: 2em;
+    line-height: 1.2em;
+  }
 }
 
 .doar p {
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1rem;
+}
+
+@media (max-width: 800px) {
+  .doar p {
+    font-size: 1.2rem;
+  }
 }
 
 .ajudar-hero-content .doar svg {
@@ -2359,6 +2377,186 @@ No mobile fica em 2 e 1 colunas
 
 .doar svg:hover {
   transform: scale(1.06);
+}
+
+.ajudar-btn-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20%;
+}
+
+@media (max-width: 800px) {
+  .ajudar-btn-wrapper {
+    flex-direction: column;
+    width: max-content;
+    gap: 1.5rem;
+  }
+}
+
+.ajudar_button {
+  border: none;
+  border-radius: 5px;
+  padding: 0.8em 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.75em;
+  font-weight: 500;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.2s;
+  color: #10845a;
+  text-decoration: none;
+}
+
+.ajudar_button:hover {
+  background-color: #10845a;
+  color: white;
+}
+
+.socio_button {
+  background-color: #10845a;
+  color: white;
+}
+
+.socio_button:hover {
+  background-color: white;
+  color: #10845a;
+}
+
+.ajudar-cards-wrapper {
+  min-height: 50vh;
+  width: 100%;
+  padding-bottom: 6em;
+  background-color: #c8e5dd;
+}
+
+@media (max-width: 800px) {
+  .ajudar-cards-wrapper {
+    padding-inline: 10%;
+  }
+}
+
+@media (min-width: 800px) {
+  .ajudar-cards-wrapper {
+    padding-inline: 5%;
+  }
+}
+
+.ajudar-cards-wrapper h1 {
+  padding-block: 3em;
+  font-size: 3em;
+  line-height: 1.2em;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .ajudar-cards-wrapper h1 {
+    font-size: 2em;
+  }
+}
+
+.ajudar-cards-content {
+  margin-inline: auto;
+  max-width: 1100px;
+  display: flex;
+  align-items: flex-start;
+}
+
+@media (max-width: 800px) {
+  .ajudar-cards-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .ajudar-cards-content {
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .ajudar-cards-content {
+    gap: 5%;
+  }
+}
+
+.ajudar-card {
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  line-height: 1.2;
+  transform: scale(1);
+  transition: 0.3s;
+}
+
+.ajudar-card:hover {
+  transform: scale(1.03);
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+  .ajudar-card {
+    margin-inline: auto;
+    max-width: 350px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1100px) {
+  .ajudar-card {
+    padding: 2em;
+  }
+}
+
+.ajudar-card-img {
+  width: 100%;
+  margin-inline: auto;
+  border-radius: 7px;
+}
+
+.ajudar-card-value-wrapper {
+  margin-block: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.ajudar-card-value {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.ajudar-card hr {
+  width: 100%;
+}
+
+.ajudar-card ul {
+  width: 80%;
+  margin-top: 1.5em;
+}
+
+.ajudar-card .link-underline.contactos.intro {
+  margin-top: 2em;
+}
+
+/*----------------------------------------------
+----------------- DOAR -----------------
+----------------------------------------------*/
+
+.titulo p {
+  margin-top: 1em;
+  font-size: 0.75em;
+}
+
+.doar-info {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  color: black;
 }
 
 /*----------------------------------------------

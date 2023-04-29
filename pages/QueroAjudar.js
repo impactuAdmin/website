@@ -1,28 +1,110 @@
+import Link from 'next/link'
+import AjudarCard from '../components/AjudarCard'
+
 const QueroAjudar = () => {
-    return (
-        <>
-            <section className="ajudar-hero-wrapper">
-                <div className="ajudar-hero-content">
-                    <div className='doar'>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="70" viewBox="0 0 51 45" fill="#10845a">
-                            <path
-                                d="M24.5132 41.5892C24.7899 41.8631 25.1496 42 25.5094 42C25.8691 42 26.2565 41.8631 26.5056 41.5892L44.4925 23.5407C51.9917 16.0091 46.6786 3 35.9971 3C29.5772 3 26.6439 7.6559 25.5094 8.5323C24.3748 7.6559 21.4415 3 15.0216 3C4.36777 3 -1.02832 15.9544 6.5262 23.5407L24.5132 41.5892Z"
-                                stroke="#10845a" strokeWidth="4.5" strokeMiterlimit="10" />
-                        </svg><br />
-                        <h2>
-                            FAZER DOAÇÃO<br />
-                        </h2>
-                        <br />
-                        <p> *IBAN: <strong>PT50 0033 0000 4553 2412 3620 5</strong></p>
-                        <p> *MBWAY: <strong>+351 913 363 673</strong></p>
-                        <br />
-                        <p> *Pedimos para nos enviar o comprovativo da transferência <br />
-                            para o email <strong>socios@impactu.org</strong></p>
-                    </div>
-                </div>
-            </section>
-        </>
-    )
+  return (
+    <>
+      <section className="ajudar-hero-wrapper">
+        <div className="ajudar-hero-content">
+          <div className="doar">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="80"
+              height="70"
+              viewBox="0 0 51 45"
+              fill="#10845a"
+            >
+              <path
+                d="M24.5132 41.5892C24.7899 41.8631 25.1496 42 25.5094 42C25.8691 42 26.2565 41.8631 26.5056 41.5892L44.4925 23.5407C51.9917 16.0091 46.6786 3 35.9971 3C29.5772 3 26.6439 7.6559 25.5094 8.5323C24.3748 7.6559 21.4415 3 15.0216 3C4.36777 3 -1.02832 15.9544 6.5262 23.5407L24.5132 41.5892Z"
+                stroke="#10845a"
+                strokeWidth="4.5"
+                strokeMiterlimit="10"
+              />
+            </svg>
+            <br />
+            <h2>
+              Ser <span>sócio</span> ou <span>doar</span> é ajudar a criar impacto!
+              <br />
+            </h2>
+            <br />
+            <p>
+              Se está aqui é porque pretende fazer a diferença. Agora só falta concretizar esse
+              apoio!
+            </p>
+            <p>
+              Pssss, sabia que, pelo módico preço de um café por mês, pode ajudar a nossa causa?
+            </p>
+            <br />
+            <br />
+            <div className="ajudar-btn-wrapper">
+              <a className="ajudar_button socio_button" href="#ajudarCards">
+                Torna-te sócio
+              </a>
+              <Link href="/Doar">
+                <a className="ajudar_button">Faz uma doação</a>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="ajudarCards" className="ajudar-cards-wrapper">
+        <h1>Modalidade de cartão de sócio</h1>
+        <div className="ajudar-cards-content">
+          <AjudarCard
+            modalidade="companheiro"
+            value="10€"
+            features={
+              <>
+                <li>Contributo na causa de criar impacto</li>
+                <br />
+                <li>Contributo na causa de criar impacto</li>
+                <br />
+                <li>Contributo na causa de criar impacto</li>
+              </>
+            }
+          />
+          <AjudarCard
+            modalidade="amigo"
+            value="25€"
+            features={
+              <>
+                <li>Contributo na causa de criar impacto</li>
+                <br />
+                <li>Contributo na causa de criar impacto</li>
+                <br />
+                <li>Contributo na causa de criar impacto</li>
+                <br />
+                <li>Contributo na causa de criar impacto</li>
+                <br />
+                <li>Contributo na causa de criar impacto</li>
+              </>
+            }
+          />
+          <AjudarCard
+            modalidade="familiar"
+            value="50€"
+            features={
+              <>
+                <li>Contributo na causa de criar impacto</li>
+                <br />
+                <li>Contributo na causa de criar impacto</li>
+                <br />
+                <li>Contributo na causa de criar impacto</li>
+                <br />
+                <li>Contributo na causa de criar impacto</li>
+                <br />
+                <li>Contributo na causa de criar impacto</li>
+                <br />
+                <li>Contributo na causa de criar impacto</li>
+                <br />
+                <li>Contributo na causa de criar impacto</li>
+              </>
+            }
+          />
+        </div>
+      </section>
+    </>
+  )
 }
 
-export default QueroAjudar;
+export default QueroAjudar
