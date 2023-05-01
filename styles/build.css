@@ -1738,6 +1738,8 @@ textarea {
   margin-bottom: 20px;
   resize: vertical;
   font-family: 'Poppins', sans-serif;
+
+  -webkit-appearance: none;
 }
 
 input[type='file'] {
@@ -2360,7 +2362,7 @@ No mobile fica em 2 e 1 colunas
 
 @media (max-width: 800px) {
   .doar p {
-    font-size: 1.2rem;
+    font-size: 0.75rem;
   }
 }
 
@@ -2500,6 +2502,12 @@ No mobile fica em 2 e 1 colunas
   transform: scale(1.03);
 }
 
+@media (max-width: 600px) {
+  .ajudar-card {
+    padding: 2em 1.9em;
+  }
+}
+
 @media (min-width: 600px) and (max-width: 800px) {
   .ajudar-card {
     margin-inline: auto;
@@ -2551,6 +2559,7 @@ No mobile fica em 2 e 1 colunas
 .titulo p {
   margin-top: 1em;
   font-size: 0.75em;
+  text-align: center;
 }
 
 .doar-info {
@@ -2989,8 +2998,6 @@ No mobile fica em 2 e 1 colunas
   .container-formulario h1 {
     font-size: 2em;
     line-height: 1em;
-    padding-top: 3em;
-    padding-bottom: 3em;
   }
 
   .ajudar-hero-wrapper .ajudar-hero-content {

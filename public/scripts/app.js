@@ -15,7 +15,13 @@ const currentPage = window.location.href
 if (
   currentPage === 'http://localhost:3000/QueroAjudar' ||
   currentPage === 'http://localhost:3000/Socio' ||
-  currentPage === 'http://localhost:3000/Doar'
+  currentPage === 'http://localhost:3000/Doar' ||
+  currentPage === 'https://impactu.org/QueroAjudar' ||
+  currentPage === 'https://impactu.org/Socio' ||
+  currentPage === 'https://impactu.org/Doar' ||
+  currentPage === 'https://impactu-develop-branch.netlify.app/QueroAjudar' ||
+  currentPage === 'https://impactu-develop-branch.netlify.app/Socio' ||
+  currentPage === 'https://impactu-develop-branch.netlify.app/Doar'
 ) {
   for (let i = 0; i < getNavbarLinks.length; i++) {
     getNavbarLinks[i].style.color = 'black'

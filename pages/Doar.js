@@ -7,25 +7,27 @@ const Doar = () => {
           <p>Nenhum dos campos abaixo é obrigatório, preencha apenas se quiser</p>
         </div>
         <div className="container-formulario-2">
-          <form name="candidaturas" method="POST" data-netlify="true" action="/Sucesso">
+          <form
+          // name="candidaturas" method="POST" data-netlify="true" action="/Sucesso"
+          >
             <input type="hidden" name="form-name" value="candidaturas" />
             <label htmlFor="fname">Nome Completo</label>
             <input type="text" id="fname" name="Nome" placeholder="Texto de resposta curta" />
             <label htmlFor="nascimento">Data de nascimento</label>
             <input type="date" id="nascimento" name="Nascimento" />
             <label htmlFor="sexo">Sexo</label>
-            <input type="text" id="sexo" name="sexo" placeholder="Texto de resposta curta" />
+            <input type="text" id="sexo" name="Sexo" placeholder="Texto de resposta curta" />
             <label htmlFor="mail">E-mail</label>
-            <input type="email" id="mail" name="email" placeholder="Texto de resposta curta" />
+            <input type="email" id="mail" name="Email" placeholder="Texto de resposta curta" />
             <label htmlFor="tel">Contacto telefónico</label>
             <input type="tel" id="tel" name="Tel." placeholder="Texto de resposta curta" />
             <label htmlFor="morada">Morada</label>
-            <input type="text" id="morada" name="morada" placeholder="Texto de resposta livre" />
+            <input type="text" id="morada" name="Morada" placeholder="Texto de resposta livre" />
             <label htmlFor="localidade">Localidade</label>
             <input
               type="text"
               id="localidade"
-              name="localidade"
+              name="Localidade"
               placeholder="Texto de resposta livre"
             />
             <div className="doar-info">

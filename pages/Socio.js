@@ -11,7 +11,9 @@ const Socio = () => {
           <h1>Inscrição cartão de sócio</h1>
         </div>
         <div className="container-formulario-2">
-          <form name="candidaturas" method="POST" data-netlify="true" action="/Sucesso">
+          <form
+          // name="candidaturas" method="POST" data-netlify="true" action="/Sucesso"
+          >
             <input type="hidden" name="form-name" value="candidaturas" required />
             <label htmlFor="fname">Nome Completo</label>
             <input
@@ -27,7 +29,7 @@ const Socio = () => {
             <input
               type="text"
               id="sexo"
-              name="sexo"
+              name="Sexo"
               placeholder="Texto de resposta curta"
               required
             />
@@ -35,7 +37,7 @@ const Socio = () => {
             <input
               type="email"
               id="mail"
-              name="email"
+              name="Email"
               placeholder="Texto de resposta curta"
               required
             />
@@ -45,7 +47,7 @@ const Socio = () => {
             <input
               type="text"
               id="morada"
-              name="morada"
+              name="Morada"
               placeholder="Texto de resposta livre"
               required
             />
@@ -53,7 +55,7 @@ const Socio = () => {
             <input
               type="text"
               id="localidade"
-              name="localidade"
+              name="Localidade"
               placeholder="Texto de resposta livre"
               required
             />

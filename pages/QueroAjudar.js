@@ -57,9 +57,9 @@ const QueroAjudar = () => {
               <>
                 <li>Contributo na causa de criar impacto</li>
                 <br />
-                <li>Contributo na causa de criar impacto</li>
+                <li>Descontos nos parceiros da Impac&apos;tu</li>
                 <br />
-                <li>Contributo na causa de criar impacto</li>
+                <li>Newsletter periódica</li>
               </>
             }
           />
@@ -70,13 +70,17 @@ const QueroAjudar = () => {
               <>
                 <li>Contributo na causa de criar impacto</li>
                 <br />
-                <li>Contributo na causa de criar impacto</li>
+                <li>Descontos nos parceiros da Impac&apos;tu</li>
                 <br />
-                <li>Contributo na causa de criar impacto</li>
+                <li>Newsletter periódica</li>
                 <br />
-                <li>Contributo na causa de criar impacto</li>
+                <li>Divulgação personalizada</li>
                 <br />
-                <li>Contributo na causa de criar impacto</li>
+                <li>Acesso prioritário a eventos</li>
+                <br />
+                <li>Acesso a uma formação</li>
+                <br />
+                <li>Participação em campanhas de rua</li>
               </>
             }
           />
@@ -87,17 +91,21 @@ const QueroAjudar = () => {
               <>
                 <li>Contributo na causa de criar impacto</li>
                 <br />
-                <li>Contributo na causa de criar impacto</li>
+                <li>Descontos nos parceiros da Impac&apos;tu</li>
                 <br />
-                <li>Contributo na causa de criar impacto</li>
+                <li>Newsletter periódica</li>
                 <br />
-                <li>Contributo na causa de criar impacto</li>
+                <li>Divulgação personalizada</li>
                 <br />
-                <li>Contributo na causa de criar impacto</li>
+                <li>Acesso prioritário a eventos</li>
                 <br />
-                <li>Contributo na causa de criar impacto</li>
+                <li>Acesso gratuito a eventos</li>
                 <br />
-                <li>Contributo na causa de criar impacto</li>
+                <li>Acesso a duas formações</li>
+                <br />
+                <li>Apadrinhamento de um caso</li>
+                <br />
+                <li>Participação em campanhas de rua</li>
               </>
             }
           />
