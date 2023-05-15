@@ -28,11 +28,11 @@ const QueroAjudar = () => {
             </h2>
             <br />
             <p>
-              Se está aqui é porque pretende fazer a diferença. Agora só falta concretizar esse
+              Se estás aqui é porque pretendes fazer a diferença. Agora só falta concretizar esse
               apoio!
             </p>
             <p>
-              Pssss, sabia que, pelo módico preço de um café por mês, pode ajudar a nossa causa?
+              Pssss, sabias que, pelo módico preço de um café por mês, podes ajudar a nossa causa?
             </p>
             <br />
             <br />
@@ -52,7 +52,7 @@ const QueroAjudar = () => {
         <div className="ajudar-cards-content">
           <AjudarCard
             modalidade="companheiro"
-            value="10€"
+            value="12€"
             features={
               <>
                 <li>Contributo na causa de criar impacto</li>

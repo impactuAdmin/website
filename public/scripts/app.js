@@ -11,46 +11,29 @@ window.addEventListener('scroll', function () {
   }
 })
 
-const currentPage = window.location.href
-if (
-  currentPage === 'http://localhost:3000/QueroAjudar' ||
-  currentPage === 'http://localhost:3000/Socio' ||
-  currentPage === 'http://localhost:3000/Doar' ||
-  currentPage === 'https://impactu.org/QueroAjudar' ||
-  currentPage === 'https://impactu.org/Socio' ||
-  currentPage === 'https://impactu.org/Doar' ||
-  currentPage === 'https://impactu-develop-branch.netlify.app/QueroAjudar' ||
-  currentPage === 'https://impactu-develop-branch.netlify.app/Socio' ||
-  currentPage === 'https://impactu-develop-branch.netlify.app/Doar'
-) {
-  for (let i = 0; i < getNavbarLinks.length; i++) {
-    getNavbarLinks[i].style.color = 'black'
-  }
-  for (let i = 0; i < getLogo.length; i++) {
-    getLogo[i].classList.add('logo-scrolling-active')
-  }
-} else {
-  document.addEventListener('scroll', () => {
-    function changeStyle(e, classe) {
-      // criei esta função porque achei que ia precisar de manipular a dom mesmo muitas vezes, mas acabei por enquanto só precisar dela 3 vezes xD (para já)
-      for (let i = 0; i < e.length; i++) {
-        if ((window.scrollY > 1100 && window.scrollY < 3350) || window.scrollY > 4200) {
-          e[i].classList.add(classe)
-        } else {
-          e[i].classList.remove(classe)
-        }
-        if (window.scrollY >= 3350 && window.scrollY < 4000 && e === getSticker) {
-          e[i].classList.add(classe)
-        } else if (window.scrollY >= 4000 && e === getSticker) {
-          e[i].classList.remove(classe)
-        }
-      }
-    }
-    changeStyle(getNavbarLinks, 'nav-links-scrolling-active')
-    changeStyle(getLogo, 'logo-scrolling-active')
-    changeStyle(getSticker, 'sticker-scrolling-active')
-  })
-}
+// if (getLogo[0].classList.contains('logo-scrolling-active')) {
+// } else {
+// document.addEventListener('scroll', () => {
+//   function changeStyle(e, classe) {
+//     // criei esta função porque achei que ia precisar de manipular a dom mesmo muitas vezes, mas acabei por enquanto só precisar dela 3 vezes xD (para já)
+//     for (let i = 0; i < e.length; i++) {
+//       if ((window.scrollY > 1100 && window.scrollY < 3350) || window.scrollY > 4200) {
+//         e[i].classList.add(classe)
+//       } else {
+//         e[i].classList.remove(classe)
+//       }
+//       if (window.scrollY >= 3350 && window.scrollY < 4000 && e === getSticker) {
+//         e[i].classList.add(classe)
+//       } else if (window.scrollY >= 4000 && e === getSticker) {
+//         e[i].classList.remove(classe)
+//       }
+//     }
+//   }
+//   changeStyle(getNavbarLinks, 'nav-links-scrolling-active')
+//   changeStyle(getLogo, 'logo-scrolling-active')
+//   changeStyle(getSticker, 'sticker-scrolling-active')
+// })
+// }
 
 getMobileHeader = document.getElementsByClassName('mobile-header-wrapper')[0] // faz aparecer e desaparecer a navbar com scroll
 

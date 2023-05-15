@@ -1,9 +1,12 @@
 import Link from 'next/link'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useRouter } from 'next/router'
 import Logo from '../components/Logo'
 
 const Header = ({ datasDeRecrutamento }) => {
   const [overlayMenuStyle, setOverlayMenuStyle] = useState({ display: 'none', opacity: '0' })
+  const router = useRouter()
+  const [navLinkClassName, setNavLinkClassName] = useState('')
 
   const closeButtonClick = () => {
     setOverlayMenuStyle({ display: 'none', opacity: '0' })
@@ -13,25 +16,55 @@ const Header = ({ datasDeRecrutamento }) => {
     setOverlayMenuStyle({ display: 'flex', opacity: '1' })
   }
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if ((window.scrollY > 1100 && window.scrollY < 3350) || window.scrollY > 4200) {
+        setNavLinkClassName('nav-links-scrolling-active')
+      } else {
+        setNavLinkClassName('')
+      }
+      if (window.scrollY >= 3350 && window.scrollY < 4000 && e === getSticker) {
+        setNavLinkClassName('nav-links-scrolling-active')
+      } else if (window.scrollY >= 4000 && e === getSticker) {
+        setNavLinkClassName('')
+      }
+    }
+
+    if (
+      router.pathname === '/QueroAjudar' ||
+      router.pathname === '/Doar' ||
+      router.pathname === '/Socio'
+    ) {
+      setNavLinkClassName('nav-links-scrolling-active')
+    } else {
+      setNavLinkClassName('')
+      document.addEventListener('scroll', handleScroll)
+    }
+
+    return () => {
+      document.removeEventListener('scroll', handleScroll)
+    }
+  }, [router.pathname])
+
   return (
     <>
       <nav className="navigation_wrapper">
         <div className="navigation">
-          <Logo isMobile={false} />
+          <Logo isMobile={false} router={router} />
           <div className="links">
             <Link href="/QuemSomos">
-              <a>Quem somos?</a>
+              <a className={navLinkClassName}>Quem somos?</a>
             </Link>
             <Link href="/ImpactoSocial">
-              <a>Impacto Social</a>
+              <a className={navLinkClassName}>Impacto Social</a>
             </Link>
             {datasDeRecrutamento.length === 0 ? null : (
               <Link href="/Recrutamento">
-                <a>Recrutamento</a>
+                <a className={navLinkClassName}>Recrutamento</a>
               </Link>
             )}
             <Link href="/Contactos">
-              <a>Contactos</a>
+              <a className={navLinkClassName}>Contactos</a>
             </Link>
           </div>
           <Link href="/QueroAjudar">
@@ -55,6 +88,7 @@ const Header = ({ datasDeRecrutamento }) => {
           </Link>
         </div>
       </nav>
+
       <nav className="mobile-header">
         <div className="mobile-header-wrapper">
           <div className="burger-menu" onClick={openButtonClick}>

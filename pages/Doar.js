@@ -23,7 +23,7 @@ const Doar = () => {
             <input type="tel" id="tel" name="Tel." placeholder="Texto de resposta curta" />
             <label htmlFor="morada">Morada</label>
             <input type="text" id="morada" name="Morada" placeholder="Texto de resposta livre" />
-            <label htmlFor="localidade">Localidade</label>
+            <label htmlFor="localidade">Código Postal e Localidade</label>
             <input
               type="text"
               id="localidade"

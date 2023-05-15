@@ -51,7 +51,7 @@ const Socio = () => {
               placeholder="Texto de resposta livre"
               required
             />
-            <label htmlFor="localidade">Localidade</label>
+            <label htmlFor="localidade">Código Postal e Localidade</label>
             <input
               type="text"
               id="localidade"
