@@ -11,33 +11,29 @@ window.addEventListener('scroll', function () {
   }
 })
 
-document.addEventListener('scroll', () => {
-  // const currentPage = window.location.href;
-  // if(currentPage === "http://localhost:3000/QueroAjudar") {
-  //     for(let i = 0; i < getNavbarLinks.length; i++) {
-  //         getNavbarLinks[i].style.color = "black";
-  //     }
-  // } else {
-  function changeStyle(e, classe) {
-    // criei esta função porque achei que ia precisar de manipular a dom mesmo muitas vezes, mas acabei por enquanto só precisar dela 3 vezes xD (para já)
-    for (let i = 0; i < e.length; i++) {
-      if ((window.scrollY > 1100 && window.scrollY < 3350) || window.scrollY > 4200) {
-        e[i].classList.add(classe)
-      } else {
-        e[i].classList.remove(classe)
-      }
-      if (window.scrollY >= 3350 && window.scrollY < 4000 && e === getSticker) {
-        e[i].classList.add(classe)
-      } else if (window.scrollY >= 4000 && e === getSticker) {
-        e[i].classList.remove(classe)
-      }
-    }
-  }
-  changeStyle(getNavbarLinks, 'nav-links-scrolling-active')
-  changeStyle(getLogo, 'logo-scrolling-active')
-  changeStyle(getSticker, 'sticker-scrolling-active')
-  // }
-})
+// if (getLogo[0].classList.contains('logo-scrolling-active')) {
+// } else {
+// document.addEventListener('scroll', () => {
+//   function changeStyle(e, classe) {
+//     // criei esta função porque achei que ia precisar de manipular a dom mesmo muitas vezes, mas acabei por enquanto só precisar dela 3 vezes xD (para já)
+//     for (let i = 0; i < e.length; i++) {
+//       if ((window.scrollY > 1100 && window.scrollY < 3350) || window.scrollY > 4200) {
+//         e[i].classList.add(classe)
+//       } else {
+//         e[i].classList.remove(classe)
+//       }
+//       if (window.scrollY >= 3350 && window.scrollY < 4000 && e === getSticker) {
+//         e[i].classList.add(classe)
+//       } else if (window.scrollY >= 4000 && e === getSticker) {
+//         e[i].classList.remove(classe)
+//       }
+//     }
+//   }
+//   changeStyle(getNavbarLinks, 'nav-links-scrolling-active')
+//   changeStyle(getLogo, 'logo-scrolling-active')
+//   changeStyle(getSticker, 'sticker-scrolling-active')
+// })
+// }
 
 getMobileHeader = document.getElementsByClassName('mobile-header-wrapper')[0] // faz aparecer e desaparecer a navbar com scroll
 
@@ -97,9 +93,9 @@ if (videoElement) {
   document.addEventListener('click', playVideoiOS, false)
 }
 
-var contactButton = document.querySelectorAll('.links a:nth-child(4)')[0]
+var contactButton = document.querySelectorAll('.links a:nth-last-child(2)')[0]
 var contactButtonMobile = document.querySelectorAll(
-  '.menu-wrapper .menu-content a:nth-of-type(4)'
+  '.menu-wrapper .menu-content a:nth-last-of-type(2)'
 )[0]
 
 contactButton.addEventListener('click', function timeFunction() {
