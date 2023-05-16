@@ -13,6 +13,7 @@ const Socio = () => {
         <div className="container-formulario-2">
           <form name="cartao-socio" method="POST" data-netlify="true" action="/Sucesso">
             <input type="hidden" name="form-name" value="cartao-socio" required />
+            <input type="hidden" name="Valor" value={value} required />
             <label htmlFor="fname">Nome Completo</label>
             <input
               type="text"
