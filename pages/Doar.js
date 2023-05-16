@@ -7,10 +7,8 @@ const Doar = () => {
           <p>Nenhum dos campos abaixo é obrigatório, preencha apenas se quiser</p>
         </div>
         <div className="container-formulario-2">
-          <form
-          // name="candidaturas" method="POST" data-netlify="true" action="/Sucesso"
-          >
-            <input type="hidden" name="form-name" value="candidaturas" />
+          <form name="donativo" method="POST" data-netlify="true" action="/Sucesso">
+            <input type="hidden" name="form-name" value="donativo" />
             <label htmlFor="fname">Nome Completo</label>
             <input type="text" id="fname" name="Nome" placeholder="Texto de resposta curta" />
             <label htmlFor="nascimento">Data de nascimento</label>

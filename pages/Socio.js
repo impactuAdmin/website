@@ -11,10 +11,8 @@ const Socio = () => {
           <h1>Inscrição cartão de sócio</h1>
         </div>
         <div className="container-formulario-2">
-          <form
-          // name="candidaturas" method="POST" data-netlify="true" action="/Sucesso"
-          >
-            <input type="hidden" name="form-name" value="candidaturas" required />
+          <form name="cartao-socio" method="POST" data-netlify="true" action="/Sucesso">
+            <input type="hidden" name="form-name" value="cartao-socio" required />
             <label htmlFor="fname">Nome Completo</label>
             <input
               type="text"
