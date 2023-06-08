@@ -1,5 +1,5 @@
 import PageHead from '../PageHead'
-import Header from '../Header'
+import Header from '../Header/Header'
 import Footer from '../Footer'
 import Script from 'next/script'
 import { datas } from '../../public/data/dados'

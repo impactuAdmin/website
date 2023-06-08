@@ -11,9 +11,16 @@ const Logo = ({ closeMenuFunction, isMobile, router }) => {
       } else {
         setPathClassName('')
       }
-      if (window.scrollY >= 3350 && window.scrollY < 4000 && e === getSticker) {
+      if (
+        window.scrollY >= 3350 &&
+        window.scrollY < 4000
+        // && e === getSticker
+      ) {
         setPathClassName('logo-scrolling-active')
-      } else if (window.scrollY >= 4000 && e === getSticker) {
+      } else if (
+        window.scrollY >= 4000
+        // && e === getSticker
+      ) {
         setPathClassName('')
       }
     }

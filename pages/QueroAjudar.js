@@ -49,7 +49,7 @@ const QueroAjudar = () => {
       </section>
       <section id="ajudarCards" className="ajudar-cards-wrapper">
         <h1>Modalidade de cartão de sócio</h1>
-        <div className="ajudar-cards-content">
+        <div className="ajudar-cards-content reveal">
           <AjudarCard
             modalidade="companheiro"
             value="12€"
