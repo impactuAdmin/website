@@ -58,8 +58,8 @@ export const pdfs = [
   },
   {
     linkParam: 'RelatorioContas',
-    title: 'Relatório de Contas 2021',
-    file: 'RelatorioContas2020.pdf',
+    title: 'Relatório de Contas 2022',
+    file: 'RelatorioContas.pdf',
   },
   {
     linkParam: 'PoliticaPrivacidade',

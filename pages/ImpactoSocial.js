@@ -11,7 +11,7 @@ const ImpactoSocial = () => {
           </div>
         </div>
       </section>
-      <section className="impactosocial-background">
+      <section id="social" className="impactosocial-background">
         <section className="impactosocial-intro-content reveal">
           <div className="impactosocial-intro-title">
             <h1>O nosso impacto:</h1>

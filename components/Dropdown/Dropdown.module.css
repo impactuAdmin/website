@@ -1,0 +1,29 @@
+.nav-links-item {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-wrapper {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  color: black;
+  overflow: hidden;
+}
+
+.dropdown-link {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  color: black;
+  font-size: 14px;
+  transition: 0.2s ease-out;
+}
+
+.dropdown-link:hover {
+  background-color: #10845a;
+  color: white;
+}

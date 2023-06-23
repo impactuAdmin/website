@@ -93,7 +93,7 @@ if (videoElement) {
   document.addEventListener('click', playVideoiOS, false)
 }
 
-var contactButton = document.querySelectorAll('.links a:nth-last-child(2)')[0]
+var contactButton = document.querySelector('.links > li:nth-last-child(2) a')
 var contactButtonMobile = document.querySelectorAll(
   '.menu-wrapper .menu-content a:nth-last-of-type(2)'
 )[0]

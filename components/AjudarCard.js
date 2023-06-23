@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const AjudarCard = ({ modalidade, value, features }) => {
   return (
-    <div className="ajudar-card">
+    <div className="ajudar-card reveal">
       <img src={`/${modalidade}.webp`} className="ajudar-card-img"></img>
       <div className="ajudar-card-value-wrapper">
         <p>{modalidade}</p>
