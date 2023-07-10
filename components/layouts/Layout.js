@@ -12,6 +12,7 @@ export default function Layout({ children }) {
       {children}
       <Footer datasDeRecrutamento={datas} />
       <Script src="./scripts/app.js" />
+      <Script src="./scripts/snipcart.js" defer />
     </>
   )
 }
