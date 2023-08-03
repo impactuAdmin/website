@@ -1,13 +1,13 @@
-import Hero from '../components/Hero'
+import VideoHero from '../components/VideoHero'
 import Intro from '../components/Intro'
 import Stats from '../components/Stats'
 
 export default function App() {
   return (
-    < >
-        <Hero/>
-        <Intro />
-        <Stats />
+    <>
+      <VideoHero />
+      <Intro />
+      <Stats />
     </>
   )
 }

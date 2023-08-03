@@ -22,6 +22,10 @@ h3 {
   font-weight: 300;
 }
 
+button {
+  font-family: inherit;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -717,7 +721,7 @@ video {
 ------------------ ABOUT.HTML -----------------
 ---------------------------------------------*/
 
-.about-hero-wrapper {
+/* .about-hero-wrapper {
   min-height: 100vh;
   height: 100vh;
   width: 100%;
@@ -738,7 +742,7 @@ video {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-}
+} */
 
 .orgaosociais-box {
   height: 30vh;
@@ -767,13 +771,13 @@ video {
   max-width: 400px;
 }
 
-.about-hero-wrapper .about-hero-content .about-title h1 {
+/* .about-hero-wrapper .about-hero-content .about-title h1 {
   color: white;
   font-size: 4em;
   line-height: 1em;
   font-weight: 700;
   max-width: 450px;
-}
+} */
 
 .about-background {
   background-color: #c8e5dd;
@@ -2875,11 +2879,11 @@ No mobile fica em 2 e 1 colunas
   }
 
   /*------------- ABOUT ------------*/
-  .about-hero-wrapper {
+  /* .about-hero-wrapper {
     background-image: url('../public/about2.webp');
     background-size: cover;
     background-position-y: 70%;
-  }
+  } */
 
   .manel-wrapper {
     height: 100%;
@@ -3215,4 +3219,54 @@ No mobile fica em 2 e 1 colunas
   to {
     opacity: 1;
   }
+}
+
+/*------------------------------------*/
+/*----------- TIAGO STYLES -----------*/
+/*------------------------------------*/
+
+.primary-btn,
+.secondary-btn,
+.tertiary-btn {
+  padding: 0.8em 1.6em;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.75em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  cursor: pointer;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+.primary-btn {
+  background-color: white;
+  color: #10845a;
+}
+
+.primary-btn:hover {
+  background-color: #10845a;
+  color: white;
+}
+
+.secondary-btn,
+.tertiary-btn {
+  background-color: #10845a;
+  color: white;
+}
+
+.secondary-btn:hover {
+  background-color: white;
+  color: #10845a;
+}
+
+.tertiary-btn:hover {
+  background-color: #c8e5dd;
+  color: #10845a;
+}
+
+.tertiary-btn.active {
+  background-color: #c8e5dd;
+  color: #10845a;
 }
