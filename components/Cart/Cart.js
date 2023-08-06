@@ -1,13 +1,9 @@
-import { useRef, useEffect } from 'react'
+import { useRef } from 'react'
 import CartItem from './CartItem'
 import styles from './Cart.module.css'
 
 const Cart = ({ cartProducts, setCartProducts }) => {
   const cartRef = useRef(null)
-
-  // useEffect(() => {
-  //   console.log(cartProducts)
-  // }, [cartProducts])
 
   return (
     <div className={styles['cart-container']}>
@@ -27,7 +23,7 @@ const Cart = ({ cartProducts, setCartProducts }) => {
             />
           </svg>
           <div className={styles['cart-quantity']}>
-            <span>0</span>
+            <span>{cartProducts.length}</span>
           </div>
         </div>
       </div>

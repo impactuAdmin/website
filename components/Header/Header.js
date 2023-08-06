@@ -43,6 +43,8 @@ const Header = ({ datasDeRecrutamento, merchProducts }) => {
       router.pathname === '/QueroAjudar' ||
       router.pathname === '/Doar' ||
       router.pathname === '/Socio'
+      // ||
+      // router.pathname === '/Checkout'
     ) {
       setNavLinkClassName('nav-links-scrolling-active')
     } else {

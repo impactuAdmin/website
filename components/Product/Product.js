@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { useRef, useEffect } from 'react'
 import styles from './Product.module.css'
 
@@ -19,7 +20,7 @@ const Product = ({ product, cartProducts, setCartProducts }) => {
   useEffect(() => {
     if (!cartProducts.find((item) => item.id === product.id)) {
       addBtnRef.current.classList.remove('active')
-      addBtnRef.current.innerText = ' Adicionar '
+      addBtnRef.current.innerText = 'Adicionar'
     }
   }, [cartProducts])
 
@@ -31,9 +32,17 @@ const Product = ({ product, cartProducts, setCartProducts }) => {
         {product.colors ? <p className={styles['secondary-info']}>+ cores</p> : null}
       </div>
       <p className={styles['price']}>{product.price}€</p>
-      <button className="tertiary-btn" ref={addBtnRef} onClick={handleAdd}>
-        Adicionar
-      </button>
+      {product.colors || product.sizes ? (
+        <Link href={{ pathname: '/ProductPage', query: product }}>
+          <button className="tertiary-btn" ref={addBtnRef}>
+            Adicionar
+          </button>
+        </Link>
+      ) : (
+        <button className="tertiary-btn" ref={addBtnRef} onClick={handleAdd}>
+          Adicionar
+        </button>
+      )}
     </div>
   )
 }

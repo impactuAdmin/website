@@ -97,21 +97,21 @@ export const departamentos = [
 ]
 
 export const merchProducts = [
-  {
-    id: 1,
-    name: 'Boné',
-    price: 5,
-    colors: ['verde', 'cinzento'],
-  },
-  {
-    id: 2,
-    name: 'T-Shirt',
-    price: 5,
-    sizes: ['S', 'M'],
-  },
-  {
-    id: 3,
-    name: 'Agenda',
-    price: 5,
-  },
+  // {
+  //   id: 1,
+  //   name: 'Boné',
+  //   price: 5,
+  //   colors: ['verde', 'cinzento'],
+  // },
+  // {
+  //   id: 2,
+  //   name: 'T-Shirt',
+  //   price: 5,
+  //   sizes: ['S', 'M'],
+  // },
+  // {
+  //   id: 3,
+  //   name: 'Agenda',
+  //   price: 5,
+  // },
 ]

@@ -43,7 +43,7 @@ const CartItem = ({ product, cartProducts, setCartProducts }) => {
       <div className={styles['item-info']}>
         <p>{product.name}</p>
         <p className={styles['price']}>€{product.price}</p>
-        <p className={styles['secondary-info']}>Verde</p>
+        {product.colors ? <p className={styles['secondary-info']}>{product.colors[0]}</p> : null}
       </div>
       <div className={styles['item-quantity-wrapper']}>
         <button

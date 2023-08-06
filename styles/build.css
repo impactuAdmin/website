@@ -1487,11 +1487,15 @@ figcaption {
   stroke: white;
 }
 
-div#dataEscolhida {
+div#dataEscolhida,
+.input-select,
+.product-select {
   margin-bottom: 2rem;
 }
 
-div#dataEscolhida > div {
+div#dataEscolhida > div,
+.input-select > div,
+.product-select > div {
   font-size: 0.85em;
   border: 1px solid #10845a;
 }
@@ -3269,4 +3273,8 @@ No mobile fica em 2 e 1 colunas
 .tertiary-btn.active {
   background-color: #c8e5dd;
   color: #10845a;
+}
+
+.total {
+  font-weight: bold;
 }
