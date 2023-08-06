@@ -20,6 +20,7 @@ const LojaOnline = () => {
           <div className={styles['products-wrapper']}>
             {merchProducts.map((product) => (
               <Product
+                key={product.name}
                 product={product}
                 cartProducts={cartProducts}
                 setCartProducts={setCartProducts}

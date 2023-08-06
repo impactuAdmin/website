@@ -36,6 +36,7 @@ const Cart = ({ cartProducts, setCartProducts }) => {
             {cartProducts.map((product) => {
               return (
                 <CartItem
+                  key={product.name}
                   product={product}
                   cartProducts={cartProducts}
                   setCartProducts={setCartProducts}
