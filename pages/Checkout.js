@@ -1,46 +1,34 @@
-import { useRef, useState, useEffect } from 'react'
+import { useState } from 'react'
 import Select from 'react-select'
 
 const Checkout = () => {
-  const sizeInputRef = useRef(null)
-  const colorInputRef = useRef(null)
-  const [selectedProducts, setSelectedProducts] = useState()
-  const [selectedSize, setSelectedSize] = useState()
-  const [selectedColor, setSelectedColor] = useState()
-  const [total, setTotal] = useState(0)
+  const [selectedProducts, setSelectedProducts] = useState([])
 
-  const produtos = [
+  const artigos = [
     {
-      label: 'Boné 5,00€',
+      label: 'Tshirt bordada 12€',
+      value: 'Tshirt bordada',
+    },
+    {
+      label: 'Tshirt impactador 12€',
+      value: 'Tshirt impactador',
+    },
+    {
+      label: 'Sweatshirt impactador 25€',
+      value: 'Sweatshirt',
+    },
+    {
+      label: "Tote bag Impac'tu 7,5€",
+      value: 'Tote bag',
+    },
+    {
+      label: "Boné Impac'tu 7,5€",
       value: 'Boné',
-      price: 5,
     },
-    {
-      label: 'Tshirt 5,00€',
-      value: 'Tshirt',
-      price: 5,
-    },
-    // {
-    //   label: 'Agenda',
-    //   value: 'Agenda',
-    // price: 5,
-    // },
   ]
 
   const handleChange = (data) => {
-    setTotal(data.reduce((acc, product) => acc + product.price, 0))
-
-    if (data.some((obj) => Object.values(obj).includes('Boné'))) {
-      colorInputRef.current.style.display = 'block'
-    } else {
-      colorInputRef.current.style.display = 'none'
-    }
-
-    if (data.some((obj) => Object.values(obj).includes('Tshirt'))) {
-      sizeInputRef.current.style.display = 'block'
-    } else {
-      sizeInputRef.current.style.display = 'none'
-    }
+    setSelectedProducts(data)
   }
 
   return (
@@ -53,73 +41,50 @@ const Checkout = () => {
           <form name="compra" method="POST" data-netlify="true" action="/Sucesso">
             <input type="hidden" name="form-name" value="compra" required />
 
-            <label htmlFor="produtos">Produto</label>
+            <label htmlFor="artigos">Artigo</label>
             <Select
-              id="produtos"
+              id="artigos"
               className="product-select"
-              name="Produtos"
+              name="Artigos"
               required
-              placeholder="Seleciona o(s) produto(s)"
-              options={produtos}
-              value={selectedProducts}
+              placeholder="Seleciona o(s) artigo(s)"
+              options={artigos}
               onChange={handleChange}
               isMulti
             />
 
-            <div ref={sizeInputRef} style={{ display: 'none' }}>
-              <label htmlFor="tamanho" className="input-select-title">
-                Tamanho (Tshirt)
-              </label>
-              <Select
-                id="tamanho"
-                className="input-select"
-                name="Tamanho"
-                // required
-                placeholder="Seleciona o tamanho da Tshirt"
-                options={[
-                  {
-                    label: 'S',
-                    value: 'S',
-                  },
-                  {
-                    label: 'M',
-                    value: 'M',
-                  },
-                  {
-                    label: 'L',
-                    value: 'L',
-                  },
-                ]}
-                value={selectedSize}
-                onChange={(data) => setSelectedSize(data)}
-              />
-            </div>
+            {selectedProducts.map((product) => {
+              if (product.label.includes('shirt')) {
+                return (
+                  <>
+                    <label htmlFor="size">Tamanho {product.value}</label>
+                    <Select
+                      id="size"
+                      className="product-select"
+                      name={`Tamanho ${product.value}`}
+                      required
+                      placeholder="Seleciona o tamanho do artigo"
+                      options={[
+                        {
+                          label: 'S',
+                          value: 'S',
+                        },
+                        {
+                          label: 'M',
+                          value: 'M',
+                        },
+                        {
+                          label: 'L',
+                          value: 'L',
+                        },
+                      ]}
+                    />
+                  </>
+                )
+              }
+            })}
 
-            <div ref={colorInputRef} style={{ display: 'none' }}>
-              <label htmlFor="cor" className="input-select-title">
-                Cor (Boné)
-              </label>
-              <Select
-                id="cor"
-                className="input-select"
-                name="Cor"
-                // required
-                placeholder="Seleciona a cor do boné"
-                options={[
-                  {
-                    label: 'Verde',
-                    value: 'verde',
-                  },
-                  {
-                    label: 'Beige',
-                    value: 'beige',
-                  },
-                ]}
-                value={selectedColor}
-                onChange={(data) => setSelectedColor(data)}
-              />
-            </div>
-            <label htmlFor="fname">Nome Completo</label>
+            <label htmlFor="fname">Nome e apelido</label>
             <input
               type="text"
               id="fname"
@@ -128,16 +93,6 @@ const Checkout = () => {
               required
             />
 
-            <label htmlFor="mail">E-mail</label>
-            <input
-              type="email"
-              id="mail"
-              name="Email"
-              placeholder="Texto de resposta curta"
-              required
-            />
-            <label htmlFor="tel">Contacto telefónico</label>
-            <input type="tel" id="tel" name="Tel." placeholder="Texto de resposta curta" required />
             <label htmlFor="morada">Morada</label>
             <input
               type="text"
@@ -154,21 +109,24 @@ const Checkout = () => {
               placeholder="Texto de resposta curta"
               required
             />
+            <label htmlFor="tel">Contacto telefónico</label>
+            <input type="tel" id="tel" name="Tel." placeholder="Texto de resposta curta" required />
+            <label htmlFor="mail">E-mail</label>
+            <input
+              type="email"
+              id="mail"
+              name="Email"
+              placeholder="Texto de resposta curta"
+              required
+            />
             <div className="doar-info">
               <p>
-                Total: <span className="total">{total}€</span>
+                <strong>Os dados de pagamento ser-te-ão enviados para o e-mail.</strong>
               </p>
               <br />
               <p>
-                Para concluir a sua compra só necessita de realizar a transferência com o valor
-                para:
-              </p>
-              <br />
-              <p>
-                *IBAN: <strong>PT50 0033 0000 4553 2412 3620 5</strong>
-              </p>
-              <p>
-                *MBWAY: <strong>+351 913 363 673</strong>
+                Ao efectuares esta compra estás-nos a ajudar a elevar histórias de mais famílias.
+                Obrigado :)
               </p>
             </div>
             <input type="submit" value="Enviar" />
