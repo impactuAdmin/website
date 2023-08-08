@@ -98,14 +98,14 @@ var contactButtonMobile = document.querySelectorAll(
   '.menu-wrapper .menu-content a:nth-last-of-type(2)'
 )[0]
 
-contactButton.addEventListener('click', function timeFunction() {
-  setTimeout(() => {
-    sendButton = document.querySelectorAll('.link-underline.contactos.intro')[0]
-    sendButton.addEventListener('click', () => {
-      document.querySelectorAll('.container-contactos form input[type=submit]')[0].click()
-    })
-  }, 4000)
-})
+// contactButton.addEventListener('click', function timeFunction() {
+//   setTimeout(() => {
+//     sendButton = document.querySelectorAll('.link-underline.contactos.intro')[0]
+//     sendButton.addEventListener('click', () => {
+//       document.querySelectorAll('.container-contactos form input[type=submit]')[0].click()
+//     })
+//   }, 4000)
+// })
 
 contactButtonMobile.addEventListener('click', function timeFunction() {
   setTimeout(() => {

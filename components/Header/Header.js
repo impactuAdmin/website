@@ -5,7 +5,7 @@ import Logo from '../Logo'
 import Dropdown from '../Dropdown/Dropdown'
 import styles from './Header.module.css'
 
-const Header = ({ datasDeRecrutamento }) => {
+const Header = ({ datasDeRecrutamento, merchProducts }) => {
   const [overlayMenuStyle, setOverlayMenuStyle] = useState({ display: 'none', opacity: '0' })
   const router = useRouter()
   const [navLinkClassName, setNavLinkClassName] = useState('')
@@ -43,6 +43,8 @@ const Header = ({ datasDeRecrutamento }) => {
       router.pathname === '/QueroAjudar' ||
       router.pathname === '/Doar' ||
       router.pathname === '/Socio'
+      // ||
+      // router.pathname === '/Checkout'
     ) {
       setNavLinkClassName('nav-links-scrolling-active')
     } else {
@@ -73,6 +75,13 @@ const Header = ({ datasDeRecrutamento }) => {
               <li>
                 <Link href="/Recrutamento">
                   <a className={`${styles['nav-link']} ${navLinkClassName}`}>Recrutamento</a>
+                </Link>
+              </li>
+            )}
+            {merchProducts.length === 0 ? null : (
+              <li>
+                <Link href="/LojaOnline">
+                  <a className={`${styles['nav-link']} ${navLinkClassName}`}>Loja Online</a>
                 </Link>
               </li>
             )}
@@ -156,6 +165,13 @@ const Header = ({ datasDeRecrutamento }) => {
             <Link href="/Recrutamento">
               <a onClick={closeButtonClick}>
                 <h1>Recrutamento</h1>
+              </a>
+            </Link>
+          )}
+          {merchProducts.length === 0 ? null : (
+            <Link href="/LojaOnline">
+              <a onClick={closeButtonClick}>
+                <h1>Loja Online</h1>
               </a>
             </Link>
           )}

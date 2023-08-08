@@ -1,0 +1,35 @@
+/* 2col */
+@media (min-width: 700px) and (max-width: 1000px) {
+  .product-wrapper {
+    width: calc(50% - 2.5vw);
+  }
+}
+
+/* 3col */
+@media (min-width: 1000px) {
+  .product-wrapper {
+    width: calc(calc(100% / 3) - calc(8vw / 3));
+  }
+}
+
+.product-img {
+  margin-bottom: 1em;
+  background-color: #f2f2f4;
+  aspect-ratio: 4/3;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  /* font-size: 18px; */
+}
+
+.secondary-info {
+  opacity: 0.7;
+}
+
+.price {
+  margin-bottom: 1em;
+  color: #10845a;
+  font-weight: 500;
+}

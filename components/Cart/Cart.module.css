@@ -1,0 +1,165 @@
+.cart-container {
+  position: relative;
+}
+
+.cart-title {
+  margin-left: auto;
+  padding: 0.5em 1em;
+  margin-bottom: 1em 2em;
+  border: 1px solid red;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 0.75em;
+  cursor: pointer;
+}
+
+.cart-title span {
+  color: #10845a;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+/* @media (min-width: 1000px) {
+  .cart-title:hover + .cart {
+    display: block;
+  }
+} */
+
+.cart-icon {
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-quantity {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  height: 1.5em;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  color: #10845a;
+  background-color: rgb(235, 235, 235);
+  font-size: 0.75em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.cart {
+  position: absolute;
+  top: 2.5em;
+  right: 0;
+  transform: translate(25%);
+  /* display: none; */
+  padding: 1.5em 2em;
+  background-color: #e8f6f4;
+  border-radius: 5px;
+  animation: fade-in 0.1s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.cart-item {
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.cart-item:not(:last-of-type) {
+  margin-bottom: 1.5em;
+}
+
+.delete-btn {
+  padding-right: 2em;
+}
+
+.delete-btn button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.item-img {
+  max-height: 4.2em;
+  padding-right: 2em;
+}
+
+.item-info {
+  align-self: flex-start;
+  max-width: 8em;
+  min-width: max-content;
+  font-size: 14px;
+}
+
+.item-quantity-wrapper {
+  padding-left: 3em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  font-size: 14px;
+}
+
+.item-quantity-wrapper button {
+  padding-inline: 0.5em;
+  aspect-ratio: 1;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  background-color: #10845a;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.item-quantity-wrapper button span {
+  vertical-align: baseline;
+}
+
+.item-quantity-wrapper button:first-of-type,
+.item-quantity-wrapper button:last-of-type:active {
+  color: #10845a;
+  background-color: white;
+}
+
+.item-quantity-wrapper button:first-of-type:active {
+  color: white;
+  background-color: #10845a;
+}
+
+.price {
+  margin-bottom: 0.5em;
+  color: #10845a;
+  font-weight: 500;
+}
+
+.secondary-info {
+  opacity: 0.5;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.cart-total {
+  margin-left: calc(28px + 14px);
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+
+.cart-total span {
+  color: #10845a;
+  font-weight: 500;
+}
+
+.checkout-btn {
+  margin-left: calc(28px + 14px);
+}
