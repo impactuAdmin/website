@@ -15,6 +15,10 @@ const Checkout = () => {
       value: 'Tshirt bordada',
     },
     {
+      label: "Boné Impac'tu 13,50€",
+      value: 'Boné',
+    },
+    {
       label: 'Tshirt impactador 12€',
       value: 'Tshirt impactador',
     },
@@ -25,10 +29,6 @@ const Checkout = () => {
     {
       label: "Tote bag Impac'tu 7,5€",
       value: 'Tote bag',
-    },
-    {
-      label: "Boné Impac'tu 7,5€",
-      value: 'Boné',
     },
   ]
 
@@ -107,6 +107,7 @@ const Checkout = () => {
               placeholder="Texto de resposta curta"
               required
             />
+
             <label htmlFor="localidade">Código Postal e Localidade</label>
             <input
               type="text"
@@ -115,8 +116,10 @@ const Checkout = () => {
               placeholder="Texto de resposta curta"
               required
             />
+
             <label htmlFor="tel">Contacto telefónico</label>
             <input type="tel" id="tel" name="Tel." placeholder="Texto de resposta curta" required />
+
             <label htmlFor="mail">E-mail</label>
             <input
               type="email"
@@ -125,13 +128,14 @@ const Checkout = () => {
               placeholder="Texto de resposta curta"
               required
             />
+
             <div className="doar-info">
               <p>
                 <strong>Os dados de pagamento ser-te-ão enviados para o e-mail.</strong>
               </p>
               <br />
               <p>
-                Ao efectuares esta compra estás-nos a ajudar a elevar histórias de mais famílias.
+                Ao efectuares esta compra estás a ajudar-nos a elevar histórias de mais famílias.
                 Obrigado :)
               </p>
             </div>
