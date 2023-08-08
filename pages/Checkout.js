@@ -1,9 +1,13 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Select from 'react-select'
 
 const Checkout = () => {
   const [selectedProducts, setSelectedProducts] = useState([])
-  const [sizes, setSizes] = useState()
+  const [sizes, setSizes] = useState([])
+
+  // useEffect(() => {
+  //   console.log(sizes)
+  // }, [sizes])
 
   const artigos = [
     {
@@ -77,7 +81,9 @@ const Checkout = () => {
                           value: 'L',
                         },
                       ]}
-                      onChange={(data) => setSizes(data)}
+                      onChange={(data) =>
+                        setSizes((sizes) => [...sizes, `${product.value} ${data.value}`])
+                      }
                     />
                   </>
                 )
