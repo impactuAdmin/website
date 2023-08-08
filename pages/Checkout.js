@@ -3,6 +3,7 @@ import Select from 'react-select'
 
 const Checkout = () => {
   const [selectedProducts, setSelectedProducts] = useState([])
+  const [sizes, setSizes] = useState()
 
   const artigos = [
     {
@@ -27,10 +28,6 @@ const Checkout = () => {
     },
   ]
 
-  const handleChange = (data) => {
-    setSelectedProducts(data)
-  }
-
   return (
     <section className="formulario-wrapper">
       <div className="container-formulario" id="start">
@@ -41,7 +38,7 @@ const Checkout = () => {
           <form name="compra" method="POST" data-netlify="true" action="/Sucesso">
             <input type="hidden" name="form-name" value="compra" required />
 
-            <label htmlFor="artigos">Artigo</label>
+            <label htmlFor="artigos">Artigo(s)</label>
             <Select
               id="artigos"
               className="product-select"
@@ -49,9 +46,11 @@ const Checkout = () => {
               required
               placeholder="Seleciona o(s) artigo(s)"
               options={artigos}
-              onChange={handleChange}
+              onChange={(data) => setSelectedProducts(data)}
               isMulti
             />
+
+            <input type="hidden" name="Tamanhos" value={sizes} required />
 
             {selectedProducts.map((product) => {
               if (product.label.includes('shirt')) {
@@ -78,6 +77,7 @@ const Checkout = () => {
                           value: 'L',
                         },
                       ]}
+                      onChange={(data) => setSizes(data)}
                     />
                   </>
                 )
