@@ -3278,3 +3278,28 @@ No mobile fica em 2 e 1 colunas
 .total {
   font-weight: bold;
 }
+
+.products-section {
+  overflow: hidden;
+  background-color: white;
+  padding: max(5vw, 5em) 10% max(5vw, 6em) 10%;
+}
+
+@media (max-width: 700px) {
+  .products-section {
+    padding-inline: 14%;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.checkout-form {
+  margin-top: 2em;
+}

@@ -29,7 +29,9 @@ const Logo = ({ closeMenuFunction, isMobile, router }) => {
       if (
         router.pathname === '/QueroAjudar' ||
         router.pathname === '/Doar' ||
-        router.pathname === '/Socio'
+        router.pathname === '/Socio' ||
+        router.pathname === '/ProductPage/[product]' ||
+        router.pathname === '/Checkout'
       ) {
         setPathClassName('logo-scrolling-active')
       } else {

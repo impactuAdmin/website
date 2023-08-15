@@ -1,11 +1,12 @@
 import { useRef, useEffect } from 'react'
 import styles from './Cart.module.css'
+import Link from 'next/link'
 
 const CartItem = ({ product, cartProducts, setCartProducts }) => {
   const itemRef = useRef(null)
 
   function handleRemove() {
-    const updatedCart = cartProducts.filter((item) => item.id !== product.id)
+    const updatedCart = cartProducts.filter((item) => item.name !== product.name)
     setCartProducts(updatedCart)
   }
 
@@ -39,17 +40,21 @@ const CartItem = ({ product, cartProducts, setCartProducts }) => {
           </svg>
         </button>
       </div>
-      <img src="/Baixa_Porto_50_DSC_1550.webp" className={styles['item-img']}></img>
+      <Link href={`ProductPage/${product.linkParam}`}>
+        <img src="/bone.webp" className={styles['item-img']}></img>
+      </Link>
       <div className={styles['item-info']}>
-        <p>{product.name}</p>
-        <p className={styles['price']}>€{product.price}</p>
-        {product.colors ? <p className={styles['secondary-info']}>{product.colors[0]}</p> : null}
+        <Link href={`ProductPage/${product.linkParam}`}>{product.name}</Link>
+        {/* <p className={styles['price']}>€{product.price.display}</p> */}
+        {product.sizes ? (
+          <p className={styles['secondary-info']}>Tamanho: {product.sizes[0]}</p>
+        ) : null}
       </div>
       <div className={styles['item-quantity-wrapper']}>
         <button
           onClick={() => {
             const updatedCart = cartProducts.map((item) => {
-              if (item.id === product.id) return { ...item, quantity: item.quantity - 1 }
+              if (item.name === product.name) return { ...item, quantity: item.quantity - 1 }
               return item
             })
 
@@ -58,11 +63,11 @@ const CartItem = ({ product, cartProducts, setCartProducts }) => {
         >
           <span>-</span>
         </button>
-        <p>{product.quantity}</p>
+        <p className={styles['item-quantity']}>{product.quantity}</p>
         <button
           onClick={() => {
             const updatedCart = cartProducts.map((item) => {
-              if (item.id === product.id) return { ...item, quantity: item.quantity + 1 }
+              if (item.name === product.name) return { ...item, quantity: item.quantity + 1 }
               return item
             })
 

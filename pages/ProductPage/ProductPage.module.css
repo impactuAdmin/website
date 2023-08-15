@@ -1,35 +1,109 @@
-.products-section {
-  background-color: white;
-  padding: max(5vw, 5em) 10% max(5vw, 6em) 10%;
+.product-page-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.back-link {
+  margin-top: 0.5em;
+  overflow: hidden;
+}
+
+.back-link a {
+  position: relative;
+  color: black;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: color 0.3s ease-in-out;
+}
+
+.back-link a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  display: inline-block;
+  background-color: black;
+  transition: transform 0.3s ease-in-out;
+}
+
+.back-link a:hover::after {
+  transform: translateX(100%);
+}
+
+.title-mobile,
+.title-desktop {
+  /* margin-bottom: 0.5em; */
+  display: flex;
+}
+
+.price {
+  margin-bottom: 0.75em;
+  color: #10845a;
+  font-weight: 500;
+}
+
+.options-wrapper {
+  margin-top: 0.5em;
 }
 
 @media (max-width: 700px) {
-  .products-section {
-    padding-inline: 13%;
+  .title-desktop {
+    display: none;
   }
-}
 
-.products-container {
-  max-width: 1800px;
-  margin-inline: auto;
-}
-
-@media (max-width: 1000px) {
-  .products-wrapper > *:not(:last-of-type) {
-    margin-bottom: 4em;
+  .product-images-container {
+    max-width: 100%;
+    margin-bottom: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
   }
-}
 
-@media (min-width: 700px) and (max-width: 1000px) {
-  .products-wrapper > *:not(:last-of-type) {
-    margin-bottom: 1em;
+  .main-img {
+    width: 100%;
+  }
+
+  .product-img {
+    width: calc(100% / 3 - 7.5px);
   }
 }
 
 @media (min-width: 700px) {
-  .products-wrapper {
+  .container {
+    padding-top: 2em;
     display: flex;
-    flex-wrap: wrap;
-    gap: 4vw;
+    gap: 13%;
+  }
+
+  .title-mobile {
+    display: none;
+  }
+
+  .product-images-container {
+    width: 70%;
+    max-width: 50rem;
+  }
+
+  .product-text {
+    margin-right: auto;
+    width: 100%;
+    max-width: 50rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .product-text {
+    position: relative;
+    padding-right: 10%;
+  }
+
+  .product-text-content {
+    position: sticky;
+    top: 0;
   }
 }

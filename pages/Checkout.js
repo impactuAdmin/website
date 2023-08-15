@@ -1,13 +1,21 @@
 import { useState, useEffect } from 'react'
 import Select from 'react-select'
+import Cart from '../components/Cart/Cart'
 
 const Checkout = () => {
-  const [selectedProducts, setSelectedProducts] = useState([])
   const [sizes, setSizes] = useState([])
+  const [cartProducts, setCartProducts] = useState([])
 
-  // useEffect(() => {
-  //   console.log(sizes)
-  // }, [sizes])
+  // Load cartProducts from localStorage when the component mounts
+  useEffect(() => {
+    const savedCartProducts = JSON.parse(localStorage.getItem('cartProducts')) || []
+    setCartProducts(savedCartProducts)
+  }, [])
+
+  // Save cartProducts to localStorage whenever it changes
+  useEffect(() => {
+    localStorage.setItem('cartProducts', JSON.stringify(cartProducts))
+  }, [cartProducts])
 
   const artigos = [
     {
@@ -36,59 +44,12 @@ const Checkout = () => {
     <section className="formulario-wrapper">
       <div className="container-formulario" id="start">
         <div className="titulo">
-          <h1>Formulário de Compra</h1>
+          <h1>Checkout</h1>
         </div>
-        <div className="container-formulario-2">
+        <Cart cartProducts={cartProducts} setCartProducts={setCartProducts} />
+        <div className="container-formulario-2 checkout-form">
           <form name="compra" method="POST" data-netlify="true" action="/Sucesso">
             <input type="hidden" name="form-name" value="compra" required />
-
-            <label htmlFor="artigos">Artigo(s)</label>
-            <Select
-              id="artigos"
-              className="product-select"
-              name="Artigos"
-              required
-              placeholder="Seleciona o(s) artigo(s)"
-              options={artigos}
-              onChange={(data) => setSelectedProducts(data)}
-              isMulti
-            />
-
-            <input type="hidden" name="Tamanhos" value={sizes} required />
-
-            {selectedProducts.map((product) => {
-              if (product.label.includes('shirt')) {
-                return (
-                  <>
-                    <label htmlFor="size">Tamanho {product.value}</label>
-                    <Select
-                      id="size"
-                      className="product-select"
-                      name={`Tamanho ${product.value}`}
-                      required
-                      placeholder="Seleciona o tamanho do artigo"
-                      options={[
-                        {
-                          label: 'S',
-                          value: 'S',
-                        },
-                        {
-                          label: 'M',
-                          value: 'M',
-                        },
-                        {
-                          label: 'L',
-                          value: 'L',
-                        },
-                      ]}
-                      onChange={(data) =>
-                        setSizes((sizes) => [...sizes, `${product.value} ${data.value}`])
-                      }
-                    />
-                  </>
-                )
-              }
-            })}
 
             <label htmlFor="fname">Nome e apelido</label>
             <input
