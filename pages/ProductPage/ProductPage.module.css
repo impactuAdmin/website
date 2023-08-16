@@ -1,10 +1,15 @@
+.product-section {
+  overflow: hidden;
+  background-color: white;
+  padding: max(5vw, 5.5em) 10% max(5vw, 6em) 10%;
+}
+
 .product-page-header {
   display: flex;
   justify-content: space-between;
 }
 
 .back-link {
-  margin-top: 0.5em;
   overflow: hidden;
 }
 
@@ -37,7 +42,7 @@
 
 .title-mobile,
 .title-desktop {
-  /* margin-bottom: 0.5em; */
+  margin-bottom: 1em;
   display: flex;
 }
 
@@ -75,7 +80,7 @@
 
 @media (min-width: 700px) {
   .container {
-    padding-top: 2em;
+    padding-top: 1em;
     display: flex;
     gap: 13%;
   }

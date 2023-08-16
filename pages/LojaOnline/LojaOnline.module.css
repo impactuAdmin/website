@@ -3,6 +3,11 @@
   margin-inline: auto;
 }
 
+.products-section-header {
+  padding-top: min(5%, 5em);
+  padding-bottom: min(1.5%, 2em);
+}
+
 @media (max-width: 700px) {
   .products-container > *:not(:last-of-type) {
     margin-bottom: 3em;
