@@ -12,7 +12,7 @@ const CartPreview = ({ cartProducts, setCartProducts }) => {
       ) : (
         <>
           {cartProducts.map((product) => {
-            return <p>{product.name}</p>
+            return <p key={product.name}>{product.name}</p>
           })}
           <button className={`secondary-btn ${styles['checkout-btn']}`}>Finalizar</button>
         </>
