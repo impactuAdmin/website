@@ -1,13 +1,14 @@
 import styles from './ProductPage.module.css'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
-import Cart from '../../components/Cart/Cart'
-import { useRouter } from 'next/router'
+import CartPreview from '../../components/CartPreview/CartPreview'
 import { merchProducts } from '../../public/data/dados'
 
 const ProductPage = ({ product }) => {
   const [cartProducts, setCartProducts] = useState([])
   const [selectedSize, setSelectedSize] = useState()
+  const [slideIndex, setSlideIndex] = useState(1)
+  const [previewing, setPreviewing] = useState(false)
 
   const isAdded = cartProducts.find((item) => item.name === product.name)
   const hasOptions = product.colors || product.sizes
@@ -23,42 +24,127 @@ const ProductPage = ({ product }) => {
     localStorage.setItem('cartProducts', JSON.stringify(cartProducts))
   }, [cartProducts])
 
-  function handleAdd() {
-    if (isAdded) {
-      const updatedCart = cartProducts.filter((cartProduct) => cartProduct.name !== product.name)
+  function updateSlides(n) {
+    const updatedIndex = slideIndex + n
+
+    if (updatedIndex > product.images.length) {
+      setSlideIndex(1)
+    } else if (updatedIndex < 1) {
+      setSlideIndex(product.images.length)
+    } else {
+      setSlideIndex(slideIndex + n)
+    }
+  }
+
+  function handleAdd(e) {
+    const addBtn = e.target
+    if (previewing && addBtn.classList.contains('active')) return
+
+    function preview() {
+      setPreviewing(true)
+
+      addBtn.classList.add('active')
+      addBtn.innerText = 'Adicionado'
+      setTimeout(() => {
+        addBtn.classList.remove('active')
+        addBtn.innerText = 'Adicionar'
+      }, 3000)
+    }
+
+    if (isAdded && isAdded.size === selectedSize) {
+      const updatedCart = cartProducts.map((cartProduct) =>
+        cartProduct.name === product.name
+          ? { ...cartProduct, quantity: cartProduct.quantity + 1 }
+          : cartProduct
+      )
       setCartProducts(updatedCart)
+      preview()
     } else if (hasOptions && selectedSize === undefined) {
       alert('Selecione um tamanho')
     } else {
       const updatedCart = [
         ...cartProducts,
-        { name: product.name, quantity: 1, sizes: selectedSize },
+        {
+          name: product.name,
+          quantity: 1,
+          size: selectedSize,
+          images: product.images,
+          price: product.price,
+        },
       ]
       setCartProducts(updatedCart)
+      preview()
     }
   }
 
   return (
     <section className={styles['product-section']}>
       <div className={styles['product-page-header']}>
-        <div className={styles['back-link']}>
-          <Link href="/LojaOnline">← voltar</Link>
+        <div className="back-link">
+          <Link href="/LojaOnline#products">← voltar</Link>
         </div>
       </div>
 
       <div className={styles['container']}>
         <div className={styles['title-mobile']}>
           <h1>{product.name}</h1>
+          <Link href="/Checkout">
+            <div className="cart-link-wrapper">
+              <div className="cart-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M21.1125 21.946L20.7095 21.994C20.6185 22.0048 20.5298 21.9999 20.4429 21.9878H1.55658C1.46996 21.9996 1.38131 22.0048 1.28995 21.994L0.886944 21.946C0.332689 21.8797 -0.0611776 21.3919 0.00785045 20.8567L1.6696 7.1694C1.73728 6.64271 2.22792 6.26828 2.77202 6.31958C2.7974 6.31762 2.82176 6.31206 2.84782 6.31206H5.7179V5.10317H5.72771C5.72872 2.28448 8.0953 0 11.0144 0C13.9343 0 16.2758 2.28546 16.2758 5.1048C16.2758 5.25738 16.291 5.39624 16.2775 5.53085V6.31206H19.1344C19.1601 6.31206 19.1845 6.31762 19.2098 6.31925C19.7533 6.26861 20.2432 6.64271 20.3109 7.16907L21.9923 20.8564C22.0606 21.3919 21.6671 21.8797 21.1125 21.946ZM13.8612 5.11591C13.8612 3.59858 12.5872 2.36845 11.0158 2.36845C9.44474 2.36845 8.1711 3.59793 8.17042 5.11493H8.16501V6.31239H13.8483V5.3456C13.8558 5.27307 13.8612 5.19825 13.8612 5.11591ZM16.2758 9.12748V10.0159C16.2758 10.5553 15.8231 10.9924 15.2644 10.9924H14.8584C14.3058 10.9924 13.8581 10.5641 13.8487 10.0325V8.65764H8.16501V9.12748H8.15452V10.0159C8.15452 10.5553 7.70178 10.9924 7.14312 10.9924H6.73708C6.17842 10.9924 5.72568 10.5553 5.72568 10.0159V9.12748H5.71756V8.65764H3.93433L2.60046 19.6429H19.397L18.0475 8.65764H16.2772V9.12748H16.2758Z"
+                    fill="#10845A"
+                  />
+                </svg>
+                <div className="cart-quantity">
+                  <span>{cartProducts.length}</span>
+                </div>
+              </div>
+            </div>
+          </Link>
         </div>
 
-        <div className={styles['product-images-container']}>
-          {product.images.map((src, i) =>
-            i === 0 ? (
-              <img src={src} className={styles['main-img']}></img>
-            ) : (
-              <img src={src} className={styles['product-img']}></img>
-            )
-          )}
+        <div className={styles['slider-container']}>
+          <button className={styles['prev']} onClick={() => updateSlides(-1)}>
+            &#10094;
+          </button>
+
+          <div className={styles['product-images-container']}>
+            {product.images.map((src, index) => (
+              <img
+                key={index}
+                src={src}
+                className={`${styles['product-img']} fade`}
+                style={{ display: slideIndex === index + 1 ? 'block' : 'none' }}
+              ></img>
+            ))}
+          </div>
+
+          <button className={styles['next']} onClick={() => updateSlides(1)}>
+            &#10095;
+          </button>
+
+          <div className={styles['dots-container']}>
+            {product.images.map((img, index) => (
+              <span
+                key={index}
+                className={
+                  index + 1 === slideIndex ? `${styles['dot']} ${styles['active']}` : styles['dot']
+                }
+                // {index + 1 === slideIndex}
+                onClick={() => setSlideIndex(index + 1)}
+              ></span>
+            ))}
+          </div>
         </div>
 
         <div className={styles['product-text']}>
@@ -93,10 +179,14 @@ const ProductPage = ({ product }) => {
             <i>{product.characteristics}</i>
           </p>
           <br />
-          <p>
-            <label htmlFor="options">{hasOptions ? 'Tamanho' : 'Tamanho único'}</label>&nbsp;
-            <span style={{ color: 'red' }}>*</span>
-          </p>
+          {hasOptions ? (
+            <p>
+              <label htmlFor="options">Tamanho</label>&nbsp;<span style={{ color: 'red' }}>*</span>
+            </p>
+          ) : (
+            <p>Tamanho único</p>
+          )}
+
           <div className={styles['options-wrapper']}>
             {hasOptions
               ? hasOptions.map((option) => (
@@ -117,11 +207,13 @@ const ProductPage = ({ product }) => {
           </div>
           <br />
           <p className={styles['price']}>€{product.price.display}</p>
-          <button className={`tertiary-btn ${isAdded ? 'active' : null}`} onClick={handleAdd}>
-            {isAdded ? 'Adicionado' : 'Adicionar'}
+          <button className="tertiary-btn" onClick={(e) => handleAdd(e)}>
+            Adicionar
           </button>
         </div>
       </div>
+
+      {previewing && <CartPreview cartProducts={cartProducts} setPreviewing={setPreviewing} />}
     </section>
   )
 }

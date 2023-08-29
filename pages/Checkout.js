@@ -1,54 +1,47 @@
 import { useState, useEffect } from 'react'
 import Select from 'react-select'
 import Cart from '../components/Cart/Cart'
+import Link from 'next/link'
 
 const Checkout = () => {
-  const [sizes, setSizes] = useState([])
   const [cartProducts, setCartProducts] = useState([])
+  const [isEmpty, setIsEmpty] = useState(false)
 
   // Load cartProducts from localStorage when the component mounts
   useEffect(() => {
     const savedCartProducts = JSON.parse(localStorage.getItem('cartProducts')) || []
     setCartProducts(savedCartProducts)
+    cartProducts.length === 0 ? setIsEmpty(true) : setIsEmpty(false)
   }, [])
 
   // Save cartProducts to localStorage whenever it changes
   useEffect(() => {
     localStorage.setItem('cartProducts', JSON.stringify(cartProducts))
+    cartProducts.length === 0 ? setIsEmpty(true) : setIsEmpty(false)
   }, [cartProducts])
 
-  const artigos = [
-    {
-      label: 'Tshirt bordada 12€',
-      value: 'Tshirt bordada',
-    },
-    {
-      label: "Boné Impac'tu 13,50€",
-      value: 'Boné',
-    },
-    {
-      label: 'Tshirt impactador 12€',
-      value: 'Tshirt impactador',
-    },
-    {
-      label: 'Sweatshirt impactador 25€',
-      value: 'Sweatshirt',
-    },
-    {
-      label: "Tote bag Impac'tu 7,5€",
-      value: 'Tote bag',
-    },
-  ]
+  function handleFormSubmit() {
+    setCartProducts([])
+  }
 
   return (
     <section className="formulario-wrapper">
       <div className="container-formulario" id="start">
+        {/* <div className="back-link">
+          <Link href="/LojaOnline#products">← voltar</Link>
+        </div> */}
         <div className="titulo">
           <h1>Checkout</h1>
         </div>
         <Cart cartProducts={cartProducts} setCartProducts={setCartProducts} />
         <div className="container-formulario-2 checkout-form">
-          <form name="compra" method="POST" data-netlify="true" action="/Sucesso">
+          <form
+            name="compra"
+            method="POST"
+            data-netlify="true"
+            action="/Sucesso"
+            onSubmit={handleFormSubmit}
+          >
             <input type="hidden" name="form-name" value="compra" required />
 
             <label htmlFor="fname">Nome e apelido</label>
@@ -58,6 +51,7 @@ const Checkout = () => {
               name="Nome"
               placeholder="Texto de resposta curta"
               required
+              disabled={isEmpty}
             />
 
             <label htmlFor="morada">Morada</label>
@@ -67,6 +61,7 @@ const Checkout = () => {
               name="Morada"
               placeholder="Texto de resposta curta"
               required
+              disabled={isEmpty}
             />
 
             <label htmlFor="localidade">Código Postal e Localidade</label>
@@ -76,10 +71,18 @@ const Checkout = () => {
               name="Localidade"
               placeholder="Texto de resposta curta"
               required
+              disabled={isEmpty}
             />
 
             <label htmlFor="tel">Contacto telefónico</label>
-            <input type="tel" id="tel" name="Tel." placeholder="Texto de resposta curta" required />
+            <input
+              type="tel"
+              id="tel"
+              name="Tel."
+              placeholder="Texto de resposta curta"
+              required
+              disabled={isEmpty}
+            />
 
             <label htmlFor="mail">E-mail</label>
             <input
@@ -88,6 +91,7 @@ const Checkout = () => {
               name="Email"
               placeholder="Texto de resposta curta"
               required
+              disabled={isEmpty}
             />
 
             <div className="doar-info">

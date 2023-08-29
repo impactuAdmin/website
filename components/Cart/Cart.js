@@ -25,7 +25,7 @@ const Cart = ({ cartProducts, setCartProducts }) => {
           <p className={styles['cart-total']}>
             Sub-total:&nbsp;
             <span>
-              {/* €{cartProducts.reduce((total, acc) => total + acc.price.value * acc.quantity, 0)} */}
+              €{cartProducts.reduce((total, acc) => total + acc.price.value * acc.quantity, 0)}
             </span>
           </p>
         </>

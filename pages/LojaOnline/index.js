@@ -8,23 +8,26 @@ import styles from './LojaOnline.module.css'
 
 const LojaOnline = () => {
   const [cartProducts, setCartProducts] = useState([])
+  const [previewing, setPreviewing] = useState(false)
+  const cartQuantityTotal = cartProducts.reduce((acc, cur) => acc + cur.quantity, 0)
 
   // Load cartProducts from localStorage when the component mounts
   useEffect(() => {
     const savedCartProducts = JSON.parse(localStorage.getItem('cartProducts')) || []
     setCartProducts(savedCartProducts)
   }, [])
-
   // Save cartProducts to localStorage whenever it changes
   useEffect(() => {
     localStorage.setItem('cartProducts', JSON.stringify(cartProducts))
+
+    console.log(cartProducts)
   }, [cartProducts])
 
   return (
     <>
-      <Hero title={'Loja Online'} backgroundImage={'loja-banner.webp'} />
+      <Hero title={'Loja Online'} backgroundImage={'impactu-merch-banner.webp'} />
 
-      <section className="products-section">
+      <section id="products" className="products-section">
         <div className={styles['products-section-header']}>
           <Link href="/Checkout">
             <div className="cart-link-wrapper">
@@ -43,14 +46,13 @@ const LojaOnline = () => {
                   />
                 </svg>
                 <div className="cart-quantity">
-                  <span>{cartProducts.length}</span>
+                  <span>{cartQuantityTotal}</span>
                 </div>
               </div>
             </div>
           </Link>
         </div>
 
-        {/* <CartPreview cartProducts={cartProducts} setCartProducts={setCartProducts} /> */}
         <div className={styles['products-container']}>
           {merchProducts.map((product) => (
             <Product
@@ -58,9 +60,13 @@ const LojaOnline = () => {
               product={product}
               cartProducts={cartProducts}
               setCartProducts={setCartProducts}
+              previewing={previewing}
+              setPreviewing={setPreviewing}
             />
           ))}
         </div>
+
+        {previewing && <CartPreview cartProducts={cartProducts} setPreviewing={setPreviewing} />}
       </section>
     </>
   )

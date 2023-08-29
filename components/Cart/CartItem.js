@@ -6,7 +6,7 @@ const CartItem = ({ product, cartProducts, setCartProducts }) => {
   const itemRef = useRef(null)
 
   function handleRemove() {
-    const updatedCart = cartProducts.filter((item) => item.name !== product.name)
+    const updatedCart = cartProducts.filter((item) => item !== product)
     setCartProducts(updatedCart)
   }
 
@@ -41,20 +41,18 @@ const CartItem = ({ product, cartProducts, setCartProducts }) => {
         </button>
       </div>
       <Link href={`ProductPage/${product.linkParam}`}>
-        <img src="/bone.webp" className={styles['item-img']}></img>
+        <img src={product.images[0]} className={styles['item-img']}></img>
       </Link>
       <div className={styles['item-info']}>
         <Link href={`ProductPage/${product.linkParam}`}>{product.name}</Link>
-        {/* <p className={styles['price']}>€{product.price.display}</p> */}
-        {product.sizes ? (
-          <p className={styles['secondary-info']}>Tamanho: {product.sizes[0]}</p>
-        ) : null}
+        {product.size ? <p className={styles['secondary-info']}>Tamanho: {product.size}</p> : null}
+        <p className={styles['price']}>€{product.price.display}</p>
       </div>
       <div className={styles['item-quantity-wrapper']}>
         <button
           onClick={() => {
             const updatedCart = cartProducts.map((item) => {
-              if (item.name === product.name) return { ...item, quantity: item.quantity - 1 }
+              if (item === product) return { ...item, quantity: item.quantity - 1 }
               return item
             })
 
@@ -67,7 +65,7 @@ const CartItem = ({ product, cartProducts, setCartProducts }) => {
         <button
           onClick={() => {
             const updatedCart = cartProducts.map((item) => {
-              if (item.name === product.name) return { ...item, quantity: item.quantity + 1 }
+              if (item === product) return { ...item, quantity: item.quantity + 1 }
               return item
             })
 

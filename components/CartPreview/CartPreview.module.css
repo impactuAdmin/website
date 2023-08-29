@@ -1,15 +1,12 @@
 .cart {
-  /* position: absolute; */
   position: fixed;
   top: 96px;
   right: 50px;
-  /* transform: translate(-100%); */
-  /* display: none; */
-  z-index: 9;
   padding: 1.5em;
   background-color: #e8f6f4;
   border-radius: 5px;
-  animation: fade-in 0.1s;
+  animation: fade-in 500ms;
+  /* animation: fade-out 0.1s; */
 }
 
 @keyframes fade-in {
@@ -23,14 +20,15 @@
 
 /* cart item */
 
-.cart-item {
+.item {
   height: auto;
   display: flex;
   align-items: center;
+  gap: 1em;
 }
 
-.cart-item:not(:last-of-type) {
-  margin-bottom: 1.5em;
+.item:not(:last-of-type) {
+  margin-bottom: 1em;
 }
 
 .delete-btn {
@@ -45,7 +43,6 @@
 
 .item-img {
   max-height: 4em;
-  padding-right: 1.5em;
   cursor: pointer;
 }
 
@@ -55,54 +52,8 @@
   font-size: 14px;
 }
 
-.item-quantity-wrapper {
-  padding-left: 3em;
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-  gap: 1em;
-  font-size: 14px;
-}
-
-.item-quantity-wrapper button {
-  padding-inline: 0.5em;
-  aspect-ratio: 1;
-  border: none;
-  border-radius: 50%;
-  color: white;
-  background-color: #10845a;
-  text-align: center;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.item-quantity-wrapper button span {
-  vertical-align: baseline;
-}
-
-.item-quantity {
-  max-width: 1em;
-  text-align: center;
-}
-
-.item-quantity-wrapper button:first-of-type,
-.item-quantity-wrapper button:last-of-type:active {
-  color: #10845a;
-  background-color: white;
-}
-
-.item-quantity-wrapper button:first-of-type:active {
-  color: white;
-  background-color: #10845a;
-}
-
-.price {
-  margin-bottom: 0.25em;
-  color: #10845a;
-  font-weight: 500;
-}
-
 .secondary-info {
+  margin-top: 0.2em;
   opacity: 0.5;
   font-size: 0.75em;
   font-weight: 600;
@@ -110,27 +61,7 @@
   letter-spacing: 0.2em;
 }
 
-.cart-total {
-  margin-left: calc(28px + 14px);
-  padding-top: 2em;
-  padding-bottom: 1em;
-}
-
-.cart-total span {
-  color: #10845a;
-  font-weight: 500;
-}
-
 .checkout-btn {
-  margin-left: calc(28px + 14px);
-}
-
-@media (max-width: 900px) {
-  .delete-btn {
-    display: none;
-  }
-
-  .item-info {
-    font-size: 12px;
-  }
+  margin-top: 2em;
+  margin-inline: auto;
 }
