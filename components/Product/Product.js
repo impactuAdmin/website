@@ -31,7 +31,13 @@ const Product = ({ product, cartProducts, setCartProducts, previewing, setPrevie
     } else {
       const updatedCart = [
         ...cartProducts,
-        { name: product.name, quantity: 1, images: product.images, price: product.price },
+        {
+          linkParam: product.linkParam,
+          name: product.name,
+          quantity: 1,
+          images: product.images,
+          price: product.price,
+        },
       ]
       setCartProducts(updatedCart)
       preview()

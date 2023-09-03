@@ -19,9 +19,21 @@ const LojaOnline = () => {
   // Save cartProducts to localStorage whenever it changes
   useEffect(() => {
     localStorage.setItem('cartProducts', JSON.stringify(cartProducts))
-
-    console.log(cartProducts)
   }, [cartProducts])
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if ((window.scrollY > 1100 && window.scrollY < 3350) || window.scrollY > 4200) {
+  //       setNavLinkClassName('nav-links-scrolling-active')
+  //     } else {
+  //       setNavLinkClassName('')
+  //     }
+  //   }
+
+  //   return () => {
+  //     document.removeEventListener('scroll', handleScroll)
+  //   }
+  // }, [])
 
   return (
     <>
@@ -31,7 +43,6 @@ const LojaOnline = () => {
         <div className={styles['products-section-header']}>
           <Link href="/Checkout">
             <div className="cart-link-wrapper">
-              <span>Cesto</span>
               <div className="cart-icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

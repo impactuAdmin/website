@@ -65,6 +65,7 @@ const ProductPage = ({ product }) => {
       const updatedCart = [
         ...cartProducts,
         {
+          linkParam: product.linkParam,
           name: product.name,
           quantity: 1,
           size: selectedSize,
@@ -152,7 +153,6 @@ const ProductPage = ({ product }) => {
             <h1>{product.name}</h1>
             <Link href="/Checkout">
               <div className="cart-link-wrapper">
-                <span>Cesto</span>
                 <div className="cart-icon">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

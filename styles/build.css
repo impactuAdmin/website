@@ -3313,23 +3313,38 @@ a {
 }
 
 .cart-link-wrapper {
+  position: fixed;
+  right: 60px;
+  bottom: 60px;
+  width: 3.2em;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
   margin-left: auto;
-  width: max-content;
-  display: flex;
-  gap: 0.75em;
+  border-radius: 50%;
+  background-color: #e8f6f4;
   color: #10845a;
   cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.cart-link-wrapper > span {
+@media (max-width: 700px) {
+  .cart-link-wrapper {
+    right: 30px;
+    bottom: 50px;
+  }
+}
+
+/* .cart-link-wrapper > span {
   font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-}
+} */
 
 .cart-icon {
   position: relative;
+  margin-top: 7px;
 }
 
 .cart-quantity {
