@@ -25,7 +25,13 @@ const RecruitmentForm = ({ dates, departments }) => {
               required
             />
             <label htmlFor="nascimento">Idade</label>
-            <input type="number" id="nascimento" name="Idade" placeholder="Número" required />
+            <input
+              type="number"
+              id="nascimento"
+              name="Idade"
+              placeholder="Texto de resposta curta"
+              required
+            />
             <label htmlFor="tel">Contacto telefónico</label>
             <input type="tel" id="tel" name="Tel." placeholder="Texto de resposta curta" required />
             <label htmlFor="mail">E-mail</label>
@@ -60,11 +66,6 @@ const RecruitmentForm = ({ dates, departments }) => {
               placeholder="Texto de resposta livre"
               required
             />
-            <label htmlFor="dataEscolhida">
-              Assinala a/as tua/s disponibilidade/s para as dinâmicas de grupo
-              <br />
-            </label>
-            <MultipleSelector dates={dates} />
             <input type="submit" value="Enviar" />
           </form>
         </div>
