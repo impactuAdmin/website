@@ -1,12 +1,17 @@
 .cart {
   position: fixed;
   top: 96px;
-  right: 50px;
+  right: 30px;
   padding: 1.5em;
   background-color: #e8f6f4;
   border-radius: 5px;
   animation: fade-in 500ms;
-  /* animation: fade-out 0.1s; */
+}
+@media (min-width: 900px) {
+  .cart {
+    top: 96px;
+    right: 50px;
+  }
 }
 
 @keyframes fade-in {
