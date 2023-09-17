@@ -1,12 +1,13 @@
 import Link from 'next/link'
+import styles from './Intro.module.css'
 
 const Intro = () => {
   return (
-    <section className="intro-wrapper">
-      <div className="intro-content">
+    <section className={styles['intro-wrapper']}>
+      <div className={styles['intro-content']}>
         <h1>juntos criamos mais</h1>
         <svg
-          className="logo_intro"
+          className={styles['logo_intro']}
           xmlns="http://www.w3.org/2000/svg"
           width="686"
           height="161"
@@ -70,13 +71,13 @@ const Intro = () => {
           sobretudo, mais <strong>inclusiva</strong>, onde todas as famílias têm&nbsp;
           <strong>igualdade de oportunidades</strong>.
         </h3>
-        <div className="link intro">
-          <div className="link-underline intro">
+        <div className={styles['link intro']}>
+          <div className={styles['link-underline intro']}>
             <Link href="/QuemSomos">
               <a>
                 <h4>Ler História</h4>
                 <svg
-                  className="arrow"
+                  className={styles['arrow']}
                   xmlns="http://www.w3.org/2000/svg"
                   width="19"
                   height="14"
@@ -107,7 +108,7 @@ const Intro = () => {
           </div>
         </div>
       </div>
-      <div className="sticker">
+      <div className={styles['sticker']}>
         <a href="#">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183 183" fill="none">
             <g clipPath="url(#clip0)">

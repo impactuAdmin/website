@@ -1,24 +1,26 @@
+import styles from './Porto.module.css'
+
 const Porto = () => {
   return (
-    <section id="onde" className="about-porto">
-      <div className="about-porto-content reveal">
-        <div className="about-porto-content-top">
+    <section id="onde" className={styles['about-porto']}>
+      <div className={`${styles['about-porto-content']} reveal`}>
+        <div className={styles['about-porto-content-top']}>
           <h1 style={{ textAlign: 'left' }}>
             A nossa <br />
             área de ação
           </h1>
           <h2>Onde?</h2>
         </div>
-        <div className="about-porto-content-bottom">
-          <div className="teste">
+        <div className={styles['about-porto-content-bottom']}>
+          <div className={styles['teste']}>
             <img
               src="/onde-timeline.webp"
               alt="Cronologia dos locais de ação"
-              className="onde-timeline"
+              className={styles['onde-timeline']}
             />
-            <img src="/onde-mapa.webp" alt="Mapa da área de ação" className="onde-mapa" />
+            <img src="/onde-mapa.webp" alt="Mapa da área de ação" className={styles['onde-mapa']} />
           </div>
-          <div className="about-porto-content-bottom-text">
+          <div className={styles['about-porto-content-bottom-text']}>
             <h3>
               A Impac&rsquo;tu nasceu na cidade Invicta e durante 3 anos marcou a diferença na
               comunidade Portuense.

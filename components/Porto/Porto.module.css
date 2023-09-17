@@ -1,0 +1,122 @@
+.about-porto {
+  min-height: 90vh;
+  padding: 0 10% 10vh 10%;
+  transform: scale(0.8);
+}
+
+.about-porto-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 5em;
+}
+
+.about-porto-content-top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-porto-content-top h1 {
+  width: 100%;
+  flex: 1;
+  padding-right: 2em;
+}
+
+.about-porto-content h2 {
+  flex: 1;
+
+  color: #10845a;
+  font-size: 10em;
+}
+
+@media (max-width: 1329px) {
+  .about-porto-content h2 {
+    flex: initial;
+  }
+}
+
+.about-porto-content-bottom {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4em;
+
+  width: 100%;
+}
+
+.teste {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.onde-timeline {
+  width: 100% !important;
+  margin-bottom: 3em;
+}
+
+.onde-mapa {
+  width: 30% !important;
+}
+
+.about-porto-content img {
+  width: 25vw;
+  max-width: 450px;
+  min-width: 300px;
+}
+
+.about-porto-content-bottom-text {
+  flex: 1;
+  min-width: 420px;
+}
+
+.about-porto-content-bottom-text h1 {
+  font-size: 2.3em;
+}
+
+.about-porto-content-bottom-text h3 {
+  flex: 1.5;
+  font-size: 1.7em;
+  padding-top: 2em;
+  width: 100%;
+}
+
+@media (max-width: 630px) {
+  .about-porto-content-bottom-text {
+    width: 100%;
+    min-width: initial;
+  }
+}
+
+@media (max-width: 979px) {
+  .about-porto-content-bottom-text h1 {
+    width: 80%;
+  }
+
+  .about-porto-content-bottom-text h3 {
+    min-width: initial;
+    width: 80%;
+  }
+
+  .about-porto-content-bottom-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .about-porto .about-porto-content h2 {
+    font-size: 5.6em;
+  }
+
+  .about-porto-content-bottom-text {
+    font-size: 0.8em;
+  }
+}

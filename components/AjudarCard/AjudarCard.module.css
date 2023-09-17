@@ -1,0 +1,65 @@
+.ajudar-card {
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  line-height: 1.2;
+  transform: scale(1);
+  transition: 0.3s;
+}
+
+.ajudar-card:hover {
+  transform: scale(1.03);
+}
+
+@media (max-width: 600px) {
+  .ajudar-card {
+    padding: 2em 1.9em;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+  .ajudar-card {
+    margin-inline: auto;
+    max-width: 350px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1100px) {
+  .ajudar-card {
+    padding: 2em;
+  }
+}
+
+.ajudar-card-img {
+  width: 100%;
+  margin-inline: auto;
+  border-radius: 7px;
+}
+
+.ajudar-card-value-wrapper {
+  margin-block: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.ajudar-card-value {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.ajudar-card hr {
+  width: 100%;
+}
+
+.ajudar-card ul {
+  width: 80%;
+  margin-top: 1.5em;
+}
+
+.ajudar-card .link-underline.contactos.intro {
+  margin-top: 2em;
+}

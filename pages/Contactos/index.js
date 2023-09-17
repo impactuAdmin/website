@@ -1,11 +1,12 @@
 import Link from 'next/link'
+import styles from './Contactos.module.css'
 
 const Contactos = () => {
   return (
     <>
-      <section className="contacts-hero-wrapper">
-        <div className="contacts-hero-content">
-          <div className="contacts-title">
+      <section className={styles['contacts-hero-wrapper']}>
+        <div className={styles['contacts-hero-content']}>
+          <div className={styles['contacts-title']}>
             <h1>
               Caso precises
               <br /> de nos encontrar
@@ -13,15 +14,15 @@ const Contactos = () => {
           </div>
         </div>
       </section>
-      <section className="contacts-background">
-        <section className="contacts-intro-content">
-          <div className="contacts-intro-title">
+      <section className={styles['contacts-background']}>
+        <section className={styles['contacts-intro-content']}>
+          <div className={styles['contacts-intro-title']}>
             <h2>
-              <img src="../sede.webp" alt="Sede" className="sede" />
+              <img src="../sede.webp" alt="Sede" className={styles['sede']} />
               Praça de Carlos Alberto nº52 <br />
               4050-153 Porto <br />
             </h2>
-            <div className="localiza">
+            <div className={styles['localiza']}>
               <br />
               <br />
               <p>
@@ -41,11 +42,11 @@ const Contactos = () => {
                 <strong>Segue a Impac&rsquo;tu</strong>
               </p>
             </div>
-            <div className="icons">
+            <div className={styles['icons']}>
               <Link href="https://www.linkedin.com/company/impac%E2%80%99tu">
                 <a target="_blank">
                   <svg
-                    className="linkedin"
+                    className={styles['linkedin']}
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
                     height="20"
@@ -69,7 +70,7 @@ const Contactos = () => {
               <Link href="https://www.facebook.com/associacaoimpactu/">
                 <a target="_blank">
                   <svg
-                    className="facebook"
+                    className={styles['facebook']}
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
                     height="20"
@@ -88,7 +89,7 @@ const Contactos = () => {
               <Link href="https://www.instagram.com/impac.tu/">
                 <a target="_blank">
                   <svg
-                    className="instagram"
+                    className={styles['instagram']}
                     width="20"
                     height="20"
                     viewBox="0 0 21 21"
@@ -123,7 +124,7 @@ const Contactos = () => {
                   >
                     <g>
                       <path
-                        className="st0"
+                        className={styles['st0']}
                         d="M526.4,174.4H189.7h0c-22.9,0-44.8,9.1-60.9,25.2c-16.2,16.2-25.2,38.1-25.2,60.9v180.1v0   c0,22.9,9.1,44.8,25.2,60.9c16.2,16.2,38.1,25.2,60.9,25.2h336.8h0c22.9,0,44.8-9.1,60.9-25.2c16.2-16.2,25.2-38.1,25.2-60.9V260.5   v0c0-22.9-9.1-44.8-25.2-60.9C571.2,183.5,549.3,174.4,526.4,174.4L526.4,174.4z M457.8,354.1L305,432.4c-1.2,0.6-2.7,0.6-3.8-0.1   c-1.2-0.7-1.9-2-1.9-3.3V272.3c0-1.4,0.7-2.6,1.9-3.3c1.2-0.7,2.6-0.7,3.8-0.1l152.7,78.3c1.3,0.7,2.1,2,2.1,3.5   C459.9,352.1,459.1,353.5,457.8,354.1L457.8,354.1z"
                       />
                     </g>
@@ -132,7 +133,7 @@ const Contactos = () => {
               </Link>
             </div>
           </div>
-          <div className="responsive-map-container reveal">
+          <div className={`${styles['responsive-map-container']} reveal`}>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.0845826769427!2d-8.616641770750023!3d41.148968208559054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2465309c670e5b%3A0x9eb91bbabfd13a89!2sImpac&#39;tu!5e0!3m2!1spt-PT!2spt!4v1632066576066!5m2!1spt-PT!2spt"
               width="600"
@@ -143,8 +144,8 @@ const Contactos = () => {
             ></iframe>
           </div>
         </section>
-        <section className="contactar-wrapper">
-          <div className="container-contactos reveal">
+        <section className={styles['contactar-wrapper']}>
+          <div className={`${styles['container-contactos']} reveal`}>
             <div style={{ textAlign: 'center' }}>
               <h1>Fala connosco</h1>
             </div>
@@ -175,9 +176,9 @@ const Contactos = () => {
                   style={{ heigth: '200px' }}
                 />
 
-                <input type="submit" value="Enviar" className="hidden-button" />
-                <div className="link intro contactos">
-                  <div className="link-underline contactos intro">
+                <input type="submit" value="Enviar" className={styles['hidden-button']} />
+                <div className={`link ${styles['intro']} ${styles['contactos']}`}>
+                  <div className={`link-underline ${styles['intro']} ${styles['contactos']}`}>
                     <a>
                       <h4>Enviar</h4>
                       <svg

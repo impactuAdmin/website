@@ -1,6 +1,6 @@
 import PageHead from '../PageHead'
 import Header from '../Header/Header'
-import Footer from '../Footer'
+import Footer from '../Footer/Footer'
 import Script from 'next/script'
 import { datas, merchProducts } from '../../public/data/dados'
 

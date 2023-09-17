@@ -1,6 +1,6 @@
-import VideoHero from '../components/VideoHero'
-import Intro from '../components/Intro'
-import Stats from '../components/Stats'
+import VideoHero from '../components/VideoHero/VideoHero'
+import Intro from '../components/Intro/Intro'
+import Stats from '../components/Stats/Stats'
 
 export default function App() {
   return (

@@ -59,10 +59,10 @@ const Header = ({ datasDeRecrutamento, merchProducts }) => {
 
   return (
     <>
-      <nav className="navigation_wrapper">
-        <div className="navigation">
+      <nav className={styles['navigation_wrapper']}>
+        <div className={styles['navigation']}>
           <Logo isMobile={false} router={router} />
-          <ul className={`links ${styles['links']}`}>
+          <ul className={styles['links']}>
             <Dropdown
               title={'Quem somos?'}
               navLinkClassName={`${styles['nav-link']} ${navLinkClassName}`}
@@ -93,7 +93,7 @@ const Header = ({ datasDeRecrutamento, merchProducts }) => {
           </ul>
           <Link href="/QueroAjudar">
             <a>
-              <button className="donate_button" type="button">
+              <button className={styles['donate_button']} type="button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="14"
@@ -113,24 +113,24 @@ const Header = ({ datasDeRecrutamento, merchProducts }) => {
         </div>
       </nav>
 
-      <nav className="mobile-header">
-        <div className="mobile-header-wrapper">
-          <div className="burger-menu" onClick={openButtonClick}>
-            <div className="rect 1"></div>
-            <div className="rect 2"></div>
-            <div className="rect 3"></div>
+      <nav className={styles['mobile-header']}>
+        <div className={styles['mobile-header-wrapper']}>
+          <div className={styles['burger-menu']} onClick={openButtonClick}>
+            <div className={`${styles['rect']} 1`}></div>
+            <div className={`${styles['rect']} 2`}></div>
+            <div className={`${styles['rect']} 3`}></div>
           </div>
-          <div className="logo mobile">
+          <div className={`${styles['logo']} ${styles['mobile']}`}>
             <Logo isMobile={true} />
           </div>
         </div>
       </nav>
       {/* MENU LAYOVER */}
-      <menu className="menu-wrapper" style={overlayMenuStyle}>
-        <div className="menu-content">
-          <nav className="mobile-header">
-            <div className="mobile-header-wrapper">
-              <div className="menu-dismiss" onClick={closeButtonClick}>
+      <menu className={styles['menu-wrapper']} style={overlayMenuStyle}>
+        <div className={styles['menu-content']}>
+          <nav className={styles['mobile-header']}>
+            <div className={styles['mobile-header-wrapper']}>
+              <div className={styles['menu-dismiss']} onClick={closeButtonClick}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="35px"
@@ -146,7 +146,7 @@ const Header = ({ datasDeRecrutamento, merchProducts }) => {
                   </g>
                 </svg>
               </div>
-              <div className="logo mobile">
+              <div className={`${styles['logo']} ${styles['mobile']}`}>
                 <Logo closeMenuFunction={closeButtonClick} isMobile={true} />
               </div>
             </div>
@@ -182,7 +182,10 @@ const Header = ({ datasDeRecrutamento, merchProducts }) => {
           </Link>
           <Link href="/QueroAjudar">
             <a onClick={closeButtonClick}>
-              <button className="donate_button overlay-menu" type="button">
+              <button
+                className={`${styles['donate_button']} ${styles['overlay-menu']}`}
+                type="button"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="14"
@@ -199,11 +202,11 @@ const Header = ({ datasDeRecrutamento, merchProducts }) => {
               </button>
             </a>
           </Link>
-          <div className="social-media">
+          <div className={styles['social-media']}>
             <Link href="https://www.linkedin.com/company/impac%E2%80%99tu">
               <a target="blank">
                 <svg
-                  className="linkedin"
+                  className={styles['linkedin']}
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
                   height="20"
@@ -227,7 +230,7 @@ const Header = ({ datasDeRecrutamento, merchProducts }) => {
             <Link href="https://www.facebook.com/associacaoimpactu/">
               <a target="blank">
                 <svg
-                  className="facebook"
+                  className={styles['facebook']}
                   xmlns="http://www.w3.org/2000/svg"
                   width="10"
                   height="20"
@@ -246,7 +249,7 @@ const Header = ({ datasDeRecrutamento, merchProducts }) => {
             <Link href="https://www.instagram.com/impac.tu/">
               <a target="blank">
                 <svg
-                  className="instagram"
+                  className={styles['instagram']}
                   width="21"
                   height="21"
                   viewBox="0 0 21 21"
@@ -281,7 +284,7 @@ const Header = ({ datasDeRecrutamento, merchProducts }) => {
                 >
                   <g>
                     <path
-                      className="st0"
+                      className={styles['st0']}
                       d="M526.4,174.4H189.7h0c-22.9,0-44.8,9.1-60.9,25.2c-16.2,16.2-25.2,38.1-25.2,60.9v180.1v0   c0,22.9,9.1,44.8,25.2,60.9c16.2,16.2,38.1,25.2,60.9,25.2h336.8h0c22.9,0,44.8-9.1,60.9-25.2c16.2-16.2,25.2-38.1,25.2-60.9V260.5   v0c0-22.9-9.1-44.8-25.2-60.9C571.2,183.5,549.3,174.4,526.4,174.4L526.4,174.4z M457.8,354.1L305,432.4c-1.2,0.6-2.7,0.6-3.8-0.1   c-1.2-0.7-1.9-2-1.9-3.3V272.3c0-1.4,0.7-2.6,1.9-3.3c1.2-0.7,2.6-0.7,3.8-0.1l152.7,78.3c1.3,0.7,2.1,2,2.1,3.5   C459.9,352.1,459.1,353.5,457.8,354.1L457.8,354.1z"
                     />
                   </g>

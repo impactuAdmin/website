@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import styles from './AboutStarted.module.css'
+
 const phases = [
   {
     slideNumber: 1,
@@ -48,12 +50,12 @@ const AboutStarted = () => {
   const listItems = phases.map((phase) => (
     <div
       key={phase.slideNumber}
-      className="mySlides fade"
+      className={`${styles['mySlides']} fade`}
       style={phase.slideNumber === slideIndex + 1 ? { display: 'flex' } : { display: 'none' }}
     >
-      <div className="numbertext">{phase.slideNumber} / 4</div>
+      <div className={styles['numbertext']}>{phase.slideNumber} / 4</div>
       <img src={phase.imsgSrc} alt={phase.alt} />
-      <div className="text">
+      <div className={styles['text']}>
         <strong>{phase.title}</strong>
         <br />
         <br />
@@ -65,20 +67,24 @@ const AboutStarted = () => {
   const dots = phases.map((phase) => (
     <span
       key={phase.slideNumber}
-      className={phase.slideNumber === slideIndex + 1 ? 'dot active' : 'dot'}
+      className={
+        phase.slideNumber === slideIndex + 1
+          ? `${styles['dot']} ${styles['active']}`
+          : styles['dot']
+      }
       onClick={() => setCurrentSlide(phase.slideNumber - 1)}
     ></span>
   ))
 
   return (
-    <section id="historia" className="about-comecou reveal">
+    <section id="historia" className={`${styles['about-comecou']} reveal`}>
       <h1>Como tudo começou</h1>
-      <div className="slideshow-container">
+      <div className={styles['slideshow-container']}>
         {listItems}
-        <a className="prev" onClick={() => increaseSlideIndex(-1)}>
+        <a className={styles['prev']} onClick={() => increaseSlideIndex(-1)}>
           &#10094;
         </a>
-        <a className="next" onClick={() => increaseSlideIndex(1)}>
+        <a className={styles['next']} onClick={() => increaseSlideIndex(1)}>
           &#10095;
         </a>
       </div>

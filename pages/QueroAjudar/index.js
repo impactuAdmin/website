@@ -1,12 +1,13 @@
 import Link from 'next/link'
-import AjudarCard from '../components/AjudarCard'
+import AjudarCard from '../../components/AjudarCard/AjudarCard'
+import styles from './QueroAjudar.module.css'
 
 const QueroAjudar = () => {
   return (
     <>
-      <section className="ajudar-hero-wrapper">
-        <div className="ajudar-hero-content">
-          <div className="doar">
+      <section className={styles['ajudar-hero-wrapper']}>
+        <div className={styles['ajudar-hero-content']}>
+          <div className={styles['doar']}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="80"
@@ -36,20 +37,23 @@ const QueroAjudar = () => {
             </p>
             <br />
             <br />
-            <div className="ajudar-btn-wrapper">
-              <a className="ajudar_button socio_button" href="#ajudarCards">
+            <div className={styles['ajudar-btn-wrapper']}>
+              <a
+                className={`${styles['ajudar_button']} ${styles['socio_button']}`}
+                href="#ajudarCards"
+              >
                 Torna-te sócio
               </a>
               <Link href="/Doar">
-                <a className="ajudar_button">Faz uma doação</a>
+                <a className={styles['ajudar_button']}>Faz uma doação</a>
               </Link>
             </div>
           </div>
         </div>
       </section>
-      <section id="ajudarCards" className="ajudar-cards-wrapper">
+      <section id="ajudarCards" className={styles['ajudar-cards-wrapper']}>
         <h1>Modalidade de cartão de sócio</h1>
-        <div className="ajudar-cards-content reveal">
+        <div className={`${styles['ajudar-cards-content']} reveal`}>
           <AjudarCard
             modalidade="companheiro"
             value="12€"

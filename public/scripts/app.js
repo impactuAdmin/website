@@ -2,14 +2,14 @@ const getLogo = document.querySelectorAll('.logo.desktop path')
 const getNavbarLinks = document.querySelectorAll('.links a')
 const getSticker = document.querySelectorAll('.sticker')
 
-window.addEventListener('scroll', function () {
-  // altera os estilos da navbar com scroll (a height, cor de background, cor dos elementos, etc)
-  if (window.scrollY > 100) {
-    getMobileHeader.style.backgroundColor = '#10845A'
-  } else {
-    getMobileHeader.style.backgroundColor = 'transparent'
-  }
-})
+// window.addEventListener('scroll', function () {
+//   // altera os estilos da navbar com scroll (a height, cor de background, cor dos elementos, etc)
+//   if (window.scrollY > 100) {
+//     getMobileHeader.style.backgroundColor = '#10845A'
+//   } else {
+//     getMobileHeader.style.backgroundColor = 'transparent'
+//   }
+// })
 
 // if (getLogo[0].classList.contains('logo-scrolling-active')) {
 // } else {
@@ -35,23 +35,23 @@ window.addEventListener('scroll', function () {
 // })
 // }
 
-getMobileHeader = document.getElementsByClassName('mobile-header-wrapper')[0] // faz aparecer e desaparecer a navbar com scroll
+// getMobileHeader = document.getElementsByClassName('mobile-header-wrapper')[0] // faz aparecer e desaparecer a navbar com scroll
 
-var prevScrollpos = window.pageYOffset
+// var prevScrollpos = window.pageYOffset
 
-window.onscroll = function () {
-  var currentScrollPos = window.pageYOffset
-  if (prevScrollpos > currentScrollPos) {
-    getMobileHeader.style.top = '0'
-  } else {
-    getMobileHeader.style.top = '-100px'
-  }
-  prevScrollpos = currentScrollPos
+// window.onscroll = function () {
+//   var currentScrollPos = window.pageYOffset
+//   if (prevScrollpos > currentScrollPos) {
+//     getMobileHeader.style.top = '0'
+//   } else {
+//     getMobileHeader.style.top = '-100px'
+//   }
+//   prevScrollpos = currentScrollPos
 
-  if (currentScrollPos <= 0) {
-    getMobileHeader.style.top = '0'
-  }
-}
+//   if (currentScrollPos <= 0) {
+//     getMobileHeader.style.top = '0'
+//   }
+// }
 
 // ----------------------------------------
 
@@ -107,11 +107,11 @@ var contactButtonMobile = document.querySelectorAll(
 //   }, 4000)
 // })
 
-contactButtonMobile.addEventListener('click', function timeFunction() {
-  setTimeout(() => {
-    sendButton = document.querySelectorAll('.link-underline.contactos.intro')[0]
-    sendButton.addEventListener('click', () => {
-      document.querySelectorAll('.container-contactos form input[type=submit]')[0].click()
-    })
-  }, 4000)
-})
+// contactButtonMobile.addEventListener('click', function timeFunction() {
+//   setTimeout(() => {
+//     sendButton = document.querySelectorAll('.link-underline.contactos.intro')[0]
+//     sendButton.addEventListener('click', () => {
+//       document.querySelectorAll('.container-contactos form input[type=submit]')[0].click()
+//     })
+//   }, 4000)
+// })

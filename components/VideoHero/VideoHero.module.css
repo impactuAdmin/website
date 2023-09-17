@@ -1,0 +1,111 @@
+.hero-wrapper {
+  width: 100vw;
+  height: 100vh;
+  padding: 6em 10% 6em 10%;
+  background-image: url(../../public/videoGif.gif);
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+}
+
+.title-hero {
+  /* padding: 10% 0 0 0; */
+  width: 100%;
+  height: 100%;
+}
+
+.title-hero .animate-title h1 {
+  font-weight: 800;
+  font-size: 10vw;
+  line-height: 0.9em;
+  display: inline-block;
+  /* background-color: rgba(16, 132, 90, 0.6); */
+  padding: 10px 0 10px 0;
+  /* white-space: nowrap; */
+  opacity: 0.8;
+  color: #dbfff5;
+}
+
+@media (min-width: 1501px) {
+  .title-hero .animate-title h1 {
+    font-size: 11.5vw;
+  }
+}
+
+@media (max-width: 1500px) {
+  .title-hero .animate-title h1 {
+    font-size: 12vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .title-hero .animate-title h1 {
+    font-size: 17.8vw;
+  }
+}
+
+.title-hero h1:nth-of-type(2) {
+  padding-bottom: 20px;
+}
+
+.title-hero h3 {
+  display: none;
+
+  position: relative;
+  top: 1.5em;
+  color: white;
+  font-weight: 300;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  white-space: nowrap;
+}
+
+.animate-title {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: fadein2 1.5s ease-in-out;
+}
+
+.hero-wrapper video {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  top: -5.1em;
+  pointer-events: none;
+  height: 120vh;
+  object-fit: cover;
+}
+
+@keyframes fadein2 {
+  from {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 450px) {
+  .title-hero h1 {
+    font-size: 2em;
+    line-height: 0.7em;
+    padding-left: 5px;
+  }
+
+  .title-hero h1:last-of-type {
+    padding-bottom: 10px;
+  }
+
+  .title-hero h3 {
+    font-size: 1em;
+    white-space: initial;
+  }
+}

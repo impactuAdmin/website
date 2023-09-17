@@ -50,7 +50,7 @@ button {
 /* -------------------------
 ----------- HEADER ---------
 ---------------------------- */
-.mobile-header-wrapper {
+/* .mobile-header-wrapper {
   display: none;
 }
 
@@ -81,7 +81,7 @@ button {
   width: 105px;
   padding-top: 4px;
 }
-
+ */
 .logo-container svg path {
   transition: 0.4s;
 }
@@ -89,8 +89,8 @@ button {
 .logo-container:hover svg path {
   fill: #10845a;
 }
-
-/* .links {
+/*  
+.links {
   min-width: fit-content;
   width: 50%;
   display: flex;
@@ -121,7 +121,7 @@ button {
   border-bottom: 2px solid white;
   transition: 0.2s ease-out;
   font-size: 0.9em;
-} */
+} 
 
 .nav-links-scrolling-active {
   color: black !important;
@@ -183,25 +183,24 @@ button {
   height: 4em;
   background-color: transparent;
 }
-
+*/
 /* -------------------------
 ----------- HERO -----------
 ---------------------------- */
-.hero-wrapper {
+/* .hero-wrapper {
   width: 100vw;
   height: 100vh;
   padding: 6em 10% 6em 10%;
   background-image: url(../public/videoGif.gif);
   background-position: center;
-  /* Center the image */
+  /* Center the image */ /*
   background-repeat: no-repeat;
-  /* Do not repeat the image */
+  /* Do not repeat the image */ /*
   background-size: cover;
-  /* Resize the background image to cover the entire container */
 }
 
 .title-hero {
-  /* padding: 10% 0 0 0; */
+  /* padding: 10% 0 0 0; */ /*
   width: 100%;
   height: 100%;
 }
@@ -211,9 +210,9 @@ button {
   font-size: 10vw;
   line-height: 0.9em;
   display: inline-block;
-  /* background-color: rgba(16, 132, 90, 0.6); */
+  /* background-color: rgba(16, 132, 90, 0.6); */ /*
   padding: 10px 0 10px 0;
-  /* white-space: nowrap; */
+  /* white-space: nowrap; */ /*
   opacity: 0.8;
   color: #dbfff5;
 }
@@ -280,12 +279,12 @@ video {
     opacity: 1;
     transform: translateY(0);
   }
-}
+}*/
 
 /* -------------------------
 ----------- INTRO ---------
 ---------------------------- */
-.intro-wrapper {
+/* .intro-wrapper {
   height: 100vh;
   position: relative;
   background-color: #c8e5dd;
@@ -319,7 +318,7 @@ video {
   margin-top: -8em;
   height: 11vh;
 }
-
+ */
 .link {
   min-width: fit-content;
 }
@@ -327,7 +326,7 @@ video {
 .link:hover .link-underline::after {
   transform: translateX(100%);
 }
-
+/* 
 .link.intro.contactos {
   display: flex;
   justify-content: center;
@@ -425,12 +424,12 @@ video {
 
 .sticker-scrolling-active {
   transform: translateX(0);
-}
+} */
 
 /* -------------------------
 ----------- STATS ---------
 ---------------------------- */
-.stats-wrapper {
+/* .stats-wrapper {
   position: relative;
   min-height: fit-content;
   background-color: #e8f6f4;
@@ -498,7 +497,7 @@ video {
 
 .card:hover {
   transform: scale(1.05);
-}
+} */
 
 /* -------------------------
 ----------- HELP -----------
@@ -574,7 +573,7 @@ video {
 /* -------------------------
 ----------- FOOTER ---------
 ---------------------------- */
-.footer-wrapper {
+/* .footer-wrapper {
   position: relative;
   height: 25%;
   background-color: #e8f6f4;
@@ -703,7 +702,7 @@ video {
 
 .footer-sticker svg:hover {
   transform: rotate(360deg);
-}
+} */
 
 .reveal {
   position: relative;
@@ -779,7 +778,7 @@ video {
   max-width: 450px;
 } */
 
-.about-background {
+/* .about-background {
   background-color: #c8e5dd;
 }
 
@@ -799,9 +798,9 @@ video {
 
 .about-background .about-intro-content .about-intro-title img {
   margin-top: 3em;
-}
+} */
 
-.about-intro-content {
+/* .about-intro-content {
   min-height: 90vh;
   justify-content: left;
   align-items: center;
@@ -905,9 +904,9 @@ video {
   .about-intro-title-2 .about-intro-text h3 {
     width: initial;
   }
-}
+} */
 
-.ods-list {
+/* .ods-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -990,11 +989,11 @@ video {
   .ods-list li {
     width: 45%;
   }
-}
+} */
 /*-------------------------------------
 --------------- 4 PILARES -------------
 -------------------------------------*/
-
+/* 
 .about-pillars {
   min-height: 100vh;
   background-color: #e8f6f4;
@@ -1062,7 +1061,7 @@ video {
     font-size: 3em;
   }
 
-  .about-background .about-intro-content .about-intro-title {
+  /* .about-background .about-intro-content .about-intro-title {
     font-size: 0.8em;
   }
 
@@ -1074,9 +1073,9 @@ video {
     font-size: 2em;
     line-height: 1.2em;
     padding-top: 3em;
-  }
+  } 
 }
-
+  
 .about-pillars .about-pillars-content {
   height: 30%;
   display: flex;
@@ -1097,6 +1096,7 @@ video {
 4 imagens
 No mobile fica em 2 e 1 colunas
 */
+/*
 .column {
   flex: 0 0 20%;
   display: flex;
@@ -1112,19 +1112,19 @@ No mobile fica em 2 e 1 colunas
 /* .column:nth-child(4) img {
   width: 170px;
   padding-bottom: 40px;
-} */
+} 
 
 figcaption {
   text-align: center;
   font-size: 1.05em;
   font-weight: 800;
-}
-
+} 
+*/
 /*-------------------------------------
 ----- PORQUÊ NA CIDADE DO PORTO? ------
 -------------------------------------*/
 
-.about-porto {
+/* .about-porto {
   min-height: 90vh;
   padding: 0 10% 10vh 10%;
   transform: scale(0.8);
@@ -1159,14 +1159,14 @@ figcaption {
 }
 
 @media (max-width: 1329px) {
-  .about-intro-content .about-intro-title h1 {
+  /* .about-intro-content .about-intro-title h1 {
     flex: initial;
     padding-right: 0;
   }
 
   .about-intro-content .about-intro-title h2 {
     flex: initial;
-  }
+  } 
 
   .about-porto .about-porto-content h2 {
     flex: initial;
@@ -1244,13 +1244,13 @@ figcaption {
     flex-direction: column;
     align-items: center;
   }
-}
-
+} 
+*/
 /*-------------------------------------
 -------- COMO TUDO COMEÇOU ------------
 -------------------------------------*/
 
-.about-comecou {
+/* .about-comecou {
   background-color: white;
   min-height: 70vh;
   padding: 0vh 10% 0vh 10%;
@@ -1264,20 +1264,19 @@ figcaption {
 
 .about-comecou img {
   width: 200px;
-}
+} */
 
 /*----------------------------------------
 --------------- Slideshow ----------------
 ----------------------------------------*/
 
-/* Slideshow container */
+/* Slideshow container
 .slideshow-container {
   max-width: 45vw;
   position: relative;
   margin: auto;
 }
 
-/* Next & previous buttons */
 .prev,
 .next {
   cursor: pointer;
@@ -1294,7 +1293,6 @@ figcaption {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
@@ -1310,7 +1308,6 @@ figcaption {
   width: 65%;
 }
 
-/* Caption text */
 .slideshow-container .text {
   color: black;
   font-size: 1em;
@@ -1323,7 +1320,6 @@ figcaption {
   padding-right: 25%;
 }
 
-/* Number text (1/4 etc) */
 .numbertext {
   color: #10845a;
   font-size: 12px;
@@ -1331,7 +1327,6 @@ figcaption {
   display: none;
 }
 
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 8px;
@@ -1346,7 +1341,7 @@ figcaption {
 .about-comecou .active,
 .dot:hover {
   background-color: #10845a;
-}
+} */
 
 /* Fading animation */
 .fade {
@@ -1376,8 +1371,7 @@ figcaption {
   }
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 800px) {
+/* @media only screen and (max-width: 800px) {
   .prev,
   .next,
   .text {
@@ -1394,7 +1388,7 @@ figcaption {
     padding-left: 1%;
     padding-right: 1%;
   }
-}
+} */
 
 /*----------------------------------------
 ---------- Notícia Recrutamento ----------
@@ -1570,7 +1564,7 @@ div#dataEscolhida > div,
 --------------- CONTACTS.HTML -----------------
 ---------------------------------------------*/
 
-.contacts-hero-wrapper {
+/* .contacts-hero-wrapper {
   width: 100%;
 }
 
@@ -1721,7 +1715,7 @@ div#dataEscolhida > div,
 .contacts-intro-title img:hover {
   transform: scale(0.94);
   transition: 0.4s;
-}
+} */
 
 /*----------------------------------------------
 ------------------ FORULÁRIO -------------------
@@ -1905,7 +1899,7 @@ input[type='submit']:hover {
 ----------------- IMPACTO SOCIAL ---------------
 ----------------------------------------------*/
 
-.impactosocial-hero-wrapper {
+/* .impactosocial-hero-wrapper {
   min-height: 100vh;
   height: 100vh;
   width: 100%;
@@ -2033,9 +2027,9 @@ input[type='submit']:hover {
     width: 70%;
     font-size: 1.7em;
   }
-}
+} */
 
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
   .container-contactos {
     width: 80%;
     padding: 5% 0 5% 0;
@@ -2044,16 +2038,16 @@ input[type='submit']:hover {
   .container-contactos .container {
     padding: 5% 0 5% 0;
   }
-}
+} */
 
 @media (max-width: 800px) {
-  .impactosocial-intro-content .impactosocial-intro-title h2 {
+  /* .impactosocial-intro-content .impactosocial-intro-title h2 {
     font-size: 7em;
   }
 
   .impactosocial-hero-wrapper {
     background-position: center center;
-  }
+  } */
 
   .recrutamento-hero-content .recrutamento-subtitle h2 {
     display: none;
@@ -2066,16 +2060,16 @@ input[type='submit']:hover {
     padding-bottom: 60%;
   }
 
-  .about-porto .about-porto-content h2 {
+  /* .about-porto .about-porto-content h2 {
     font-size: 5.6em;
   }
 
   .about-porto-content-bottom-text {
     font-size: 0.8em;
-  }
+  } */
 }
 
-@media (max-width: 630px) {
+/* @media (max-width: 630px) {
   .impactosocial-intro-text {
     min-width: auto;
   }
@@ -2087,10 +2081,10 @@ input[type='submit']:hover {
   .impactosocial-intro-title-2 .impactosocial-intro-text h3 {
     width: 80%;
   }
-}
+} */
 
 @media (max-width: 500px) {
-  .impactosocial-intro-img {
+  /* .impactosocial-intro-img {
     min-width: 200px;
   }
 
@@ -2103,24 +2097,24 @@ input[type='submit']:hover {
     font-size: 1.3em;
     font-weight: 300;
     display: block;
-  }
+  } */
 
   .container-formulario {
     width: 80%;
   }
 }
 
-@media (max-width: 280px) {
+/* @media (max-width: 280px) {
   .impactosocial-intro-title-2 .impactosocial-intro-text h3 {
     width: initial;
   }
-}
+} */
 
 /*-------------------------------------
 ---------- PROJETOS IMPACTO -----------
 -------------------------------------*/
 
-.section-projetos {
+/* .section-projetos {
   background-color: #c8e5dd;
   width: 100%;
   padding-left: 5%;
@@ -2148,13 +2142,13 @@ input[type='submit']:hover {
   display: flex;
   flex-wrap: wrap;
   row-gap: 3em;
-}
+} */
 
 /*
 3 imagens
 No mobile fica em 2 e 1 colunas
 */
-.column-projetos {
+/* .column-projetos {
   width: 33%;
   margin-bottom: auto;
   padding-left: 5%;
@@ -2185,7 +2179,7 @@ No mobile fica em 2 e 1 colunas
   transform: scale(0.85);
   transition: 0.4s;
   color: #10845a;
-}
+} */
 
 /*----------------------------------------
 ------------ DEPARTAMENTOS ---------------
@@ -2320,7 +2314,7 @@ No mobile fica em 2 e 1 colunas
 ----------------- QUERO AJUDAR -----------------
 ----------------------------------------------*/
 
-.ajudar-hero-wrapper {
+/* .ajudar-hero-wrapper {
   min-height: 50vh;
   height: 100vh;
   width: 100%;
@@ -2563,7 +2557,7 @@ No mobile fica em 2 e 1 colunas
 
 .ajudar-card .link-underline.contactos.intro {
   margin-top: 2em;
-}
+} */
 
 /*----------------------------------------------
 ----------------- DOAR -----------------
@@ -2585,7 +2579,7 @@ No mobile fica em 2 e 1 colunas
 --------------------- MOBILE -------------------
 ----------------------------------------------*/
 
-.menu-wrapper .menu-content .menu-dismiss {
+/* .menu-wrapper .menu-content .menu-dismiss {
   position: fixed;
   top: 14px;
   right: 11.3%;
@@ -2613,7 +2607,7 @@ No mobile fica em 2 e 1 colunas
   position: relative;
   top: 7.3px;
   right: 3px;
-}
+} */
 
 @media (max-width: 1400px) {
   /* .navigation_wrapper .links {
@@ -2689,7 +2683,7 @@ No mobile fica em 2 e 1 colunas
     width: 100%;
   }
 
-  .footer-content {
+  /* .footer-content {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
     grid-gap: 3em;
@@ -2697,7 +2691,7 @@ No mobile fica em 2 e 1 colunas
 
   .footer-sticker {
     display: none;
-  }
+  } */
 
   .manel-text-wrapper {
     transform: scale(0.7) translateX(10em);
@@ -2705,7 +2699,7 @@ No mobile fica em 2 e 1 colunas
 }
 
 @media (max-width: 1000px) {
-  .navigation_wrapper {
+  /* .navigation_wrapper {
     display: none;
   }
 
@@ -2833,9 +2827,9 @@ No mobile fica em 2 e 1 colunas
     .donate_button {
       margin-bottom: 2em;
     }
-  }
+  } */
 
-  .stats-content {
+  /* .stats-content {
     transform: scale(0.8);
   }
 
@@ -2850,7 +2844,7 @@ No mobile fica em 2 e 1 colunas
 
   .stats .card h1 {
     font-size: 4.5em;
-  }
+  } */
 
   .img-wrapper {
     height: 100vh;
@@ -2867,7 +2861,7 @@ No mobile fica em 2 e 1 colunas
     height: 90%;
   }
 
-  .footer-wrapper {
+  /* .footer-wrapper {
     align-items: center;
     height: initial;
     padding: 3em 10% 3em 10%;
@@ -2877,7 +2871,7 @@ No mobile fica em 2 e 1 colunas
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 4em;
-  }
+  } */
 
   .sticker {
     display: none;
@@ -2895,27 +2889,27 @@ No mobile fica em 2 e 1 colunas
   }
 
   /*-----PROJETOS IMPACTO-----*/
-  .column-projetos {
+  /* .column-projetos {
     flex: 50%;
     max-width: 50%;
-  }
+  } */
 
   /*------CONTACTOS-------*/
 
-  .contacts-intro-title {
+  /* .contacts-intro-title {
     padding-bottom: 7em;
-  }
+  } */
 
   /*------MAPA-----*/
 
-  .responsive-map-container {
+  /* .responsive-map-container {
     height: 60vh;
     margin-bottom: 0;
   }
 
   .responsive-map-container iframe {
     padding: 0;
-  }
+  } */
 }
 
 @media (max-width: 900px) {
@@ -2933,17 +2927,17 @@ No mobile fica em 2 e 1 colunas
 }
 
 @media (max-width: 800px) {
-  .menu-wrapper .menu-content a h1 {
+  /* .menu-wrapper .menu-content a h1 {
     font-size: 2.4em;
   }
 
   .menu-wrapper .menu-content a h1::after {
     bottom: 28px;
-  }
+  } */
 
-  .about-background .about-intro-content .about-intro-title h2 {
+  /* .about-background .about-intro-content .about-intro-title h2 {
     font-size: 7em;
-  }
+  } */
 
   .title-hero h1 {
     font-size: 3em;
@@ -2962,51 +2956,51 @@ No mobile fica em 2 e 1 colunas
     font-size: 2.5em;
   }
 
-  .column {
+  /* .column {
     flex: 50%;
     max-width: 50%;
-  }
+  } */
 
   /*-----PROJETOS IMPACTO-----*/
-  .column-projetos {
+  /* .column-projetos {
     flex: 100%;
     max-width: 100%;
-  }
+  } */
 
-  .section-projetos {
+  /* .section-projetos {
     padding-bottom: 10%;
     width: 100%;
     justify-content: center;
     align-items: center;
-  }
+  } */
 
   /*-----Contactos/Sede-----*/
 
-  .sede {
+  /* .sede {
     display: flex;
     margin-left: auto;
     margin-right: auto;
     width: 80px;
     padding-bottom: 1%;
     transition: none;
-  }
+  } */
 
   /*-----título "Projetos Impactu"----*/
-  .section-projetos .section-projetos-content h1 {
+  /* .section-projetos .section-projetos-content h1 {
     font-size: 2em;
     line-height: 1em;
     padding-top: 3em;
-  }
+  } */
 
   /*-----título "departamentos"----*/
   .departamentos-content h1 {
     font-size: 2em;
   }
 
-  .container-contactos h1 {
+  /* .container-contactos h1 {
     font-size: 2em;
     line-height: 1em;
-  }
+  } */
 
   .container-formulario h1 {
     font-size: 2em;
@@ -3034,17 +3028,17 @@ No mobile fica em 2 e 1 colunas
   }
 }
 
-@media (max-width: 630px) {
+/* @media (max-width: 630px) {
   .menu-wrapper .menu-content .menu-dismiss {
     right: 12.5%;
   }
-}
+} */
 
-@media (max-width: 572px) {
+/* @media (max-width: 572px) {
   .contacts-title {
     padding-top: 3em;
   }
-}
+} */
 
 @media (max-width: 550px) {
   .title-hero h1 {
@@ -3062,7 +3056,7 @@ No mobile fica em 2 e 1 colunas
     white-space: initial;
   }
 
-  .footer-wrapper {
+  /* .footer-wrapper {
     height: 70%;
   }
 
@@ -3090,7 +3084,7 @@ No mobile fica em 2 e 1 colunas
   .footer-links-wrapper .right-column {
     height: fit-content;
     height: -moz-fit-content;
-  }
+  } */
 
   .recrutamento-home-wrapper {
     min-height: 100vh;
@@ -3135,7 +3129,7 @@ No mobile fica em 2 e 1 colunas
 }
 
 @media (max-width: 450px) {
-  .title-hero h1 {
+  /* .title-hero h1 {
     font-size: 2em;
     line-height: 0.7em;
     padding-left: 5px;
@@ -3157,11 +3151,11 @@ No mobile fica em 2 e 1 colunas
   .intro-wrapper .intro-content h3 {
     font-size: 1em;
     text-align: center;
-  }
+  } */
 
-  .stats-wrapper .stats-content {
+  /* .stats-wrapper .stats-content {
     transform: scale(0.7);
-  }
+  } */
 
   .help-wrapper .content-wrapper .content-foo h1 {
     font-size: 2.3em;
@@ -3175,26 +3169,26 @@ No mobile fica em 2 e 1 colunas
     font-size: 0.87em;
   }
 
-  .contacts-hero-wrapper .contacts-hero-content .contacts-title h1 {
+  /* .contacts-hero-wrapper .contacts-hero-content .contacts-title h1 {
     font-size: 3.3em;
-  }
+  } */
 
-  .footer-wrapper {
+  /* .footer-wrapper {
     min-height: fit-content;
     height: 100%;
   }
 
   .footer-wrapper .footer-content {
     min-height: fit-content;
-  }
+  } */
 
-  .column {
+  /* .column {
     flex: 100%;
     max-width: 100%;
-  }
+  } */
 }
 
-@keyframes menu-slide-in {
+/* @keyframes menu-slide-in {
   from {
     position: fixed;
     top: 100vh;
@@ -3224,7 +3218,7 @@ No mobile fica em 2 e 1 colunas
   to {
     opacity: 1;
   }
-}
+} */
 
 /*------------------------------------*/
 /*----------- TIAGO STYLES -----------*/
@@ -3409,5 +3403,56 @@ a {
   }
   to {
     opacity: 0;
+  }
+}
+
+/*----------------------------------------*/
+/*----------- UNIVERSAL STYLES -----------*/
+/*----------------------------------------*/
+
+.container {
+  margin-inline: auto;
+  padding: 0 10% 7%;
+}
+
+.section-title-wrapper {
+  margin: 6em 0 2em;
+  font-size: 1.8rem;
+}
+
+.section-title-wrapper p {
+  max-width: 300px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.section-title-wrapper h2 {
+  color: #10845a;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+@media (min-width: 800px) {
+  .section-title-wrapper {
+    font-size: 2.3rem;
+  }
+
+  .section-title-wrapper h2 {
+    font-size: 3.5em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-title-wrapper p {
+    max-width: 400px;
+  }
+
+  .section-title-wrapper {
+    margin: 5em 0 2em;
+    padding-inline: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
   }
 }

@@ -1,13 +1,14 @@
 import Link from 'next/link'
+import styles from './Footer.module.css'
 
 const Footer = ({ datasDeRecrutamento }) => {
   return (
-    <footer className="footer-wrapper">
-      <div className="footer-content">
-        <div className="footer-about">
-          <div className="footer-logo">
+    <footer className={styles['footer-wrapper']}>
+      <div className={styles['footer-content']}>
+        <div className={styles['footer-about']}>
+          <div className={styles['footer-logo']}>
             <svg
-              className="logo footer"
+              className={`${styles['logo']} ${styles['footer']}`}
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 686 161"
               fill="none"
@@ -64,16 +65,16 @@ const Footer = ({ datasDeRecrutamento }) => {
                 fill="#10845A"
               />
             </svg>
-            <div className="address">
+            <div className={styles['address']}>
               <p>Praça de Carlos Alberto 25</p>
               <p>4050-153, Porto</p>
             </div>
           </div>
-          <div className="social-media">
+          <div className={styles['social-media']}>
             <Link href="https://www.linkedin.com/company/impac%E2%80%99tu">
               <a target="blank">
                 <svg
-                  className="linkedin"
+                  className={styles['linkedin']}
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
                   height="20"
@@ -97,7 +98,7 @@ const Footer = ({ datasDeRecrutamento }) => {
             <Link href="https://www.facebook.com/associacaoimpactu/">
               <a target="blank">
                 <svg
-                  className="facebook"
+                  className={styles['facebook']}
                   xmlns="http://www.w3.org/2000/svg"
                   width="10"
                   height="20"
@@ -116,7 +117,7 @@ const Footer = ({ datasDeRecrutamento }) => {
             <Link href="https://www.instagram.com/impac.tu/">
               <a target="blank">
                 <svg
-                  className="instagram"
+                  className={styles['instagram']}
                   width="21"
                   height="21"
                   viewBox="0 0 21 21"
@@ -151,7 +152,7 @@ const Footer = ({ datasDeRecrutamento }) => {
                 >
                   <g>
                     <path
-                      className="st0"
+                      className={styles['st0']}
                       d="M526.4,174.4H189.7h0c-22.9,0-44.8,9.1-60.9,25.2c-16.2,16.2-25.2,38.1-25.2,60.9v180.1v0   c0,22.9,9.1,44.8,25.2,60.9c16.2,16.2,38.1,25.2,60.9,25.2h336.8h0c22.9,0,44.8-9.1,60.9-25.2c16.2-16.2,25.2-38.1,25.2-60.9V260.5   v0c0-22.9-9.1-44.8-25.2-60.9C571.2,183.5,549.3,174.4,526.4,174.4L526.4,174.4z M457.8,354.1L305,432.4c-1.2,0.6-2.7,0.6-3.8-0.1   c-1.2-0.7-1.9-2-1.9-3.3V272.3c0-1.4,0.7-2.6,1.9-3.3c1.2-0.7,2.6-0.7,3.8-0.1l152.7,78.3c1.3,0.7,2.1,2,2.1,3.5   C459.9,352.1,459.1,353.5,457.8,354.1L457.8,354.1z"
                     />
                   </g>
@@ -160,7 +161,7 @@ const Footer = ({ datasDeRecrutamento }) => {
             </Link>
           </div>
         </div>
-        <div className="footer-sticker">
+        <div className={styles['footer-sticker']}>
           <a href="#">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183 183" fill="none">
               <g>
@@ -274,10 +275,10 @@ const Footer = ({ datasDeRecrutamento }) => {
             </svg>
           </a>
         </div>
-        <div className="footer-links-wrapper">
-          <div className="left-column">
+        <div className={styles['footer-links-wrapper']}>
+          <div className={styles['left-column']}>
             <h3>Transparência</h3>
-            <div className="footer-links">
+            <div className={styles['footer-links']}>
               <p>
                 <Link href="/Documentos/PlanoDeAtividades">
                   <a>Plano de Atividades</a>
@@ -300,9 +301,9 @@ const Footer = ({ datasDeRecrutamento }) => {
                             </p> */}
             </div>
           </div>
-          <div className="center-column">
+          <div className={styles['center-column']}>
             {/* <h3>Associação</h3> */}
-            <div className="footer-links">
+            <div className={styles['footer-links']}>
               {/* <p>
                                 <Link href="/QueroAjudar">
                                     <a>Ser Sócio</a>
@@ -322,9 +323,9 @@ const Footer = ({ datasDeRecrutamento }) => {
                             </p> */}
             </div>
           </div>
-          <div className="right-column">
+          <div className={styles['right-column']}>
             <h3>Legal</h3>
-            <div className="footer-links">
+            <div className={styles['footer-links']}>
               <p>
                 <Link href="/Documentos/PoliticaPrivacidade">
                   <a>Política de Privacidade</a>

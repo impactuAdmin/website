@@ -1,0 +1,261 @@
+.impactosocial-hero-wrapper {
+  min-height: 100vh;
+  height: 100vh;
+  width: 100%;
+  background-image: url('../../public/senhor.webp');
+  background-size: cover;
+  background-position-y: center center;
+}
+
+.impactosocial-hero-content {
+  height: 100%;
+  width: 100%;
+  padding: 0 10% 0 10%;
+}
+
+.impactosocial-title {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.impactosocial-title h1 {
+  color: white;
+  font-size: 4em;
+  line-height: 1em;
+  font-weight: 700;
+  max-width: 400px;
+}
+
+.impactosocial-background {
+  background-color: white;
+}
+
+.impactosocial-intro-title h3 {
+  font-size: 1.2em;
+  width: 50%;
+}
+
+.impactosocial-intro-title img {
+  margin-top: 3em;
+}
+
+.impactosocial-intro-content {
+  min-height: 90vh;
+  justify-content: left;
+  align-items: center;
+  padding: 0% 10% 0% 10%;
+  transform: scale(0.8) !important;
+}
+
+.impactosocial-intro-title {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.impactosocial-intro-title h1 {
+  flex: 1;
+  justify-self: center;
+  padding-right: 2em;
+  font-size: 2.3em;
+  font-weight: 500;
+  min-width: 400px;
+}
+
+.impactosocial-intro-title h2 {
+  color: #10845a;
+  font-size: 10em;
+  flex: 1;
+}
+
+.impactosocial-intro-title-2 {
+  padding-top: 4em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.impactosocial-intro-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.impactosocial-intro-img img {
+  align-self: center;
+  width: 25vw;
+  min-width: 300px;
+}
+
+.impactosocial-intro-text {
+  flex: 1.5;
+  display: flex;
+  justify-content: center;
+  min-width: 500px;
+}
+
+.impactosocial-intro-text h3 {
+  width: 65%;
+  font-size: 1.7em;
+  font-weight: 300;
+  display: block;
+}
+
+@media (max-width: 1329px) {
+  .impactosocial-intro-text h3 {
+    flex: initial;
+  }
+
+  .recrutamento-hero-wrapper {
+    background-position: center center;
+  }
+}
+
+@media (max-width: 1124px) {
+  .impactosocial-intro-title-2 {
+    gap: 4em;
+  }
+
+  .impactosocial-intro-text h3 {
+    width: 70%;
+    font-size: 1.7em;
+  }
+}
+
+@media (max-width: 800px) {
+  .impactosocial-intro-title h2 {
+    font-size: 7em;
+  }
+
+  .impactosocial-hero-wrapper {
+    background-position: center center;
+  }
+}
+
+@media (max-width: 630px) {
+  .impactosocial-intro-text {
+    min-width: auto;
+  }
+
+  .impactosocial-intro-title-2 {
+    gap: 2em;
+  }
+
+  .impactosocial-intro-text h3 {
+    width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .impactosocial-intro-img {
+    min-width: 200px;
+  }
+
+  .impactosocial-intro-title h1 {
+    min-width: initial;
+  }
+
+  .impactosocial-intro-text h3 {
+    width: 100%;
+    font-size: 1.3em;
+    font-weight: 300;
+    display: block;
+  }
+}
+
+@media (max-width: 280px) {
+  .impactosocial-intro-text h3 {
+    width: initial;
+  }
+}
+
+.ods-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+
+.ods-list li {
+  width: 25%;
+  margin-bottom: 1em;
+}
+
+.ods-img {
+  width: 80%;
+  display: block;
+  margin-inline: auto;
+  margin-bottom: 0.5em;
+}
+
+.ods-list li p {
+  color: #d03a44;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.ods-list li:first-of-type .ods-img {
+  border: 2px solid #d03a44;
+}
+
+.ods-list li:first-of-type p {
+  color: #d03a44;
+}
+
+.ods-list li:nth-of-type(2) .ods-img {
+  border: 2px solid #b23335;
+}
+
+.ods-list li:nth-of-type(2) p {
+  color: #b23335;
+}
+
+.ods-list li:nth-of-type(3) .ods-img {
+  border: 2px solid #c73269;
+}
+
+.ods-list li:nth-of-type(3) p {
+  color: #c73269;
+}
+
+.ods-list li:nth-of-type(4) .ods-img {
+  border: 2px solid #e89e46;
+}
+
+.ods-list li:nth-of-type(4) p {
+  color: #e89e46;
+}
+
+.ods-list li:nth-of-type(5) .ods-img {
+  border: 2px solid #00699e;
+}
+
+.ods-list li:nth-of-type(5) p {
+  color: #00699e;
+}
+
+.ods-list li:nth-of-type(6) .ods-img {
+  border: 2px solid #1a476b;
+}
+
+.ods-list li:nth-of-type(6) p {
+  color: #1a476b;
+}
+
+@media (max-width: 800px) {
+  .ods-list li {
+    width: 45%;
+  }
+}

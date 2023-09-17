@@ -1,3 +1,104 @@
+.mobile-header-wrapper {
+  display: none;
+}
+
+.navigation_wrapper {
+  width: 100%;
+  height: 6em;
+  position: fixed;
+  z-index: 99999;
+  animation: fadein 1.5s ease-in-out;
+  transition: 0.3s ease-out;
+}
+
+.navigation {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.navigation a:last-of-type {
+  text-decoration: none;
+}
+
+.logo {
+  width: 105px;
+  padding-top: 4px;
+}
+
+.logo-container svg path {
+  transition: 0.4s;
+}
+
+.logo-container:hover svg path {
+  fill: #10845a;
+}
+
+.nav-links-scrolling-active {
+  color: black !important;
+}
+
+.nav-links-scrolling-active:hover {
+  border-bottom: 2px solid black !important;
+}
+
+.donate_button {
+  border: none;
+  border-radius: 50px;
+  padding: 0.8em 1.2em 0.8em 1.2em;
+  width: 210px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.75em;
+  font-weight: 500;
+  background-color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  transition: 0.2s;
+}
+
+.donate_button svg {
+  margin-right: -1em;
+}
+
+.donate_button:hover {
+  background-color: #10845a;
+  color: white;
+}
+
+.donate_button:hover svg path {
+  fill: white;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(15%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logo-scrolling-active {
+  fill: #202020;
+}
+
+.nav-wrapper-scrolling-active {
+  height: 4em;
+  background-color: transparent;
+}
+
 .links {
   min-width: fit-content;
   width: 50%;
@@ -32,8 +133,216 @@
   font-size: 0.9em;
 }
 
+.menu-dismiss {
+  position: fixed;
+  top: 14px;
+  right: 11.3%;
+  font-size: 2.5em;
+  font-weight: 300;
+  color: white;
+  cursor: pointer;
+  animation: dismiss 1s ease-in;
+}
+
+.social-media svg {
+  margin-right: 30px;
+}
+
+.social-media a:nth-child(4) svg {
+  margin-right: 0;
+}
+
+.social-media a:nth-child(3) {
+  position: relative;
+  top: 2px;
+}
+
+.social-media a:nth-child(4) svg {
+  position: relative;
+  top: 7.3px;
+  right: 3px;
+}
+
 @media (max-width: 1400px) {
   .navigation_wrapper .links {
     width: 60%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .navigation_wrapper {
+    display: none;
+  }
+
+  .mobile-header-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    width: 100%;
+    height: 84px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10% 0 10%;
+    transition: all 0.3s ease-out;
+  }
+
+  .mobile-header-wrapper a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .burger-menu {
+    height: 48px;
+    cursor: pointer;
+    padding: 0.7em 0.7em 0.7em 0.7em;
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .rect {
+    width: 2.1em;
+    height: 2px;
+    border-radius: 100px;
+    background-color: white;
+  }
+
+  .logo.mobile {
+    justify-self: flex-end;
+    order: 0;
+  }
+
+  .menu-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #10845a;
+    z-index: 99999;
+    justify-content: center;
+    align-items: center;
+    animation: menu-slide-in 0.6s ease-in;
+  }
+
+  .menu-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+  }
+
+  .menu-content a:nth-last-of-type(2) {
+    margin-bottom: 2em;
+  }
+
+  .menu-content a:nth-of-type(4) button {
+    color: black;
+    font-family: Poppins, sans-serif;
+    margin-bottom: 60px;
+  }
+
+  .menu-content a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s ease-in-out;
+    font-weight: 400;
+  }
+
+  .menu-content a h1 {
+    font-size: 3em;
+    font-weight: 400;
+    overflow-x: hidden;
+  }
+
+  .menu-content a h1::after {
+    content: '';
+    display: block;
+    position: relative;
+    left: 0;
+    bottom: 35px;
+    background-color: white;
+    width: 100%;
+    height: 5px;
+    transform: translateX(-105%);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .menu-content a h1:hover::after {
+    transform: translateX(0);
+  }
+
+  .donate_button.overlay-menu {
+    transform: scale(1.4);
+    padding: 1em 1em 1em 1em;
+  }
+
+  .donate_button.overlay-menu:hover {
+    transform: scale(1.3);
+    background-color: white;
+    color: black;
+  }
+
+  .donate_button.overlay-menu:hover svg path {
+    fill: #10845a;
+  }
+
+  .donate_button {
+    margin-bottom: 2em;
+  }
+}
+
+@media (max-width: 800px) {
+  .menu-content a h1 {
+    font-size: 2.4em;
+  }
+
+  .menu-content a h1::after {
+    bottom: 28px;
+  }
+}
+
+@media (max-width: 630px) {
+  .menu-dismiss {
+    right: 12.5%;
+  }
+}
+
+@keyframes menu-slide-in {
+  from {
+    position: fixed;
+    top: 100vh;
+  }
+
+  to {
+    top: 0;
+  }
+}
+
+@keyframes menu-slide-out {
+  from {
+    position: fixed;
+    top: 0;
+  }
+
+  to {
+    top: 100vh;
+  }
+}
+
+@keyframes dismiss {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }

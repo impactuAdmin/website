@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import styles from './Project.module.css'
 
 const projects = [
   {
@@ -65,7 +66,7 @@ const projects = [
 
 const Projects = () => {
   const projectList = projects.map((project) => (
-    <div className="column-projetos" key={project.imgSrc}>
+    <div className={styles['column-projetos']} key={project.imgSrc}>
       <Link href={project.link}>
         <a target="_blank">
           <img src={project.imgSrc} style={{ width: '100%' }} />
@@ -79,11 +80,11 @@ const Projects = () => {
     </div>
   ))
   return (
-    <section id="projetos" className="section-projetos">
-      <div className="section-projetos-content reveal">
+    <section id="projetos" className={styles['section-projetos']}>
+      <div className={`${styles['section-projetos-content']} reveal`}>
         <h1>Projetos Impac&rsquo;tu</h1>
       </div>
-      <div className="projetos reveal">{projectList}</div>
+      <div className={`${styles['projetos']} reveal`}>{projectList}</div>
     </section>
   )
 }

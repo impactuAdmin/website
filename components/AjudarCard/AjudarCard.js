@@ -1,12 +1,13 @@
 import Link from 'next/link'
+import styles from './AjudarCard.module.css'
 
 const AjudarCard = ({ modalidade, value, features }) => {
   return (
-    <div className="ajudar-card reveal">
-      <img src={`/${modalidade}.webp`} className="ajudar-card-img"></img>
-      <div className="ajudar-card-value-wrapper">
+    <div className={`${styles['ajudar-card']} reveal`}>
+      <img src={`/${modalidade}.webp`} className={styles['ajudar-card-img']}></img>
+      <div className={styles['ajudar-card-value-wrapper']}>
         <p>{modalidade}</p>
-        <p className="ajudar-card-value">{value}</p>
+        <p className={styles['ajudar-card-value']}>{value}</p>
         <p>/ano</p>
       </div>
       <hr />
@@ -17,7 +18,7 @@ const AjudarCard = ({ modalidade, value, features }) => {
             <a>
               <h4>Inscrever</h4>
               <svg
-                className="arrow"
+                className={styles['arrow']}
                 xmlns="http://www.w3.org/2000/svg"
                 width="19"
                 height="14"
