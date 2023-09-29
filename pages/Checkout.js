@@ -20,9 +20,11 @@ const Checkout = () => {
     cartProducts.length === 0 ? setIsEmpty(true) : setIsEmpty(false)
   }, [cartProducts])
 
-  function handleFormSubmit() {
-    setCartProducts([])
-  }
+  // function handleFormSubmit() {
+  //   setCartProducts([])
+  // }
+
+  console.log(cartProducts)
 
   return (
     <section className="formulario-wrapper">
@@ -40,7 +42,7 @@ const Checkout = () => {
             method="POST"
             data-netlify="true"
             action="/Sucesso"
-            onSubmit={handleFormSubmit}
+            // onSubmit={handleFormSubmit}
           >
             <input type="hidden" name="form-name" value="compra" required />
             <input type="hidden" name="Produtos" value={cartProducts} required />
