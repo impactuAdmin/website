@@ -52,7 +52,7 @@ const Checkout = () => {
               name="Nome"
               placeholder="Texto de resposta curta"
               required
-              disabled={isEmpty}
+              // disabled={isEmpty}
             />
 
             <label htmlFor="morada">Morada</label>
@@ -62,7 +62,7 @@ const Checkout = () => {
               name="Morada"
               placeholder="Texto de resposta curta"
               required
-              disabled={isEmpty}
+              // disabled={isEmpty}
             />
 
             <label htmlFor="localidade">Código Postal e Localidade</label>
@@ -72,7 +72,7 @@ const Checkout = () => {
               name="Localidade"
               placeholder="Texto de resposta curta"
               required
-              disabled={isEmpty}
+              // disabled={isEmpty}
             />
 
             <label htmlFor="tel">Contacto telefónico</label>
@@ -82,7 +82,7 @@ const Checkout = () => {
               name="Tel."
               placeholder="Texto de resposta curta"
               required
-              disabled={isEmpty}
+              // disabled={isEmpty}
             />
 
             <label htmlFor="mail">E-mail</label>
@@ -92,7 +92,7 @@ const Checkout = () => {
               name="Email"
               placeholder="Texto de resposta curta"
               required
-              disabled={isEmpty}
+              // disabled={isEmpty}
             />
 
             <div className="doar-info">
