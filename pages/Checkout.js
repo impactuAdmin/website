@@ -5,24 +5,36 @@ import Link from 'next/link'
 
 const Checkout = () => {
   const [cartProducts, setCartProducts] = useState([])
+  const [boughtProducts, setBoughtProducts] = useState([])
   const [isEmpty, setIsEmpty] = useState(false)
 
   // Load cartProducts from localStorage when the component mounts
   useEffect(() => {
     const savedCartProducts = JSON.parse(localStorage.getItem('cartProducts')) || []
     setCartProducts(savedCartProducts)
+
     cartProducts.length === 0 ? setIsEmpty(true) : setIsEmpty(false)
   }, [])
 
   // Save cartProducts to localStorage whenever it changes
   useEffect(() => {
     localStorage.setItem('cartProducts', JSON.stringify(cartProducts))
+
+    const updatedArray = cartProducts.map(
+      (product) => `produto:${product.name} ${product.size} [${product.quantity}]`
+    )
+    setBoughtProducts(updatedArray)
+
     cartProducts.length === 0 ? setIsEmpty(true) : setIsEmpty(false)
   }, [cartProducts])
 
-  function handleFormSubmit() {
-    setCartProducts([])
-  }
+  // function handleFormSubmit() {
+  //   setCartProducts([])
+  // }
+
+  useEffect(() => {
+    console.log(boughtProducts)
+  }, [boughtProducts])
 
   return (
     <section className="formulario-wrapper">
@@ -40,9 +52,10 @@ const Checkout = () => {
             method="POST"
             data-netlify="true"
             action="/Sucesso"
-            onSubmit={handleFormSubmit}
+            // onSubmit={handleFormSubmit}
           >
             <input type="hidden" name="form-name" value="compra" required />
+            <input type="hidden" name="Produtos" value={boughtProducts} required />
 
             <label htmlFor="fname">Nome e apelido</label>
             <input
@@ -51,7 +64,7 @@ const Checkout = () => {
               name="Nome"
               placeholder="Texto de resposta curta"
               required
-              disabled={isEmpty}
+              // disabled={isEmpty}
             />
 
             <label htmlFor="morada">Morada</label>
@@ -61,7 +74,7 @@ const Checkout = () => {
               name="Morada"
               placeholder="Texto de resposta curta"
               required
-              disabled={isEmpty}
+              // disabled={isEmpty}
             />
 
             <label htmlFor="localidade">Código Postal e Localidade</label>
@@ -71,7 +84,7 @@ const Checkout = () => {
               name="Localidade"
               placeholder="Texto de resposta curta"
               required
-              disabled={isEmpty}
+              // disabled={isEmpty}
             />
 
             <label htmlFor="tel">Contacto telefónico</label>
@@ -81,7 +94,7 @@ const Checkout = () => {
               name="Tel."
               placeholder="Texto de resposta curta"
               required
-              disabled={isEmpty}
+              // disabled={isEmpty}
             />
 
             <label htmlFor="mail">E-mail</label>
@@ -91,7 +104,7 @@ const Checkout = () => {
               name="Email"
               placeholder="Texto de resposta curta"
               required
-              disabled={isEmpty}
+              // disabled={isEmpty}
             />
 
             <div className="doar-info">
