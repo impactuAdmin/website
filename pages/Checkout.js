@@ -21,7 +21,7 @@ const Checkout = () => {
     localStorage.setItem('cartProducts', JSON.stringify(cartProducts))
 
     const updatedArray = cartProducts.map(
-      (product) => `produto:${product.name}/tamanho:${product.size}/quantidade:${product.quantity}`
+      (product) => `produto:${product.name} ${product.size} [${product.quantity}]`
     )
     setBoughtProducts(updatedArray)
 
