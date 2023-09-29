@@ -43,6 +43,7 @@ const Checkout = () => {
             onSubmit={handleFormSubmit}
           >
             <input type="hidden" name="form-name" value="compra" required />
+            <input type="hidden" name="Produtos" value={cartProducts} required />
 
             <label htmlFor="fname">Nome e apelido</label>
             <input
