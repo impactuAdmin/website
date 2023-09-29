@@ -5,18 +5,26 @@ import Link from 'next/link'
 
 const Checkout = () => {
   const [cartProducts, setCartProducts] = useState([])
+  const [boughtProducts, setBoughtProducts] = useState([])
   const [isEmpty, setIsEmpty] = useState(false)
 
   // Load cartProducts from localStorage when the component mounts
   useEffect(() => {
     const savedCartProducts = JSON.parse(localStorage.getItem('cartProducts')) || []
     setCartProducts(savedCartProducts)
+
     cartProducts.length === 0 ? setIsEmpty(true) : setIsEmpty(false)
   }, [])
 
   // Save cartProducts to localStorage whenever it changes
   useEffect(() => {
     localStorage.setItem('cartProducts', JSON.stringify(cartProducts))
+
+    const updatedArray = cartProducts.map(
+      (product) => `produto:${product.name}/tamanho:${product.size}/quantidade:${product.quantity}`
+    )
+    setBoughtProducts(updatedArray)
+
     cartProducts.length === 0 ? setIsEmpty(true) : setIsEmpty(false)
   }, [cartProducts])
 
@@ -24,7 +32,9 @@ const Checkout = () => {
   //   setCartProducts([])
   // }
 
-  console.log(cartProducts)
+  useEffect(() => {
+    console.log(boughtProducts)
+  }, [boughtProducts])
 
   return (
     <section className="formulario-wrapper">
@@ -45,7 +55,7 @@ const Checkout = () => {
             // onSubmit={handleFormSubmit}
           >
             <input type="hidden" name="form-name" value="compra" required />
-            <input type="hidden" name="Produtos" value={cartProducts} required />
+            <input type="hidden" name="Produtos" value={boughtProducts} required />
 
             <label htmlFor="fname">Nome e apelido</label>
             <input

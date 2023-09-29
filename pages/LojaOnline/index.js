@@ -16,6 +16,7 @@ const LojaOnline = () => {
     const savedCartProducts = JSON.parse(localStorage.getItem('cartProducts')) || []
     setCartProducts(savedCartProducts)
   }, [])
+
   // Save cartProducts to localStorage whenever it changes
   useEffect(() => {
     localStorage.setItem('cartProducts', JSON.stringify(cartProducts))
@@ -34,6 +35,8 @@ const LojaOnline = () => {
   //     document.removeEventListener('scroll', handleScroll)
   //   }
   // }, [])
+
+  console.log(cartProducts)
 
   return (
     <>
