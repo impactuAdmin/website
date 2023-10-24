@@ -7,7 +7,7 @@ const Equipa = () => {
       <h1>A nossa equipa</h1>
       <div className={styles['team-container']}>
         {team.map((member) => (
-          <div className={styles['member-container']}>
+          <div key={member.name} className={styles['member-container']}>
             <div
               className={styles['member-img']}
               style={{
