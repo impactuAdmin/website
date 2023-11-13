@@ -65,7 +65,7 @@ const Footer = ({ datasDeRecrutamento }) => {
               />
             </svg>
             <div className="address">
-              <p>Praça de Carlos Alberto 25</p>
+              <p>Praça de Carlos Alberto 52</p>
               <p>4050-153, Porto</p>
             </div>
           </div>
@@ -293,11 +293,11 @@ const Footer = ({ datasDeRecrutamento }) => {
                   <a>Estatutos</a>
                 </Link>
               </p>
-              {/* <p>
-                                <Link href="/OrgaosSociais">
-                                    <a>Orgãos Sociais</a>
-                                </Link>
-                            </p> */}
+              <p>
+                <Link href="/OrgaosSociais">
+                  <a>Orgãos Sociais</a>
+                </Link>
+              </p>
             </div>
           </div>
           <div className="center-column">
