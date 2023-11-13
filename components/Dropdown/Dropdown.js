@@ -12,6 +12,7 @@ const Dropdown = ({ title, navLinkClassName }) => {
       dropdownLinks: [
         { title: 'Pilares', href: '/QuemSomos#pilares' },
         { title: 'Onde?', href: '/QuemSomos#onde' },
+        { title: 'Equipa', href: '/QuemSomos#equipa' },
         { title: 'História', href: '/QuemSomos#historia' },
       ],
     },

@@ -132,10 +132,10 @@ export const team = [
     imgAjustments: { position: '0% 20%', size: '100%' },
   },
   {
-    name: 'Sara Pereira',
+    name: 'Inês Póvoa',
     post: 'Gestora Comunicação',
-    src: '/equipa/fotoSaraPereira.webp',
-    imgAjustments: { position: '43% 40%', size: '220%' },
+    src: '/equipa/fotoInêsPóvoa.webp',
+    imgAjustments: { position: '60% 70%', size: '150%' },
   },
   {
     name: 'Eduardo Teixeira',
@@ -148,12 +148,6 @@ export const team = [
     post: 'Equipa Comunicação',
     src: '',
     imgAjustments: '',
-  },
-  {
-    name: 'Inês Póvoa',
-    post: 'Equipa Comunicação',
-    src: '/equipa/fotoInêsPóvoa.webp',
-    imgAjustments: { position: '60% 70%', size: '150%' },
   },
   {
     name: 'Rafaela Moreira',
@@ -170,8 +164,8 @@ export const team = [
   {
     name: 'Tiago Rodrigues',
     post: 'Equipa Comunicação',
-    src: '',
-    imgAjustments: '',
+    src: '/equipa/fotoTiagoRodrigues.webp',
+    imgAjustments: { position: '60% 50%', size: '100%' },
   },
   {
     name: 'Carolina Barbosa',
