@@ -143,7 +143,7 @@ const Contactos = () => {
             ></iframe>
           </div>
         </section>
-        <section className="contactar-wrapper">
+        <section id="fala-connosco" className="contactar-wrapper">
           <div className="container-contactos reveal">
             <div style={{ textAlign: 'center' }}>
               <h1>Fala connosco</h1>
