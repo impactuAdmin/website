@@ -1,4 +1,4 @@
-import Help from '../Help'
+import Help from '../Help/Help'
 import styles from './Stats.module.css'
 
 const Stats = () => {

@@ -326,7 +326,7 @@ video {
 .link:hover .link-underline::after {
   transform: translateX(100%);
 }
-/* 
+
 .link.intro.contactos {
   display: flex;
   justify-content: center;
@@ -398,7 +398,7 @@ video {
   stroke: black;
   transition: stroke 0.3s ease-in-out;
 }
-
+/*
 .sticker {
   position: fixed;
   top: 80vh;
@@ -2554,10 +2554,10 @@ No mobile fica em 2 e 1 colunas
   width: 80%;
   margin-top: 1.5em;
 }
-
+*/
 .ajudar-card .link-underline.contactos.intro {
   margin-top: 2em;
-} */
+}
 
 /*----------------------------------------------
 ----------------- DOAR -----------------
@@ -3412,16 +3412,23 @@ a {
 
 .container {
   margin-inline: auto;
-  padding: 0 10% 7%;
+  padding-inline: 10%;
+}
+
+.section-container {
+  margin-inline: auto;
+  padding: 10em 18% 10em;
 }
 
 .section-title-wrapper {
-  margin: 6em 0 2em;
+  margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
   font-size: 1.8rem;
+  gap: 1em;
 }
 
 .section-title-wrapper p {
-  max-width: 300px;
   font-weight: 500;
   line-height: 1.2;
 }
@@ -3432,7 +3439,17 @@ a {
   text-align: center;
 }
 
+.section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
 @media (min-width: 800px) {
+  .section-container {
+    padding: 10em 25% 10em;
+  }
+
   .section-title-wrapper {
     font-size: 2.3rem;
   }
@@ -3442,17 +3459,52 @@ a {
   }
 }
 
+@media (max-width: 1200px) {
+  .section-title-wrapper p {
+    margin-inline: auto;
+  }
+
+  .section-content-img {
+    padding-inline: 20%;
+  }
+}
+
 @media (min-width: 1200px) {
+  .section-container {
+    padding-inline: 18%;
+    padding-bottom: 12em;
+  }
+
+  .section-title-wrapper {
+    margin-bottom: 2em;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+  }
+
   .section-title-wrapper p {
     max-width: 400px;
   }
 
-  .section-title-wrapper {
-    margin: 5em 0 2em;
-    padding-inline: 2em;
+  .section-content {
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
-    gap: 2em;
+    gap: 15%;
+  }
+
+  .section-content-col {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-content-col > * {
+    margin: auto;
+  }
+
+  .section-content-img {
+    padding-inline: 15%;
   }
 }
