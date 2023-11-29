@@ -30,7 +30,7 @@ const Help = () => {
     },
     {
       image: '/como-ajudar2.webp',
-      title: 'Como ser ajudado',
+      title: 'Dá a tua voz',
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +47,7 @@ const Help = () => {
           />
         </svg>
       ),
-      link: 'Entrar em contacto',
+      link: 'Fala connosco',
       href: '/Contactos#fala-connosco',
     },
   ]
@@ -65,7 +65,7 @@ const Help = () => {
   }
 
   useEffect(() => {
-    const timeoutId = setTimeout(() => updateSlides(slideIndex), 3000)
+    const timeoutId = setTimeout(() => updateSlides(slideIndex), 4000)
 
     return () => clearTimeout(timeoutId)
   }, [slideIndex])
@@ -75,6 +75,7 @@ const Help = () => {
       <div className={`${styles['slider-wrapper']} reveal`}>
         {bannerData.map((banner, index) => (
           <div
+            key={index}
             className={`${styles['img-wrapper']} fade`}
             style={{
               display: slideIndex === index + 1 ? 'block' : 'none',
