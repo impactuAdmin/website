@@ -1,0 +1,117 @@
+.dots-container {
+  position: absolute;
+  bottom: 12%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 9;
+}
+
+.dot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 0 10px;
+  background-color: #c8e5dd;
+  border-radius: 50%;
+  display: inline-block;
+  transition: all 0.5s ease;
+}
+
+.dot:hover,
+.active {
+  background-color: #10845a;
+  transform: translateY(-5px);
+  padding-bottom: 5px;
+}
+
+.help-wrapper {
+  height: 115vh;
+  width: 100vw;
+  background-color: #e8f6f4;
+  display: flex;
+}
+
+.slider-wrapper {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+}
+
+.img-wrapper {
+  position: absolute;
+  inset: 0;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: 50%;
+  justify-content: center;
+}
+
+.content-wrapper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4em;
+}
+
+.content-wrapper > * {
+  margin-inline: auto;
+}
+
+.content-foo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-wrapper h1 {
+  font-size: 3em;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 0.3em;
+}
+
+@media (max-width: 1400px) {
+  .content-foo h1 {
+    font-size: 2.4em;
+  }
+
+  .content-foo svg {
+    width: 15%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .img-wrapper {
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .content-foo h1 {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 450px) {
+  .content-foo h1 {
+    font-size: 2.3em;
+  }
+
+  .content-foo svg {
+    width: 19%;
+  }
+}
