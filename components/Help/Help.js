@@ -29,7 +29,7 @@ const Help = () => {
       href: '/QueroAjudar',
     },
     {
-      image: '/como-ajudar2.webp',
+      image: '/como-ajudar-2.webp',
       title: 'Dá a tua voz',
       svg: (
         <svg

@@ -10,7 +10,6 @@ const organs = [
     ],
   },
   {
-    name: 'MAG',
     elements: [
       {
         name: ['Margarida Santos'],
@@ -19,7 +18,7 @@ const organs = [
       },
       {
         name: ['Inês Póvoa'],
-        role: 'Gestora Financeira',
+        role: 'Gestora Marketing e Comunicação',
         imgSrc: 'membros-02.webp',
       },
       {
@@ -45,7 +44,6 @@ const organs = [
     ],
   },
   {
-    name: 'MAG',
     elements: [
       {
         name: ['Beatriz Machado'],
@@ -60,7 +58,6 @@ const organs = [
     ],
   },
   {
-    name: 'MAG',
     elements: [
       {
         name: ['Francisca Fernandes'],
@@ -75,7 +72,6 @@ const organs = [
     ],
   },
   {
-    name: 'MAG',
     elements: [
       {
         name: ['Margarida Ferreira'],
@@ -85,7 +81,6 @@ const organs = [
     ],
   },
   {
-    name: 'MAG',
     elements: [
       {
         name: ['Francisca Fernandes'],
@@ -124,9 +119,6 @@ function OrgaoSocial(orgao) {
   return (
     <section className="orgaosociais">
       <div className="orgaosociais-wrapper">
-        {/* <div className="orgaosociais-content">
-          <h1>{orgao.name}</h1>
-        </div> */}
         <div className="pilares">{orgao.elements.map((element) => elementsList(element))}</div>
       </div>
     </section>

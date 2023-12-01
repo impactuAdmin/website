@@ -1511,6 +1511,7 @@ div#dataEscolhida > div,
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-size: 14px;
 }
 
 .orgaosociais:nth-of-type(2) {
@@ -1535,6 +1536,12 @@ div#dataEscolhida > div,
   flex-direction: column;
   gap: 1em;
   min-height: fit-content;
+}
+
+@media (min-width: 900px) {
+  .orgaosociais-wrapper .pilares .column h2 {
+    padding-inline: 2em;
+  }
 }
 
 .orgaosociais .orgaosociais-content {
