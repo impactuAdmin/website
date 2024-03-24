@@ -1,6 +1,7 @@
-import VideoHero from '../components/VideoHero'
-import Intro from '../components/Intro'
-import Stats from '../components/Stats'
+import VideoHero from "../components/VideoHero"
+import Intro from "../components/Intro"
+import Stats from "../components/Stats"
+import IRSModal from "../components/IRSModal/IRSModal"
 
 export default function App() {
   return (
@@ -8,6 +9,7 @@ export default function App() {
       <VideoHero />
       <Intro />
       <Stats />
+      <IRSModal />
     </>
   )
 }

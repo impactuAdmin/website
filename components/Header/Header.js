@@ -1,59 +1,59 @@
-import Link from 'next/link'
-import { useState, useEffect } from 'react'
-import { useRouter } from 'next/router'
-import Logo from '../Logo'
-import Dropdown from '../Dropdown/Dropdown'
-import styles from './Header.module.css'
+import Link from "next/link"
+import { useState, useEffect } from "react"
+import { useRouter } from "next/router"
+import Logo from "../Logo"
+import Dropdown from "../Dropdown/Dropdown"
+import styles from "./Header.module.css"
 
 const Header = ({ datasDeRecrutamento, merchProducts }) => {
-  const [overlayMenuStyle, setOverlayMenuStyle] = useState({ display: 'none', opacity: '0' })
+  const [overlayMenuStyle, setOverlayMenuStyle] = useState({ display: "none", opacity: "0" })
   const router = useRouter()
-  const [navLinkClassName, setNavLinkClassName] = useState('')
+  const [navLinkClassName, setNavLinkClassName] = useState("")
 
   const closeButtonClick = () => {
-    setOverlayMenuStyle({ display: 'none', opacity: '0' })
+    setOverlayMenuStyle({ display: "none", opacity: "0" })
   }
 
   const openButtonClick = () => {
-    setOverlayMenuStyle({ display: 'flex', opacity: '1' })
+    setOverlayMenuStyle({ display: "flex", opacity: "1" })
   }
 
   useEffect(() => {
     const handleScroll = () => {
       if ((window.scrollY > 1100 && window.scrollY < 3350) || window.scrollY > 4200) {
-        setNavLinkClassName('nav-links-scrolling-active')
+        setNavLinkClassName("nav-links-scrolling-active")
       } else {
-        setNavLinkClassName('')
+        setNavLinkClassName("")
       }
       if (
         window.scrollY >= 3350 &&
         window.scrollY < 4000
         // && e === getSticker
       ) {
-        setNavLinkClassName('nav-links-scrolling-active')
+        setNavLinkClassName("nav-links-scrolling-active")
       } else if (
         window.scrollY >= 4000
         // && e === getSticker
       ) {
-        setNavLinkClassName('')
+        setNavLinkClassName("")
       }
     }
 
     if (
-      router.pathname === '/QueroAjudar' ||
-      router.pathname === '/Doar' ||
-      router.pathname === '/Socio' ||
-      router.pathname === '/ProductPage/[product]' ||
-      router.pathname === '/Checkout'
+      router.pathname === "/QueroAjudar" ||
+      router.pathname === "/Doar" ||
+      router.pathname === "/Socio" ||
+      router.pathname === "/ProductPage/[product]" ||
+      router.pathname === "/Checkout"
     ) {
-      setNavLinkClassName('nav-links-scrolling-active')
+      setNavLinkClassName("nav-links-scrolling-active")
     } else {
-      setNavLinkClassName('')
-      document.addEventListener('scroll', handleScroll)
+      setNavLinkClassName("")
+      document.addEventListener("scroll", handleScroll)
     }
 
     return () => {
-      document.removeEventListener('scroll', handleScroll)
+      document.removeEventListener("scroll", handleScroll)
     }
   }, [router.pathname])
 
@@ -62,32 +62,32 @@ const Header = ({ datasDeRecrutamento, merchProducts }) => {
       <nav className="navigation_wrapper">
         <div className="navigation">
           <Logo isMobile={false} router={router} />
-          <ul className={`links ${styles['links']}`}>
+          <ul className={`links ${styles["links"]}`}>
             <Dropdown
-              title={'Quem somos?'}
-              navLinkClassName={`${styles['nav-link']} ${navLinkClassName}`}
+              title={"Quem somos?"}
+              navLinkClassName={`${styles["nav-link"]} ${navLinkClassName}`}
             />
             <Dropdown
-              title={'Impacto Social'}
-              navLinkClassName={`${styles['nav-link']} ${navLinkClassName}`}
+              title={"Impacto Social"}
+              navLinkClassName={`${styles["nav-link"]} ${navLinkClassName}`}
             />
             {datasDeRecrutamento.length === 0 ? null : (
               <li>
                 <Link href="/Recrutamento">
-                  <a className={`${styles['nav-link']} ${navLinkClassName}`}>Recrutamento</a>
+                  <a className={`${styles["nav-link"]} ${navLinkClassName}`}>Recrutamento</a>
                 </Link>
               </li>
             )}
             {merchProducts.length === 0 ? null : (
               <li>
                 <Link href="/LojaOnline">
-                  <a className={`${styles['nav-link']} ${navLinkClassName}`}>Loja Online</a>
+                  <a className={`${styles["nav-link"]} ${navLinkClassName}`}>Loja Online</a>
                 </Link>
               </li>
             )}
             <li>
               <Link href="/Contactos">
-                <a className={`${styles['nav-link']} ${navLinkClassName}`}>Contactos</a>
+                <a className={`${styles["nav-link"]} ${navLinkClassName}`}>Contactos</a>
               </Link>
             </li>
           </ul>
