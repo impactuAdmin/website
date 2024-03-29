@@ -1,0 +1,140 @@
+.section,
+.section-2 {
+  padding: calc(96px + 1.5em) 10%;
+}
+
+.section-content {
+  max-width: 110rem;
+  margin-inline: auto;
+}
+
+.section h2,
+.section-2 h2 {
+  font-size: max(3em, 3vw);
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.reenie {
+  font-family: "Reenie Beanie", cursive;
+  font-size: 1.5em;
+  letter-spacing: -0.05em;
+  line-height: 0.5;
+  color: #10845a;
+}
+
+.green-text {
+  color: #10845a;
+  font-weight: 500;
+}
+
+.section-header {
+  /* margin-top: 1em; */
+  margin-bottom: 1em;
+}
+
+.content-col {
+  position: relative;
+}
+
+.nif-container {
+  text-align: center;
+  font-weight: 500;
+}
+
+.nif {
+  width: max-content;
+  margin-top: 1em;
+  margin-inline: auto;
+  padding: 0.5em 1em;
+  border-radius: 1em;
+  background-color: #e8f6f4;
+  color: #10845a;
+  font-weight: 600;
+}
+
+.section-2 {
+  padding: calc(96px + 1.5em) 10%;
+  background-color: #e8f6f4;
+}
+
+.col-img {
+  max-width: 100%;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.heading-2 {
+  text-align: center;
+}
+
+.irs-img {
+  margin-top: 3em;
+}
+
+.click-btn {
+  margin-top: 4rem;
+  display: block;
+  margin-inline: auto;
+  border: none;
+  border-radius: 5px;
+  padding: 0.8em 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.75em;
+  font-weight: 500;
+  background-color: #10845a;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+.click-btn:hover {
+  background-color: white;
+  color: #10845a;
+}
+
+@media (max-width: 1000px) {
+  .section h2,
+  .section-2 h2 {
+    font-size: 2.5em;
+  }
+
+  .section .content-col:first-of-type {
+    margin-bottom: 2em;
+  }
+
+  .col-img {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  .header-container {
+    width: 50%;
+  }
+
+  .section-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .content-col {
+    width: 50%;
+  }
+
+  .nif-container {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+  }
+
+  .irs-img {
+    display: block;
+    width: 80%;
+    margin-inline: auto;
+    margin-top: 4em;
+  }
+}

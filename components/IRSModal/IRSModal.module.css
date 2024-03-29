@@ -1,0 +1,96 @@
+.modal {
+  position: fixed;
+  opacity: 0;
+  background-color: white;
+  border-radius: 0.75em;
+  text-align: center;
+  animation: fadeIn 0.75s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.title {
+  margin-bottom: 0.3em;
+  font-family: "Reenie Beanie", cursive;
+  color: #10845a;
+}
+
+.close-btn,
+.modal-btn {
+  border: 0;
+  background-color: transparent;
+}
+
+.close-btn:hover,
+.modal-btn:hover {
+  cursor: pointer;
+}
+
+.close-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0.4em;
+  margin: 0.3em;
+  color: #10845a;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.modal-btn {
+  border: none;
+  border-radius: 5px;
+  padding: 0.8em 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.75em;
+  font-weight: 500;
+  background-color: #10845a;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+.modal-btn:hover {
+  background-color: white;
+  color: #10845a;
+}
+
+@media (max-width: 1000px) {
+  .modal {
+    position: fixed;
+    margin-inline: auto;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    width: max-content;
+    padding: 20px 40px;
+  }
+
+  .title {
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width: 1000px) {
+  .modal {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 30px 60px;
+  }
+
+  .title {
+    font-size: 2.5em;
+  }
+}

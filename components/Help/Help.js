@@ -65,7 +65,7 @@ const Help = () => {
   }
 
   useEffect(() => {
-    const timeoutId = setTimeout(() => updateSlides(slideIndex), 4000)
+    const timeoutId = setTimeout(() => updateSlides(slideIndex), 5000)
 
     return () => clearTimeout(timeoutId)
   }, [slideIndex])
