@@ -9,7 +9,7 @@ const IRS = () => {
         <div className={styles["section-content"]}>
           <div className={styles["content-col"]}>
             <h2 className={styles["section-header"]}>
-              Defina até <span className={styles["reenie"]}>31 de março</span>, a entidade à qual
+              Defina até <span className={styles["reenie"]}>30 de junho</span>, a entidade à qual
               pretende consignar 0,5% do seu IRS!
             </h2>
 
@@ -24,7 +24,7 @@ const IRS = () => {
               <p>Juntos criamos Impac’tu!</p>
 
               <div className={styles["nif"]}>
-                <p>NIF 561 345 782</p>
+                <p>NIF 514 850 116</p>
               </div>
             </div>
           </div>
