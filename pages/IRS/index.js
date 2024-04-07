@@ -70,9 +70,8 @@ const IRS = () => {
         <iframe
           className={styles["video-howto"]}
           src="https://player.vimeo.com/video/930372338"
-          frameBorder="0"
           allow="autoplay; allowFullScreen"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
         {/* <Link href="/IRS">
           <button className={styles["click-btn"]}>Clique aqui para fazer</button>
