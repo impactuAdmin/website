@@ -9,8 +9,8 @@ const IRS = () => {
         <div className={styles["section-content"]}>
           <div className={styles["content-col"]}>
             <h2 className={styles["section-header"]}>
-              Defina até <span className={styles["reenie"]}>30 de junho</span>, a entidade à qual
-              pretende consignar 0,5% do seu IRS!
+              Defina até <span className={styles["reenie"]}>30 de junho</span>, a Impac&apos;tu como
+              entidade à qual pretende consignar 0,5% do seu IRS!
             </h2>
 
             <p>
@@ -21,7 +21,7 @@ const IRS = () => {
 
           <div className={styles["content-col"]}>
             <div className={styles["nif-container"]}>
-              <p>Juntos criamos Impac’tu!</p>
+              <p>Juntos criamos Impac&apos;tu!</p>
 
               <div className={styles["nif"]}>
                 <p>NIF 514 850 116</p>
@@ -45,7 +45,7 @@ const IRS = () => {
               rendimento das pessoas singulares (IRS) a{" "}
               <span className={styles["green-text"]}>instituições de solidariedade</span> social. Em
               países como Portugal, os contribuintes podem escolher direcionar uma parte do seu IRS
-              para uma entidade sem fins lucrativos, como a Impac’tu.
+              para uma entidade sem fins lucrativos, como a Impac&apos;tu.
             </p>
             <br />
             <br />
@@ -67,10 +67,16 @@ const IRS = () => {
 
       <section className={styles["section"]}>
         <h2 className={styles["heading-2"]}>Passos a tomar</h2>
-        <img className={styles["irs-img"]} src="/irs-consignacao-previa.jpg"></img>
-        <Link href="/IRS">
+        <iframe
+          className={styles["video-howto"]}
+          src="https://player.vimeo.com/video/930372338"
+          frameborder="0"
+          allow="autoplay; fullscreen"
+          allowfullscreen
+        ></iframe>
+        {/* <Link href="/IRS">
           <button className={styles["click-btn"]}>Clique aqui para fazer</button>
-        </Link>
+        </Link> */}
       </section>
     </>
   )
