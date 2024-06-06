@@ -95,6 +95,14 @@
   color: #10845a;
 }
 
+.video-howto {
+  display: block;
+  width: 80%;
+  margin-top: 3em;
+  margin-inline: auto;
+  aspect-ratio: 16/9;
+}
+
 @media (max-width: 1000px) {
   .section h2,
   .section-2 h2 {
@@ -107,6 +115,13 @@
 
   .col-img {
     display: none;
+  }
+
+  .irs-img {
+    display: block;
+    width: 100%;
+    margin-inline: auto;
+    margin-top: 4em;
   }
 }
 
