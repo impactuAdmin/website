@@ -517,7 +517,7 @@ export const merchProducts = [
   {
     linkParam: "Boné",
     name: "Boné Impac’tu",
-    price: { value: 13.5, display: "13,50" },
+    price: { value: 16, display: "16,00" },
     images: ["/bone.webp", "/bone2.webp"],
     description:
       "Com o nosso novo boné vais-nos ajudar a elevar mais histórias e ainda vais elevar o teu look! ",
