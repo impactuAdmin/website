@@ -12,7 +12,7 @@ html {
 
 body {
   background-color: #c8e5dd;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: black;
   overflow-x: hidden;
   animation: load 1.5s ease-in-out;
@@ -260,7 +260,7 @@ button {
   animation: fadein2 1.5s ease-in-out;
 }
 
-video {
+.hero-wrapper video {
   position: fixed;
   left: 0;
   width: 100%;
@@ -379,7 +379,7 @@ video {
 }
 
 .link-underline::after {
-  content: '';
+  content: "";
   position: relative;
   bottom: 13px;
   right: 100%;
@@ -1753,12 +1753,12 @@ div#dataEscolhida > div,
   align-items: center;
 }
 
-input[type='text'],
-input[type='number'],
-input[type='email'],
-input[type='date'],
-input[type='url'],
-input[type='tel'],
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+input[type="url"],
+input[type="tel"],
 select,
 textarea {
   width: 100%;
@@ -1769,12 +1769,12 @@ textarea {
   margin-top: 6px;
   margin-bottom: 20px;
   resize: vertical;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 
   -webkit-appearance: none;
 }
 
-input[type='file'] {
+input[type="file"] {
   width: 100%;
   padding: 12px;
   border: 1px solid #10845a;
@@ -1782,10 +1782,10 @@ input[type='file'] {
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 20px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-input[type='submit'] {
+input[type="submit"] {
   background-color: #10845a;
   color: white;
   padding: 12px 20px;
@@ -1794,7 +1794,7 @@ input[type='submit'] {
   cursor: pointer;
 }
 
-input[type='submit']:hover {
+input[type="submit"]:hover {
   background-color: black;
   color: white;
 }
@@ -1820,7 +1820,7 @@ input[type='submit']:hover {
 .recrutamento-hero-wrapper {
   height: 100vh;
   width: 100%;
-  background-image: url('../public/recrutamento.webp');
+  background-image: url("../public/recrutamento.webp");
   background-size: cover;
   background-position-y: 70%;
 }
@@ -1929,7 +1929,7 @@ input[type='submit']:hover {
   min-height: 100vh;
   height: 100vh;
   width: 100%;
-  background-image: url('../public/senhor.webp');
+  background-image: url("../public/senhor.webp");
   background-size: cover;
   background-position-y: center center;
 }
@@ -2818,7 +2818,7 @@ No mobile fica em 2 e 1 colunas
   }
 
   .menu-wrapper .menu-content a h1::after {
-    content: '';
+    content: "";
     display: block;
     position: relative;
     left: 0;
@@ -3397,7 +3397,7 @@ a {
 }
 
 .back-link a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: -100%;

@@ -116,6 +116,13 @@
   .col-img {
     display: none;
   }
+
+  .irs-img {
+    display: block;
+    width: 100%;
+    margin-inline: auto;
+    margin-top: 4em;
+  }
 }
 
 @media (min-width: 1000px) {

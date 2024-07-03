@@ -34,41 +34,14 @@ export const datas = [
 ]
 
 export const team = [
+  //
+  // direção
+  //
   {
     name: "Filipe Ribeiro",
     post: "Presidente",
     src: "/equipa/fotoFilipeSantosRibeiro.webp",
     imgAjustments: { position: "60% 10%", size: "140%" },
-  },
-  {
-    name: "Sofia Lessa",
-    post: "Presidente C. Consultivo",
-    src: "/equipa/fotoSofiaLessa.webp",
-    imgAjustments: { position: "center top", size: "140%" },
-  },
-  {
-    name: "Margarida Santos",
-    post: "Gestora Financeira",
-    src: "/equipa/fotoMargaridaSantos.webp",
-    imgAjustments: { position: "30% 70%", size: "150%" },
-  },
-  {
-    name: "Francisco Durães",
-    post: "Gestor Estratégia e Desenvolvimento",
-    src: "/equipa/fotoFranciscoDurães.webp",
-    imgAjustments: { position: "45% 38%", size: "170%" },
-  },
-  {
-    name: "Francisca Ribeiro",
-    post: "Gestora Responsabilidade Social",
-    src: "/equipa/fotoFranciscaRibeiro.webp",
-    imgAjustments: { position: "50% 50%", size: "190%" },
-  },
-  {
-    name: "Francisca Fernandes",
-    post: "Gestora Operações Norte",
-    src: "/equipa/fotoFranciscaFernandes.webp",
-    imgAjustments: { position: "45% 30%", size: "160%" },
   },
   {
     name: "Beatriz Machado",
@@ -77,16 +50,34 @@ export const team = [
     imgAjustments: { position: "50% top", size: "230%" },
   },
   {
-    name: "Margarida Ferreira",
-    post: "Gestora Impacto Social",
-    src: "/equipa/fotoMargaridaFerreira.webp",
-    imgAjustments: { position: "40% 50%", size: "160%" },
+    name: "Carolina Barbosa",
+    post: "Finanças e Fundos",
+    src: "/equipa/fotoCarolinaBarbosa.webp",
+    imgAjustments: { position: "60% top", size: "130%" },
   },
   {
-    name: "Luis Pinheiro",
-    post: "Gestor Projetos Norte",
-    src: "/equipa/fotoLuisPinheiro.webp",
-    imgAjustments: { position: "70% 20%", size: "120%" },
+    name: "Salvador Santos",
+    post: "Direção",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Francisca Fernandes",
+    post: "Gestora Operações Norte",
+    src: "/equipa/fotoFranciscaFernandes.webp",
+    imgAjustments: { position: "45% 30%", size: "160%" },
+  },
+  {
+    name: "Francisca Ribeiro",
+    post: "Gestora Responsabilidade Social",
+    src: "/equipa/fotoFranciscaRibeiro.webp",
+    imgAjustments: { position: "50% 50%", size: "190%" },
+  },
+  {
+    name: "Francisco Durães",
+    post: "Gestor Estratégia e Desenvolvimento",
+    src: "/equipa/fotoFranciscoDurães.webp",
+    imgAjustments: { position: "45% 38%", size: "170%" },
   },
   {
     name: "Guilherme Lessa",
@@ -94,18 +85,11 @@ export const team = [
     src: "/equipa/fotoGuilhermeLessa.webp",
     imgAjustments: { position: "30% 35%", size: "130%" },
   },
-
   {
-    name: "Inês Costa",
-    post: "Gestora RH",
-    src: "/equipa/fotoInesCosta.webp",
-    imgAjustments: { position: "60% 15%", size: "160%" },
-  },
-  {
-    name: "Joana Martins",
-    post: "Gestora Concelho",
-    src: "/equipa/fotoJoanaMartins.webp",
-    imgAjustments: { position: "48% 40%", size: "280%", rotation: "rotate(90deg)" },
+    name: "Luís Pinheiro",
+    post: "Gestor Projetos Norte",
+    src: "/equipa/fotoLuisPinheiro.webp",
+    imgAjustments: { position: "70% 20%", size: "120%" },
   },
   {
     name: "Margarida Meneses",
@@ -114,11 +98,32 @@ export const team = [
     imgAjustments: { position: "45% 35%", size: "100%" },
   },
   {
+    name: "Margarida Santos",
+    post: "Gestora Financeira",
+    src: "/equipa/fotoMargaridaSantos.webp",
+    imgAjustments: { position: "30% 70%", size: "150%" },
+  },
+  {
+    name: "Maria Azevedo",
+    post: "Direção",
+    src: "",
+    imgAjustments: "",
+  },
+  {
     name: "Marta Mónica",
     post: "Gestora Concelho",
     src: "/equipa/fotoMartaMonica.webp",
     imgAjustments: { position: "0% 20%", size: "100%" },
   },
+  {
+    name: "Paula Ferreira",
+    post: "Direção",
+    src: "",
+    imgAjustments: "",
+  },
+  //
+  // marketing
+  //
   {
     name: "Inês Póvoa",
     post: "Gestora Comunicação",
@@ -144,26 +149,314 @@ export const team = [
     imgAjustments: { position: "85% 90%", size: "190%", rotation: "rotate(-90deg)" },
   },
   {
-    name: "Sandro Vieira",
-    post: "Equipa Comunicação",
-    src: "",
-    imgAjustments: "",
-  },
-  {
     name: "Tiago Rodrigues",
     post: "Equipa Comunicação",
     src: "/equipa/fotoTiagoRodrigues.webp",
     imgAjustments: { position: "60% 50%", size: "100%" },
   },
   {
-    name: "Carolina Barbosa",
-    post: "Finanças e Fundos",
-    src: "/equipa/fotoCarolinaBarbosa.webp",
-    imgAjustments: { position: "60% top", size: "130%" },
+    name: "Maria Craveiro",
+    post: "Equipa Comunicação",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Beatriz Gomes",
+    post: "Equipa Comunicação",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Tiago Marques",
+    post: "Equipa Comunicação",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Sofia Silva",
+    post: "Equipa Comunicação",
+    src: "",
+    imgAjustments: "",
+  },
+  //
+  // projetos
+  //
+  {
+    name: "Carolina Alves",
+    post: "Projetos",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Gustavo Couto",
+    post: "Projetos",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Inês Cruz",
+    post: "Projetos",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Ana Fernandes",
+    post: "Projetos",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Laura Carvalho",
+    post: "Projetos",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Mafalda Cunha",
+    post: "Projetos",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Ana Correia",
+    post: "Projetos",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Diana Marques da Silva",
+    post: "Projetos",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "António Lourenço",
+    post: "Projetos",
+    src: "",
+    imgAjustments: "",
+  },
+  //
+  // social
+  //
+  {
+    name: "Beatriz Costa",
+    post: "Social",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Bruna Cruz",
+    post: "Social",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Francisco Amaral",
+    post: "Social",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Leonor Queiroz",
+    post: "Social",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Margarida Silva",
+    post: "Social",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Maria Martins",
+    post: "Social",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Matilde Marrinhas",
+    post: "Social",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Beatriz Ferreira",
+    post: "Social",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Ana Carolina Valente",
+    post: "Social",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Patrícia Carido",
+    post: "Social",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Beatriz da Costa",
+    post: "Social",
+    src: "",
+    imgAjustments: "",
   },
   {
     name: "Cristina Spinache",
-    post: "Empreendedorismo",
+    post: "Social",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Inês Novais",
+    post: "Social",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Inês Paula",
+    post: "Social",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Inês Marques",
+    post: "Social",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Jacira Ribeiro",
+    post: "Social",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Joana Isa Neves",
+    post: "Social",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Maria Magalhães",
+    post: "Social",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Nádia Cordeiro",
+    post: "Social",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Catarina Cruz",
+    post: "Social",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Francisca Martins",
+    post: "Social",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Matilde Cardoso",
+    post: "Social",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "João Meireles",
+    post: "Social",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Maria Almeida",
+    post: "Social",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Beatriz Moreira",
+    post: "Social",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Ana Carneiro",
+    post: "Social",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Mafalda Moura",
+    post: "Social",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Nélia Fonseca",
+    post: "Social",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "David Paulos",
+    post: "Social",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Guilherme Coimbra",
+    post: "Social",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Joana Jesus",
+    post: "Social",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Lia Cabrini",
+    post: "Social",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Ana Carolina Veiga",
+    post: "Social",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Ana Catarina Lourenço",
+    post: "Social",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Maria Sequeira",
+    post: "Social",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Carlota Coelho",
+    post: "Social",
+    src: "",
+    imgAjustments: "",
+  },
+  {
+    name: "Cláudia Sardinha",
+    post: "Social",
     src: "",
     imgAjustments: "",
   },
@@ -224,7 +517,7 @@ export const merchProducts = [
   {
     linkParam: "Boné",
     name: "Boné Impac’tu",
-    price: { value: 13.5, display: "13,50" },
+    price: { value: 16, display: "16,00" },
     images: ["/bone.webp", "/bone2.webp"],
     description:
       "Com o nosso novo boné vais-nos ajudar a elevar mais histórias e ainda vais elevar o teu look! ",

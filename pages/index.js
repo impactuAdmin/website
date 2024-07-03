@@ -9,7 +9,7 @@ export default function App() {
       <VideoHero />
       <Intro />
       <Stats />
-      <IRSModal />
+      {/* <IRSModal /> */}
     </>
   )
 }
