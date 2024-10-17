@@ -1,27 +1,27 @@
-import { useState } from 'react'
-import Link from 'next/link'
-import styles from './Dropdown.module.css'
+import { useState } from "react"
+import Link from "next/link"
+import styles from "./Dropdown.module.css"
 
 const Dropdown = ({ title, navLinkClassName }) => {
   const [isHovered, setIsHovered] = useState(false)
 
   const navLinks = [
     {
-      title: 'Quem somos?',
-      href: '/QuemSomos',
+      title: "Quem somos?",
+      href: "/QuemSomos",
       dropdownLinks: [
-        { title: 'Pilares', href: '/QuemSomos#pilares' },
-        { title: 'Onde?', href: '/QuemSomos#onde' },
-        { title: 'Equipa', href: '/QuemSomos#equipa' },
-        { title: 'História', href: '/QuemSomos#historia' },
+        { title: "Pilares", href: "/QuemSomos#pilares" },
+        { title: "Onde?", href: "/QuemSomos#onde" },
+        // { title: 'Equipa', href: '/QuemSomos#equipa' },
+        { title: "História", href: "/QuemSomos#historia" },
       ],
     },
     {
-      title: 'Impacto Social',
-      href: '/ImpactoSocial',
+      title: "Impacto Social",
+      href: "/ImpactoSocial",
       dropdownLinks: [
-        { title: 'Social', href: '/ImpactoSocial#social' },
-        { title: 'Projetos', href: '/ImpactoSocial#projetos' },
+        { title: "Social", href: "/ImpactoSocial#social" },
+        { title: "Projetos", href: "/ImpactoSocial#projetos" },
       ],
     },
   ]
@@ -34,19 +34,19 @@ const Dropdown = ({ title, navLinkClassName }) => {
     <li
       onMouseOver={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className={styles['nav-links-item']}
+      className={styles["nav-links-item"]}
     >
       <Link href={navLink.href}>
         <a className={navLinkClassName}>{navLink.title}</a>
       </Link>
 
       {isHovered && (
-        <div className={styles['dropdown-wrapper']}>
+        <div className={styles["dropdown-wrapper"]}>
           <ul>
             {navLink.dropdownLinks.map((dropdownLink) => (
               <li key={dropdownLink.title}>
                 <Link href={dropdownLink.href}>
-                  <a className={styles['dropdown-link']}>{dropdownLink.title}</a>
+                  <a className={styles["dropdown-link"]}>{dropdownLink.title}</a>
                 </Link>
               </li>
             ))}

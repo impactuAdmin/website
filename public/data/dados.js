@@ -1,36 +1,36 @@
 export const datas = [
-  //   {
-  //     label: "dia 16, de manhã (terça-feira)",
-  //     value: "dia 16, de manhã (terça-feira)",
-  //   },
-  //   {
-  //     label: "dia 16, à tarde (terça-feira)",
-  //     value: "dia 16, à tarde (terça-feira)",
-  //   },
-  //   {
-  //     label: "dia 17, de manhã (quarta-feira)",
-  //     value: "dia 17, de manhã (quarta-feira)",
-  //   },
-  //   {
-  //     label: "dia 17, à tarde (quarta-feira)",
-  //     value: "dia 17, à tarde (quarta-feira)",
-  //   },
-  //   {
-  //     label: "dia 18, de manhã (quinta-feira)",
-  //     value: "dia 18, de manhã (quinta-feira)",
-  //   },
-  //   {
-  //     label: "dia 18, à tarde (quinta-feira)",
-  //     value: "dia 18, à tarde (quinta-feira)",
-  //   },
-  //   {
-  //     label: "dia 19, de manhã (sexta-feira)",
-  //     value: "dia 19, de manhã (sexta-feira)",
-  //   },
-  //   {
-  //     label: "dia 19, à tarde (sexta-feira)",
-  //     value: "dia 19, à tarde (sexta-feira)",
-  //   },
+  {
+    label: "dia 16, de manhã (terça-feira)",
+    value: "dia 16, de manhã (terça-feira)",
+  },
+  {
+    label: "dia 16, à tarde (terça-feira)",
+    value: "dia 16, à tarde (terça-feira)",
+  },
+  {
+    label: "dia 17, de manhã (quarta-feira)",
+    value: "dia 17, de manhã (quarta-feira)",
+  },
+  {
+    label: "dia 17, à tarde (quarta-feira)",
+    value: "dia 17, à tarde (quarta-feira)",
+  },
+  {
+    label: "dia 18, de manhã (quinta-feira)",
+    value: "dia 18, de manhã (quinta-feira)",
+  },
+  {
+    label: "dia 18, à tarde (quinta-feira)",
+    value: "dia 18, à tarde (quinta-feira)",
+  },
+  {
+    label: "dia 19, de manhã (sexta-feira)",
+    value: "dia 19, de manhã (sexta-feira)",
+  },
+  {
+    label: "dia 19, à tarde (sexta-feira)",
+    value: "dia 19, à tarde (sexta-feira)",
+  },
 ]
 
 export const team = [
