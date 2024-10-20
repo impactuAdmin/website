@@ -1,35 +1,27 @@
 export const datas = [
   {
-    label: "dia 16, de manhã (terça-feira)",
-    value: "dia 16, de manhã (terça-feira)",
+    label: "dia 30 de outubro, de manhã (quarta-feira)",
+    value: "dia 30 de outubro, de manhã (quarta-feira)",
   },
   {
-    label: "dia 16, à tarde (terça-feira)",
-    value: "dia 16, à tarde (terça-feira)",
+    label: "dia 30 de outubro, de tarde (quarta-feira)",
+    value: "dia 30 de outubro, de tarde (quarta-feira)",
   },
   {
-    label: "dia 17, de manhã (quarta-feira)",
-    value: "dia 17, de manhã (quarta-feira)",
+    label: "dia 31 de outubro, de manhã (quinta-feira)",
+    value: "dia 31 de outubro, de manhã (quinta-feira)",
   },
   {
-    label: "dia 17, à tarde (quarta-feira)",
-    value: "dia 17, à tarde (quarta-feira)",
+    label: "dia 31 de outubro, de tarde (quinta-feira)",
+    value: "dia 31 de outubro, de tarde (quinta-feira)",
   },
   {
-    label: "dia 18, de manhã (quinta-feira)",
-    value: "dia 18, de manhã (quinta-feira)",
+    label: "dia 4 de novembro, de manhã (segunda-feira)",
+    value: "dia 4 de novembro, de manhã (segunda-feira)",
   },
   {
-    label: "dia 18, à tarde (quinta-feira)",
-    value: "dia 18, à tarde (quinta-feira)",
-  },
-  {
-    label: "dia 19, de manhã (sexta-feira)",
-    value: "dia 19, de manhã (sexta-feira)",
-  },
-  {
-    label: "dia 19, à tarde (sexta-feira)",
-    value: "dia 19, à tarde (sexta-feira)",
+    label: "dia 4 de novembro, de tarde (segunda-feira)",
+    value: "dia 4 de novembro, de tarde (segunda-feira)",
   },
 ]
 
@@ -488,8 +480,8 @@ export const pdfs = [
 export const departamentos = [
   {
     id: 1,
-    name: "Marketing",
-    value: "Marketing",
+    name: "Comunicação",
+    value: "Comunicação",
   },
   {
     id: 2,
@@ -498,18 +490,13 @@ export const departamentos = [
   },
   {
     id: 3,
-    name: "Recursos Humanos (Lisboa)",
-    value: "RecursoshumanosLisboa",
+    name: "Recursos Humanos",
+    value: "Recursoshumanos",
   },
   {
     id: 4,
-    name: "Social (Porto)",
-    value: "SocialPorto",
-  },
-  {
-    id: 5,
-    name: "Social (Lisboa)",
-    value: "SocialLisboa",
+    name: "Social",
+    value: "Social",
   },
 ]
 
