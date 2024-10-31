@@ -1,28 +1,28 @@
 export const datas = [
-  {
-    label: "dia 30 de outubro, de manhã (quarta-feira)",
-    value: "dia 30 de outubro, de manhã (quarta-feira)",
-  },
-  {
-    label: "dia 30 de outubro, de tarde (quarta-feira)",
-    value: "dia 30 de outubro, de tarde (quarta-feira)",
-  },
-  {
-    label: "dia 31 de outubro, de manhã (quinta-feira)",
-    value: "dia 31 de outubro, de manhã (quinta-feira)",
-  },
-  {
-    label: "dia 31 de outubro, de tarde (quinta-feira)",
-    value: "dia 31 de outubro, de tarde (quinta-feira)",
-  },
-  {
-    label: "dia 4 de novembro, de manhã (segunda-feira)",
-    value: "dia 4 de novembro, de manhã (segunda-feira)",
-  },
-  {
-    label: "dia 4 de novembro, de tarde (segunda-feira)",
-    value: "dia 4 de novembro, de tarde (segunda-feira)",
-  },
+  // {
+  //   label: "dia 30 de outubro, de manhã (quarta-feira)",
+  //   value: "dia 30 de outubro, de manhã (quarta-feira)",
+  // },
+  // {
+  //   label: "dia 30 de outubro, de tarde (quarta-feira)",
+  //   value: "dia 30 de outubro, de tarde (quarta-feira)",
+  // },
+  // {
+  //   label: "dia 31 de outubro, de manhã (quinta-feira)",
+  //   value: "dia 31 de outubro, de manhã (quinta-feira)",
+  // },
+  // {
+  //   label: "dia 31 de outubro, de tarde (quinta-feira)",
+  //   value: "dia 31 de outubro, de tarde (quinta-feira)",
+  // },
+  // {
+  //   label: "dia 4 de novembro, de manhã (segunda-feira)",
+  //   value: "dia 4 de novembro, de manhã (segunda-feira)",
+  // },
+  // {
+  //   label: "dia 4 de novembro, de tarde (segunda-feira)",
+  //   value: "dia 4 de novembro, de tarde (segunda-feira)",
+  // },
 ]
 
 export const team = [
