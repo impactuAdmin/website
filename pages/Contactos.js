@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link"
 
 const Contactos = () => {
   return (
@@ -26,7 +26,7 @@ const Contactos = () => {
               <br />
               <p>
                 <strong>Email</strong>
-                <a href="mailto:geral@impactu.org" style={{ color: '#10845A' }}>
+                <a href="mailto:geral@impactu.org" style={{ color: "#10845A" }}>
                   geral@impactu.org
                 </a>
                 <br />
@@ -34,7 +34,7 @@ const Contactos = () => {
               <br />
               <p>
                 <strong>Telemóvel</strong>
-                913 363 673
+                913 459 225
               </p>
               <br />
               <p>
@@ -145,7 +145,7 @@ const Contactos = () => {
         </section>
         <section id="fala-connosco" className="contactar-wrapper">
           <div className="container-contactos reveal">
-            <div style={{ textAlign: 'center' }}>
+            <div style={{ textAlign: "center" }}>
               <h1>Fala connosco</h1>
             </div>
             <div className="container">
@@ -172,7 +172,7 @@ const Contactos = () => {
                   name="subject"
                   placeholder="Escreve a tua mensagem"
                   required
-                  style={{ heigth: '200px' }}
+                  style={{ heigth: "200px" }}
                 />
 
                 <input type="submit" value="Enviar" className="hidden-button" />
