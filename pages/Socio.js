@@ -1,4 +1,4 @@
-import { useRouter } from 'next/router'
+import { useRouter } from "next/router"
 
 const Socio = () => {
   const router = useRouter()
@@ -68,11 +68,11 @@ const Socio = () => {
                 *IBAN: <strong>PT50 0033 0000 4553 2412 3620 5</strong>
               </p>
               <p>
-                *MBWAY: <strong>+351 913 363 673</strong>
+                *MBWAY: <strong>+351 913 459 225</strong>
               </p>
               <br />
               <p>
-                Para concluirmos mais rapidamente a sua inscrição envie comprovativo para{' '}
+                Para concluirmos mais rapidamente a sua inscrição envie comprovativo para{" "}
                 <strong>socios@impactu.org</strong>
               </p>
             </div>
